@@ -9,9 +9,7 @@
 		<jaxb:schemaBindings>
 			<jaxb:package name="org.hisrc.w3c.xlink.v_1_0"/>
 		</jaxb:schemaBindings>
-		<!--jsonix:packageMapping
-			packageName="org.hisrc.w3c.xlink.v_1_0"
-			spaceName="XLink_1_0"/-->
+		<jsonix:packageMapping packageName="org.hisrc.w3c.xlink.v_1_0" spaceName="XLink_1_0"/>
 	</jaxb:bindings>
 
         <jaxb:bindings scd="x-schema::xlink" xmlns:xlink="http://www.w3.org/1999/xlink">
