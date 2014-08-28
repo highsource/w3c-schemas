@@ -9,15 +9,9 @@
 		<jaxb:schemaBindings>
 			<jaxb:package name="org.hisrc.w3c.xlink.v_1_0"/>
 		</jaxb:schemaBindings>
-		<!--jaxb:bindings node="xs:group[@name='locatorModel']/xs:sequence/xs:element[@ref='xlink:title']">
-			<jaxb:property name="LocatorTitle"/>
-		</jaxb:bindings-->
-    <!--bindings scd="/group::xlink:locatorModel/model::sequence/xlink:title">
-      <property name="LocatorTitle"/>
-    </bindings-->
-		<jsonix:packageMapping
+		<!--jsonix:packageMapping
 			packageName="org.hisrc.w3c.xlink.v_1_0"
-			spaceName="XLink_1_0"/>
+			spaceName="XLink_1_0"/-->
 	</jaxb:bindings>
 
         <jaxb:bindings scd="x-schema::xlink" xmlns:xlink="http://www.w3.org/1999/xlink">
