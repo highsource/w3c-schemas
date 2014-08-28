@@ -2,12 +2,25 @@
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 	xmlns:wildcard="http://jaxb2-commons.dev.java.net/basic/wildcard"
 	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
-	jaxb:extensionBindingPrefixes="xjc">
+	xmlns:jsonix="http://jsonix.highsource.org/customizations"
+	jaxb:extensionBindingPrefixes="xjc jsonix">
 
-	<jaxb:bindings scd="x-schema::xlink" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<jaxb:bindings schemaLocation="w3c/1999/xlink.xsd" node="/xs:schema">
 		<jaxb:schemaBindings>
 			<jaxb:package name="org.hisrc.w3c.xlink.v_1_0"/>
 		</jaxb:schemaBindings>
+		<!--jaxb:bindings node="xs:group[@name='locatorModel']/xs:sequence/xs:element[@ref='xlink:title']">
+			<jaxb:property name="LocatorTitle"/>
+		</jaxb:bindings-->
+    <!--bindings scd="/group::xlink:locatorModel/model::sequence/xlink:title">
+      <property name="LocatorTitle"/>
+    </bindings-->
+		<jsonix:packageMapping
+			packageName="org.hisrc.w3c.xlink.v_1_0"
+			spaceName="XLink_1_0"/>
+	</jaxb:bindings>
+
+        <jaxb:bindings scd="x-schema::xlink" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<jaxb:bindings scd="/group::xlink:locatorModel/model::sequence/xlink:title">
 			<jaxb:property name="LocatorTitle"/>
 		</jaxb:bindings>

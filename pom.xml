@@ -58,10 +58,11 @@
 	</modules>
 	<properties> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-		<jaxb2-basics.version>0.7.0</jaxb2-basics.version>
+		<jaxb2-basics.version>0.7.1-SNAPSHOT</jaxb2-basics.version>
 		<jaxb-ri.version>2.1.13</jaxb-ri.version>
 		<jaxb-api.version>2.1</jaxb-api.version>
 		<maven-jaxb2-plugin.version>0.9.0</maven-jaxb2-plugin.version>
+		<jsonix-schema-compiler.version>2.0.12-SNAPSHOT</jsonix-schema-compiler.version>
 	</properties> 
 	<dependencies>
 		<dependency>
@@ -128,6 +129,11 @@
 				<artifactId>jts</artifactId>
 				<version>1.13</version>
 			</dependency-->
+			<dependency>
+				<groupId>org.hisrc.jsonix</groupId>
+				<artifactId>jsonix-schema-compiler</artifactId>
+				<version>${jsonix-schema-compiler.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -171,6 +177,7 @@
 							<arg>-Xinheritance</arg>
 							<arg>-Xfluent-api</arg>
 							<arg>-Xvisitor</arg>
+							<arg>-Xjsonix</arg>
 						</args>
 						<plugins>
 							<plugin>
@@ -184,6 +191,10 @@
 							<plugin>
 								<groupId>com.massfords</groupId>
 								<artifactId>jaxb-visitor</artifactId>
+							</plugin>
+							<plugin>
+								<groupId>org.hisrc.jsonix</groupId>
+								<artifactId>jsonix-schema-compiler</artifactId>
 							</plugin>
 						</plugins>
 					</configuration>
