@@ -10,10 +10,10 @@ pause
 
 echo Setting new version to %1.
 pause
-call mvn versions:set -Ptests,demos,samples -DnewVersion=%1
+call mvn versions:set -DnewVersion=%1
 echo Version was set to %1.
 pause
-call mvn versions:commit -Ptests,demos,samples
+call mvn versions:commit
 echo Version %1 committed.
 pause
 
@@ -50,10 +50,10 @@ pause
 
 echo Setting new version to %2.
 pause
-call mvn versions:set -Ptests,demos,samples -DnewVersion=%2
+call mvn versions:set -DnewVersion=%2
 echo Version was set to %2.
 pause
-call mvn versions:commit -Ptests,demos,samples
+call mvn versions:commit
 echo Version %2 was committed.
 pause
 

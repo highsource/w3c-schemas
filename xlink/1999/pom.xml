@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>org.hisrc.w3c</groupId>
 		<artifactId>w3c-schema-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
 		<relativePath>../../schema-parent/pom.xml</relativePath>
 	</parent>
 	<dependencies>
