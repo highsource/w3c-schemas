@@ -58,6 +58,13 @@
 					<catalog>src/main/resources/catalog.cat</catalog>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
 	</build>
 </project>
