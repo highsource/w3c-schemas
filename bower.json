@@ -1,0 +1,43 @@
+{
+	"name": "W3C-Schemas",
+	"version": "1.0.0",
+	"homepage": "https://github.com/highsource/w3c-schemas",
+	"authors": [
+		"Alexey Valikov"
+	],
+	"description": "Jsonix mappings for W3C Schemas.",
+	"main": "scripts/W3C-Schemas.js",
+	"keywords" : [
+		"json",
+		"xml",
+		"unmarshal",
+		"unmarshalling",
+		"marshal",
+		"marshalling",
+		"parse",
+		"parsing",
+		"serialize",
+		"serializing",
+		"javascript",
+		"objects",
+		"dom",
+		"util",
+		"utility",
+		"jaxb",
+		"jsonix",
+		"mapping",
+		"XLink"
+	],
+	"license": "BSD-3-Clause",
+	"ignore": [ "**/.*",
+		"schemas",
+		"xlink",
+		"README.md",
+		"pom.xml",
+		"scripts/node_modules",
+		"scripts/target",
+		"scripts/test",
+		"scripts/mnpm.bat",
+		"scripts/pom.xml"
+	]
+}
