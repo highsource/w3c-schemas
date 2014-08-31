@@ -54,6 +54,7 @@
 	<modules>
 		<!-- Schemas -->
 		<module>schemas</module>
+		<module>schema-parent</module>
 		<module>xlink</module>
 		<module>scripts</module>
 	</modules>
@@ -146,59 +147,14 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<source>1.5</source>
-						<target>1.5</target>
+						<source>1.6</source>
+						<target>1.6</target>
 					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.jvnet.jaxb2.maven2</groupId>
 					<artifactId>maven-jaxb2-plugin</artifactId>
 					<version>${maven-jaxb2-plugin.version}</version>
-					<executions>
-						<execution>
-							<goals>
-								<goal>generate</goal>
-							</goals>
-						</execution>
-					</executions>
-					<configuration>
-						<!--schemaDirectory>${project.build.directory}/unpacked-resources</schemaDirectory>
-						<bindingDirectory>src/main/resources</bindingDirectory-->
-						<strict>false</strict>
-						<extension>true</extension>
-						<args>
-							<arg>-XtoString</arg>
-							<arg>-Xequals</arg>
-							<arg>-XhashCode</arg>
-							<arg>-Xcopyable</arg>
-							<arg>-Xmergeable</arg>
-							<arg>-Xsetters</arg>
-							<arg>-Xwildcard</arg>
-							<arg>-Xinject-code</arg>
-							<arg>-Xinheritance</arg>
-							<arg>-Xfluent-api</arg>
-							<arg>-Xvisitor</arg>
-							<arg>-Xjsonix</arg>
-						</args>
-						<plugins>
-							<plugin>
-								<groupId>org.jvnet.jaxb2_commons</groupId>
-								<artifactId>jaxb2-basics</artifactId>
-							</plugin>
-							<plugin>
-								<groupId>org.jvnet.jaxb2_commons</groupId>
-								<artifactId>jaxb2-fluent-api</artifactId>
-							</plugin>
-							<plugin>
-								<groupId>com.massfords</groupId>
-								<artifactId>jaxb-visitor</artifactId>
-							</plugin>
-							<plugin>
-								<groupId>org.hisrc.jsonix</groupId>
-								<artifactId>jsonix-schema-compiler</artifactId>
-							</plugin>
-						</plugins>
-					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-antrun-plugin</artifactId>
@@ -237,7 +193,7 @@
 			</plugins>
 		</pluginManagement>
 		<plugins>
-			<plugin>
+			<!--plugin>
 				<inherited>true</inherited>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
@@ -250,7 +206,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin-->
 			<!--plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>

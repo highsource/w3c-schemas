@@ -8,8 +8,9 @@
 	<name>W3C XLink 1.0</name>
 	<parent>
 		<groupId>org.hisrc.w3c</groupId>
-		<artifactId>xlink</artifactId>
+		<artifactId>w3c-schema-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../schema-parent/pom.xml</relativePath>
 	</parent>
 	<dependencies>
 		<dependency>
