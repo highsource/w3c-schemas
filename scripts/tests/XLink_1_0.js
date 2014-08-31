@@ -7,6 +7,14 @@ module.exports = {
 		var context = new Jsonix.Context(mappings);
 		test.done();
         },
+	"Example" : function(test) {
+		var context =  new Jsonix.Context([XLink_1_0]);
+		var unmarshaller = context.createUnmarshaller();
+		unmarshaller.unmarshalFile("tests/locator-01.xml", function(result) {
+			test.equal("label", result.value.label);
+			test.done();
+		});
+	},
 	"Roundtrips" : {
 		"locator-01.xml" : function(test) {roundtrip(test, mappings, "tests/locator-01.xml");}
 	}
