@@ -8,7 +8,7 @@
 	<name>W3C Schemas Scripts</name>
 	<parent>
 		<groupId>org.hisrc.w3c</groupId>
-		<artifactId>xlink</artifactId>
+		<artifactId>w3c-schemas-project</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 	<profiles>

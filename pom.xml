@@ -139,16 +139,6 @@
 	</dependencyManagement>
 	<build>
 		<defaultGoal>install</defaultGoal>
-		<resources>
-			<resource>
-				<directory>${project.build.directory}/generated-sources/xjc</directory>
-				<filtering>false</filtering>
-				<includes>
-					<include>META-INF</include>
-					<include>**/*.js</include>
-				</includes>
-			</resource>
-		</resources>
 		<pluginManagement>
 			<plugins>
 				<plugin>
