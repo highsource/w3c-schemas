@@ -12,12 +12,6 @@
 		<jsonix:packageMapping packageName="org.hisrc.w3c.atom.v_1_0" spaceName="Atom_1_0"/>
 	</jaxb:bindings>
 
-        <!--jaxb:bindings scd="x-schema::xlink" xmlns:xlink="http://www.w3.org/1999/xlink">
-		<jaxb:bindings scd="/group::xlink:locatorModel/model::sequence/xlink:title">
-			<jaxb:property name="LocatorTitle"/>
-		</jaxb:bindings>
-	</jaxb:bindings-->
-
 </jaxb:bindings>
 
 

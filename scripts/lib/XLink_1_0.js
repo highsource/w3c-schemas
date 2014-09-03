@@ -5,65 +5,6 @@ var XLink_1_0_Module_Factory = function () {
     defaultAttributeNamespaceURI: 'http:\/\/www.w3.org\/1999\/xlink',
     typeInfos: [{
         type: 'classInfo',
-        localName: 'LocatorType',
-        propertyInfos: [{
-            type: 'element',
-            name: 'locatorTitle',
-            collection: true,
-            elementName: 'title',
-            typeInfo: 'XLink_1_0.TitleEltType'
-          }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
-          }, {
-            name: 'href',
-            typeInfo: 'String',
-            attributeName: 'href',
-            type: 'attribute'
-          }, {
-            name: 'role',
-            typeInfo: 'String',
-            attributeName: 'role',
-            type: 'attribute'
-          }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
-          }, {
-            name: 'label',
-            typeInfo: 'String',
-            attributeName: 'label',
-            type: 'attribute'
-          }]
-      }, {
-        type: 'classInfo',
-        localName: 'TitleEltType',
-        propertyInfos: [{
-            name: 'content',
-            collection: true,
-            domAllowed: true,
-            typedObjectAllowed: true,
-            mixed: true,
-            type: 'anyElement'
-          }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
-          }, {
-            name: 'lang',
-            typeInfo: 'String',
-            attributeName: {
-              localPart: 'lang',
-              namespaceURI: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            type: 'attribute'
-          }]
-      }, {
-        type: 'classInfo',
         localName: 'ArcType',
         propertyInfos: [{
             type: 'element',
@@ -121,6 +62,65 @@ var XLink_1_0_Module_Factory = function () {
             name: 'type',
             typeInfo: 'String',
             attributeName: 'type',
+            type: 'attribute'
+          }, {
+            name: 'role',
+            typeInfo: 'String',
+            attributeName: 'role',
+            type: 'attribute'
+          }, {
+            name: 'title',
+            typeInfo: 'String',
+            attributeName: 'title',
+            type: 'attribute'
+          }, {
+            name: 'label',
+            typeInfo: 'String',
+            attributeName: 'label',
+            type: 'attribute'
+          }]
+      }, {
+        type: 'classInfo',
+        localName: 'TitleEltType',
+        propertyInfos: [{
+            name: 'content',
+            collection: true,
+            domAllowed: true,
+            typedObjectAllowed: true,
+            mixed: true,
+            type: 'anyElement'
+          }, {
+            name: 'type',
+            typeInfo: 'String',
+            attributeName: 'type',
+            type: 'attribute'
+          }, {
+            name: 'lang',
+            typeInfo: 'String',
+            attributeName: {
+              localPart: 'lang',
+              namespaceURI: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            type: 'attribute'
+          }]
+      }, {
+        type: 'classInfo',
+        localName: 'LocatorType',
+        propertyInfos: [{
+            type: 'element',
+            name: 'locatorTitle',
+            collection: true,
+            elementName: 'title',
+            typeInfo: 'XLink_1_0.TitleEltType'
+          }, {
+            name: 'type',
+            typeInfo: 'String',
+            attributeName: 'type',
+            type: 'attribute'
+          }, {
+            name: 'href',
+            typeInfo: 'String',
+            attributeName: 'href',
             type: 'attribute'
           }, {
             name: 'role',
@@ -227,27 +227,27 @@ var XLink_1_0_Module_Factory = function () {
         values: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
         type: 'enumInfo',
-        localName: 'ShowType',
-        baseTypeInfo: 'String',
-        values: ['new', 'replace', 'embed', 'other', 'none']
-      }, {
-        type: 'enumInfo',
         localName: 'ActuateType',
         baseTypeInfo: 'String',
         values: ['onLoad', 'onRequest', 'other', 'none']
+      }, {
+        type: 'enumInfo',
+        localName: 'ShowType',
+        baseTypeInfo: 'String',
+        values: ['new', 'replace', 'embed', 'other', 'none']
       }],
     elementInfos: [{
+        elementName: 'locator',
+        typeInfo: 'XLink_1_0.LocatorType'
+      }, {
+        elementName: 'title',
+        typeInfo: 'XLink_1_0.TitleEltType'
+      }, {
         elementName: 'resource',
         typeInfo: 'XLink_1_0.ResourceType'
       }, {
         elementName: 'arc',
         typeInfo: 'XLink_1_0.ArcType'
-      }, {
-        elementName: 'title',
-        typeInfo: 'XLink_1_0.TitleEltType'
-      }, {
-        elementName: 'locator',
-        typeInfo: 'XLink_1_0.LocatorType'
       }]
   };
   return {
