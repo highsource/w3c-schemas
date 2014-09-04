@@ -9,13 +9,13 @@ var Atom_1_0_Module_Factory = function () {
             name: 'nameOrUriOrEmail',
             collection: true,
             elementTypeInfos: [{
-                elementName: 'email',
-                typeInfo: 'String'
-              }, {
                 elementName: 'name',
                 typeInfo: 'String'
               }, {
                 elementName: 'uri',
+                typeInfo: 'String'
+              }, {
+                elementName: 'email',
                 typeInfo: 'String'
               }],
             type: 'elementRefs'
