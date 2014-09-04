@@ -1,12 +1,12 @@
 {
-	"name": "W3C-Schemas",
-	"version": "1.0.0",
+	"name": "w3c-schemas",
+	"version": "1.0.1",
 	"homepage": "https://github.com/highsource/w3c-schemas",
 	"authors": [
 		"Alexey Valikov"
 	],
 	"description": "Jsonix mappings for W3C Schemas.",
-	"main": "scripts/W3C-Schemas.js",
+	"main": "scripts/w3c-schemas.js",
 	"keywords" : [
 		"json",
 		"xml",

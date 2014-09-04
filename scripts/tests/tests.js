@@ -1,4 +1,4 @@
 module.exports = 
 {
-	"W3C-Schemas": require('./W3C-Schemas')
+	"w3c-schemas": require('./w3c-schemas')
 };

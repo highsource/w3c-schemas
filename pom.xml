@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.hisrc.w3c</groupId>
 	<artifactId>w3c-schemas-project</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 	<name>W3C Schemas Project</name>
 	<url>https://github.com/highsource/w3c-schemas</url>
@@ -61,11 +61,11 @@
 	</modules>
 	<properties> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-		<jaxb2-basics.version>0.8.0</jaxb2-basics.version>
+		<jaxb2-basics.version>0.8.1</jaxb2-basics.version>
 		<jaxb-ri.version>2.1.13</jaxb-ri.version>
 		<jaxb-api.version>2.1</jaxb-api.version>
 		<maven-jaxb2-plugin.version>0.9.0</maven-jaxb2-plugin.version>
-		<jsonix-schema-compiler.version>2.1.0</jsonix-schema-compiler.version>
+		<jsonix-schema-compiler.version>2.1.1</jsonix-schema-compiler.version>
 	</properties> 
 	<dependencies>
 		<dependency>

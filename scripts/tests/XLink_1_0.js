@@ -1,5 +1,5 @@
 var Jsonix = require('jsonix').Jsonix;
-var XLink_1_0 = require('../W3C-Schemas').XLink_1_0;
+var XLink_1_0 = require('../w3c-schemas').XLink_1_0;
 var roundtrip = require('./roundtrip').roundtrip;
 var mappings = [XLink_1_0];
 module.exports = {

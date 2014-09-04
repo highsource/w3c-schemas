@@ -62,13 +62,13 @@ var Atom_1_0_Module_Factory = function () {
         elementName: 'author',
         typeInfo: 'Atom_1_0.AtomPersonConstruct'
       }, {
+        elementName: 'name',
+        typeInfo: 'String'
+      }, {
         elementName: 'email',
         typeInfo: 'String'
       }, {
         elementName: 'uri',
-        typeInfo: 'String'
-      }, {
-        elementName: 'name',
         typeInfo: 'String'
       }]
   };

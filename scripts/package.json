@@ -1,6 +1,6 @@
 {
 	"name": "w3c-schemas",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Jsonix mappings for W3C Schemas.",
 	"keywords": [
 		"json",
@@ -36,7 +36,7 @@
 		"name" : "Alexey Valikov",
 		"url" : "http://confluence.highsource.org"
 	},
-	"main": "W3C-Schemas.js",
+	"main": "w3c-schemas.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/highsource/w3c-schemas"
