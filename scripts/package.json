@@ -1,6 +1,6 @@
 {
 	"name": "w3c-schemas",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Jsonix mappings for W3C Schemas.",
 	"keywords": [
 		"json",
@@ -21,7 +21,8 @@
 		"jaxb",
 		"jsonix",
 		"mapping",
-		"XLink"
+		"XLink",
+		"Atom"
 	],
 	"homepage": "https://github.com/highsource/w3c-schemas",
 	"bugs" : {
@@ -45,7 +46,7 @@
 		"test" : "nodeunit tests/tests.js"
 	},
 	"dependencies": {
-		"jsonix": "~2.0.12"
+		"jsonix": "~2.0.13"
 	},
 	"devDependencies" : {
 		"nodeunit" : "~0.8.6",

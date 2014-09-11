@@ -1,253 +1,178 @@
 var XLink_1_0_Module_Factory = function () {
   var XLink_1_0 = {
-    name: 'XLink_1_0',
-    defaultElementNamespaceURI: 'http:\/\/www.w3.org\/1999\/xlink',
-    defaultAttributeNamespaceURI: 'http:\/\/www.w3.org\/1999\/xlink',
-    typeInfos: [{
-        type: 'classInfo',
-        localName: 'LocatorType',
-        propertyInfos: [{
-            type: 'element',
-            name: 'locatorTitle',
-            collection: true,
-            elementName: 'title',
-            typeInfo: 'XLink_1_0.TitleEltType'
+    n: 'XLink_1_0',
+    dens: 'http:\/\/www.w3.org\/1999\/xlink',
+    dans: 'http:\/\/www.w3.org\/1999\/xlink',
+    tis: [{
+        ln: 'ArcType',
+        ps: [{
+            n: 'locatorTitle',
+            col: true,
+            en: 'title',
+            ti: 'XLink_1_0.TitleEltType'
           }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
+            n: 'type',
+            t: 'a'
           }, {
-            name: 'href',
-            typeInfo: 'String',
-            attributeName: 'href',
-            type: 'attribute'
+            n: 'arcrole',
+            t: 'a'
           }, {
-            name: 'role',
-            typeInfo: 'String',
-            attributeName: 'role',
-            type: 'attribute'
+            n: 'title',
+            t: 'a'
           }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
+            n: 'show',
+            t: 'a'
           }, {
-            name: 'label',
-            typeInfo: 'String',
-            attributeName: 'label',
-            type: 'attribute'
+            n: 'actuate',
+            t: 'a'
+          }, {
+            n: 'from',
+            t: 'a'
+          }, {
+            n: 'to',
+            t: 'a'
           }]
       }, {
-        type: 'classInfo',
-        localName: 'TitleEltType',
-        propertyInfos: [{
-            name: 'content',
-            collection: true,
-            allowDom: true,
-            allowTypedObject: true,
-            mixed: true,
-            type: 'anyElement'
+        ln: 'ResourceType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
           }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
+            n: 'type',
+            t: 'a'
           }, {
-            name: 'lang',
-            typeInfo: 'String',
-            attributeName: {
-              localPart: 'lang',
-              namespaceURI: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
+        ln: 'TitleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
             },
-            type: 'attribute'
+            t: 'a'
           }]
       }, {
-        type: 'classInfo',
-        localName: 'ArcType',
-        propertyInfos: [{
-            type: 'element',
-            name: 'locatorTitle',
-            collection: true,
-            elementName: 'title',
-            typeInfo: 'XLink_1_0.TitleEltType'
+        ln: 'LocatorType',
+        ps: [{
+            n: 'locatorTitle',
+            col: true,
+            en: 'title',
+            ti: 'XLink_1_0.TitleEltType'
           }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
+            n: 'type',
+            t: 'a'
           }, {
-            name: 'arcrole',
-            typeInfo: 'String',
-            attributeName: 'arcrole',
-            type: 'attribute'
+            n: 'href',
+            t: 'a'
           }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
+            n: 'role',
+            t: 'a'
           }, {
-            name: 'show',
-            typeInfo: 'String',
-            attributeName: 'show',
-            type: 'attribute'
+            n: 'title',
+            t: 'a'
           }, {
-            name: 'actuate',
-            typeInfo: 'String',
-            attributeName: 'actuate',
-            type: 'attribute'
-          }, {
-            name: 'from',
-            typeInfo: 'String',
-            attributeName: 'from',
-            type: 'attribute'
-          }, {
-            name: 'to',
-            typeInfo: 'String',
-            attributeName: 'to',
-            type: 'attribute'
+            n: 'label',
+            t: 'a'
           }]
       }, {
-        type: 'classInfo',
-        localName: 'ResourceType',
-        propertyInfos: [{
-            name: 'content',
-            collection: true,
-            allowDom: true,
-            allowTypedObject: true,
-            mixed: true,
-            type: 'anyElement'
+        ln: 'Simple',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
           }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
+            n: 'type',
+            t: 'a'
           }, {
-            name: 'role',
-            typeInfo: 'String',
-            attributeName: 'role',
-            type: 'attribute'
+            n: 'href',
+            t: 'a'
           }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
+            n: 'role',
+            t: 'a'
           }, {
-            name: 'label',
-            typeInfo: 'String',
-            attributeName: 'label',
-            type: 'attribute'
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            t: 'a'
           }]
       }, {
-        type: 'classInfo',
-        localName: 'Simple',
-        propertyInfos: [{
-            name: 'content',
-            collection: true,
-            allowDom: true,
-            allowTypedObject: true,
-            mixed: true,
-            type: 'anyElement'
-          }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
-          }, {
-            name: 'href',
-            typeInfo: 'String',
-            attributeName: 'href',
-            type: 'attribute'
-          }, {
-            name: 'role',
-            typeInfo: 'String',
-            attributeName: 'role',
-            type: 'attribute'
-          }, {
-            name: 'arcrole',
-            typeInfo: 'String',
-            attributeName: 'arcrole',
-            type: 'attribute'
-          }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
-          }, {
-            name: 'show',
-            typeInfo: 'String',
-            attributeName: 'show',
-            type: 'attribute'
-          }, {
-            name: 'actuate',
-            typeInfo: 'String',
-            attributeName: 'actuate',
-            type: 'attribute'
-          }]
-      }, {
-        type: 'classInfo',
-        localName: 'Extended',
-        propertyInfos: [{
-            name: 'extendedModel',
-            collection: true,
-            elementTypeInfos: [{
-                elementName: 'title',
-                typeInfo: 'XLink_1_0.TitleEltType'
+        ln: 'Extended',
+        ps: [{
+            n: 'extendedModel',
+            col: true,
+            etis: [{
+                en: 'title',
+                ti: 'XLink_1_0.TitleEltType'
               }, {
-                elementName: 'resource',
-                typeInfo: 'XLink_1_0.ResourceType'
+                en: 'resource',
+                ti: 'XLink_1_0.ResourceType'
               }, {
-                elementName: 'locator',
-                typeInfo: 'XLink_1_0.LocatorType'
+                en: 'locator',
+                ti: 'XLink_1_0.LocatorType'
               }, {
-                elementName: 'arc',
-                typeInfo: 'XLink_1_0.ArcType'
+                en: 'arc',
+                ti: 'XLink_1_0.ArcType'
               }],
-            type: 'elements'
+            t: 'es'
           }, {
-            name: 'type',
-            typeInfo: 'String',
-            attributeName: 'type',
-            type: 'attribute'
+            n: 'type',
+            t: 'a'
           }, {
-            name: 'role',
-            typeInfo: 'String',
-            attributeName: 'role',
-            type: 'attribute'
+            n: 'role',
+            t: 'a'
           }, {
-            name: 'title',
-            typeInfo: 'String',
-            attributeName: 'title',
-            type: 'attribute'
+            n: 'title',
+            t: 'a'
           }]
       }, {
-        type: 'enumInfo',
-        localName: 'TypeType',
-        baseTypeInfo: 'String',
-        values: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+        t: 'enum',
+        ln: 'TypeType',
+        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
-        type: 'enumInfo',
-        localName: 'ShowType',
-        baseTypeInfo: 'String',
-        values: ['new', 'replace', 'embed', 'other', 'none']
+        t: 'enum',
+        ln: 'ActuateType',
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }, {
-        type: 'enumInfo',
-        localName: 'ActuateType',
-        baseTypeInfo: 'String',
-        values: ['onLoad', 'onRequest', 'other', 'none']
+        t: 'enum',
+        ln: 'ShowType',
+        vs: ['new', 'replace', 'embed', 'other', 'none']
       }],
-    elementInfos: [{
-        elementName: 'resource',
-        typeInfo: 'XLink_1_0.ResourceType'
+    eis: [{
+        en: 'locator',
+        ti: 'XLink_1_0.LocatorType'
       }, {
-        elementName: 'arc',
-        typeInfo: 'XLink_1_0.ArcType'
+        en: 'title',
+        ti: 'XLink_1_0.TitleEltType'
       }, {
-        elementName: 'title',
-        typeInfo: 'XLink_1_0.TitleEltType'
+        en: 'resource',
+        ti: 'XLink_1_0.ResourceType'
       }, {
-        elementName: 'locator',
-        typeInfo: 'XLink_1_0.LocatorType'
+        en: 'arc',
+        ti: 'XLink_1_0.ArcType'
       }]
   };
   return {

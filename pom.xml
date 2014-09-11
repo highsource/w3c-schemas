@@ -65,7 +65,7 @@
 		<jaxb-ri.version>2.1.13</jaxb-ri.version>
 		<jaxb-api.version>2.1</jaxb-api.version>
 		<maven-jaxb2-plugin.version>0.9.0</maven-jaxb2-plugin.version>
-		<jsonix-schema-compiler.version>2.1.1</jsonix-schema-compiler.version>
+		<jsonix-schema-compiler.version>2.1.2-SNAPSHOT</jsonix-schema-compiler.version>
 	</properties> 
 	<dependencies>
 		<dependency>
