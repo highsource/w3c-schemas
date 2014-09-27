@@ -46,7 +46,7 @@
 		"test" : "nodeunit tests/tests.js"
 	},
 	"dependencies": {
-		"jsonix": "~2.0.13"
+		"jsonix": "~2.1.1"
 	},
 	"devDependencies" : {
 		"nodeunit" : "~0.8.6",
