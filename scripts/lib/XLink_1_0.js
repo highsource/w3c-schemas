@@ -32,6 +32,25 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'ResourceType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
         ln: 'Extended',
         ps: [{
             n: 'extendedModel',
@@ -58,29 +77,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'title',
-            t: 'a'
-          }]
-      }, {
-        ln: 'LocatorType',
-        ps: [{
-            n: 'locatorTitle',
-            col: true,
-            en: 'title',
-            ti: '.TitleEltType'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
             t: 'a'
           }]
       }, {
@@ -130,13 +126,17 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ResourceType',
+        ln: 'LocatorType',
         ps: [{
-            n: 'content',
+            n: 'locatorTitle',
             col: true,
-            t: 'ae'
+            en: 'title',
+            ti: '.TitleEltType'
           }, {
             n: 'type',
+            t: 'a'
+          }, {
+            n: 'href',
             t: 'a'
           }, {
             n: 'role',
@@ -150,29 +150,29 @@ var XLink_1_0_Module_Factory = function () {
           }]
       }, {
         t: 'enum',
-        ln: 'ActuateType',
-        vs: ['onLoad', 'onRequest', 'other', 'none']
-      }, {
-        t: 'enum',
         ln: 'ShowType',
         vs: ['new', 'replace', 'embed', 'other', 'none']
+      }, {
+        t: 'enum',
+        ln: 'ActuateType',
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }, {
         t: 'enum',
         ln: 'TypeType',
         vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }],
     eis: [{
-        en: 'resource',
-        ti: '.ResourceType'
+        en: 'arc',
+        ti: '.ArcType'
       }, {
         en: 'locator',
         ti: '.LocatorType'
       }, {
-        en: 'arc',
-        ti: '.ArcType'
-      }, {
         en: 'title',
         ti: '.TitleEltType'
+      }, {
+        en: 'resource',
+        ti: '.ResourceType'
       }]
   };
   return {
