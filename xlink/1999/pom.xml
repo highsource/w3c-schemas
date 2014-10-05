@@ -25,7 +25,7 @@
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<plugins>
-			<plugin>
+			<!--plugin>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
 					<execution>
@@ -48,15 +48,17 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin-->
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
 				<configuration>
-					<schemaIncludes>
-						<value>w3c/1999/xlink.xsd</value>
-					</schemaIncludes>
-					<catalog>src/main/resources/catalog.cat</catalog>
+					<schemas>
+						<schema>
+							<url>http://www.w3.org/1999/xlink.xsd</url>
+						</schema>
+					</schemas>
+					<schemaIncludes/>
 				</configuration>
 			</plugin>
 			<plugin>

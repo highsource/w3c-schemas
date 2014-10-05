@@ -11,11 +11,11 @@ var Atom_1_0_Module_Factory = function () {
             dom: false,
             typed: false,
             etis: [{
+                en: 'uri'
+              }, {
                 en: 'email'
               }, {
                 en: 'name'
-              }, {
-                en: 'uri'
               }],
             t: 'ers'
           }]
@@ -60,17 +60,17 @@ var Atom_1_0_Module_Factory = function () {
           }]
       }],
     eis: [{
+        en: 'uri'
+      }, {
         en: 'link',
         ti: '.Link'
-      }, {
-        en: 'email'
-      }, {
-        en: 'name'
       }, {
         en: 'author',
         ti: '.AtomPersonConstruct'
       }, {
-        en: 'uri'
+        en: 'name'
+      }, {
+        en: 'email'
       }]
   };
   return {
