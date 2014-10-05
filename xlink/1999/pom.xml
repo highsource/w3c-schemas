@@ -25,30 +25,6 @@
 	<build>
 		<defaultGoal>install</defaultGoal>
 		<plugins>
-			<!--plugin>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>unpack-schemas</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>unpack</goal>
-						</goals>
-						<configuration>
-							<artifactItems>
-								<artifactItem>
-									<groupId>${project.groupId}</groupId>
-									<artifactId>w3c-schemas</artifactId>
-									<version>${project.version}</version>
-									<type>jar</type>
-									<outputDirectory>src/main/resources</outputDirectory>
-									<includes>w3c/1999/xlink.xsd,w3c/2001/xml.xsd</includes>
-								 </artifactItem>
-							 </artifactItems>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin-->
 			<plugin>
 				<groupId>org.jvnet.jaxb2.maven2</groupId>
 				<artifactId>maven-jaxb2-plugin</artifactId>
@@ -58,7 +34,6 @@
 							<url>http://www.w3.org/1999/xlink.xsd</url>
 						</schema>
 					</schemas>
-					<schemaIncludes/>
 				</configuration>
 			</plugin>
 			<plugin>
