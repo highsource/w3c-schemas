@@ -4,20 +4,26 @@ var XLink_1_0_Module_Factory = function () {
     dens: 'http:\/\/www.w3.org\/1999\/xlink',
     dans: 'http:\/\/www.w3.org\/1999\/xlink',
     tis: [{
-        ln: 'TitleEltType',
+        ln: 'LocatorType',
         ps: [{
-            n: 'content',
+            n: 'locatorTitle',
             col: true,
-            t: 'ae'
+            en: 'title',
+            ti: '.TitleEltType'
           }, {
             n: 'type',
             t: 'a'
           }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
             t: 'a'
           }]
       }, {
@@ -50,12 +56,11 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'LocatorType',
+        ln: 'Simple',
         ps: [{
-            n: 'locatorTitle',
+            n: 'content',
             col: true,
-            en: 'title',
-            ti: '.TitleEltType'
+            t: 'ae'
           }, {
             n: 'type',
             t: 'a'
@@ -66,10 +71,33 @@ var XLink_1_0_Module_Factory = function () {
             n: 'role',
             t: 'a'
           }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
             n: 'title',
             t: 'a'
           }, {
-            n: 'label',
+            n: 'show',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            t: 'a'
+          }]
+      }, {
+        ln: 'TitleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
             t: 'a'
           }]
       }, {
@@ -99,34 +127,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'to',
-            t: 'a'
-          }]
-      }, {
-        ln: 'Simple',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            t: 'a'
-          }, {
-            n: 'actuate',
             t: 'a'
           }]
       }, {
@@ -165,11 +165,11 @@ var XLink_1_0_Module_Factory = function () {
         en: 'locator',
         ti: '.LocatorType'
       }, {
-        en: 'resource',
-        ti: '.ResourceType'
-      }, {
         en: 'arc',
         ti: '.ArcType'
+      }, {
+        en: 'resource',
+        ti: '.ResourceType'
       }, {
         en: 'title',
         ti: '.TitleEltType'
