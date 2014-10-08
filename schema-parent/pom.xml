@@ -38,7 +38,7 @@
 								<dependencyResource>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>w3c-schemas</artifactId>
-									<resource>globalBindings.xjb</resource>
+									<resource>w3c/globalBindings.xjb</resource>
 									<version>${project.version}</version>
 								</dependencyResource>
 							</binding>
@@ -48,7 +48,7 @@
 								<dependencyResource>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>w3c-schemas</artifactId>
-									<resource>catalog.cat</resource>
+									<resource>w3c/catalog.cat</resource>
 									<version>${project.version}</version>
 								</dependencyResource>
 							</catalog>
