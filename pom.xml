@@ -57,6 +57,7 @@
 		<module>schema-parent</module>
 		<module>xlink</module>
 		<module>atom</module>
+		<module>XMLSchema</module>
 		<module>scripts</module>
 	</modules>
 	<properties> 

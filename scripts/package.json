@@ -22,6 +22,8 @@
 		"jsonix",
 		"mapping",
 		"XLink",
+		"XML Schema",
+		"XSD",
 		"Atom"
 	],
 	"homepage": "https://github.com/highsource/w3c-schemas",

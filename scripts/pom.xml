@@ -51,6 +51,7 @@
 							<artifactItems>
 								<artifactItem><artifactId>xlink-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>atom-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
+								<artifactItem><artifactId>xmlschema-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
 							 </artifactItems>
 							<outputDirectory>lib</outputDirectory>
 							<includes>**/*.js</includes>

@@ -52,25 +52,25 @@ var Atom_1_0_Module_Factory = function () {
             etis: [{
                 en: 'name'
               }, {
-                en: 'email'
-              }, {
                 en: 'uri'
+              }, {
+                en: 'email'
               }],
             t: 'ers'
           }]
       }],
     eis: [{
-        en: 'email'
+        en: 'author',
+        ti: '.AtomPersonConstruct'
       }, {
-        en: 'uri'
+        en: 'email'
       }, {
         en: 'link',
         ti: '.Link'
       }, {
-        en: 'author',
-        ti: '.AtomPersonConstruct'
-      }, {
         en: 'name'
+      }, {
+        en: 'uri'
       }]
   };
   return {
