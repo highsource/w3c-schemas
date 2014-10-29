@@ -3,33 +3,98 @@ var XSD_1_0_Module_Factory = function () {
     n: 'XSD_1_0',
     dens: 'http:\/\/www.w3.org\/2001\/XMLSchema',
     tis: [{
-        ln: 'Documentation',
+        ln: 'ComplexContent',
+        bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'content',
-            col: true,
-            t: 'ae'
+            n: 'restriction',
+            ti: '.ComplexRestrictionType'
           }, {
-            n: 'source',
-            an: {
-              lp: 'source'
-            },
-            t: 'a'
+            n: 'extension',
+            ti: '.ExtensionType'
           }, {
-            n: 'lang',
+            n: 'mixed',
+            ti: 'Boolean',
             an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+              lp: 'mixed'
             },
             t: 'a'
           }]
       }, {
-        ln: 'LocalSimpleType',
+        ln: 'GroupRef',
+        bti: '.RealGroup'
+      }, {
+        ln: 'Restriction',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'simpleType',
+            ti: '.LocalSimpleType'
+          }, {
+            n: 'enumeration',
+            col: true,
+            ti: '.NoFixedFacet'
+          }, {
+            n: 'pattern',
+            col: true,
+            ti: '.Pattern'
+          }, {
+            n: 'minExclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'minInclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'minLength',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'fractionDigits',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'whiteSpace',
+            col: true,
+            ti: '.WhiteSpace'
+          }, {
+            n: 'maxExclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'maxInclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'length',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'totalDigits',
+            col: true,
+            ti: '.TotalDigits'
+          }, {
+            n: 'maxLength',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'base',
+            ti: 'QName',
+            an: {
+              lp: 'base'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'TopLevelSimpleType',
         bti: '.SimpleType'
       }, {
-        ln: 'Selector',
+        ln: 'Field',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
@@ -41,627 +106,6 @@ var XSD_1_0_Module_Factory = function () {
             },
             t: 'a'
           }]
-      }, {
-        ln: 'NarrowMaxMin',
-        bti: '.LocalElement'
-      }, {
-        ln: 'ExtensionType',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'group',
-            ti: '.GroupRef'
-          }, {
-            n: 'all',
-            ti: '.All'
-          }, {
-            n: 'choice',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'sequence',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'attributeOrAttributeGroup',
-            col: true,
-            etis: [{
-                en: 'attribute',
-                ti: '.Attribute'
-              }, {
-                en: 'attributeGroup',
-                ti: '.AttributeGroupRef'
-              }],
-            t: 'es'
-          }, {
-            n: 'anyAttribute',
-            ti: '.Wildcard'
-          }, {
-            n: 'base',
-            ti: 'QName',
-            an: {
-              lp: 'base'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Import',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'namespace',
-            an: {
-              lp: 'namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'schemaLocation',
-            an: {
-              lp: 'schemaLocation'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'RealGroup',
-        bti: '.Group'
-      }, {
-        ln: 'Redefine',
-        bti: '.OpenAttrs',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'annotationOrSimpleTypeOrComplexType',
-            col: true,
-            etis: [{
-                en: 'annotation',
-                ti: '.Annotation'
-              }, {
-                en: 'simpleType',
-                ti: '.TopLevelSimpleType'
-              }, {
-                en: 'complexType',
-                ti: '.TopLevelComplexType'
-              }, {
-                en: 'group',
-                ti: '.NamedGroup'
-              }, {
-                en: 'attributeGroup',
-                ti: '.NamedAttributeGroup'
-              }],
-            t: 'es'
-          }, {
-            n: 'schemaLocation',
-            an: {
-              lp: 'schemaLocation'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'NoFixedFacet',
-        bti: '.Facet'
-      }, {
-        ln: 'All',
-        bti: '.ExplicitGroup'
-      }, {
-        ln: 'Include',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'schemaLocation',
-            an: {
-              lp: 'schemaLocation'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Wildcard',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'namespace',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'processContents',
-            an: {
-              lp: 'processContents'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'NamedGroup',
-        bti: '.RealGroup'
-      }, {
-        ln: 'TopLevelElement',
-        bti: '.Element'
-      }, {
-        ln: 'NumFacet',
-        bti: '.Facet'
-      }, {
-        ln: 'Union',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'simpleType',
-            col: true,
-            ti: '.LocalSimpleType'
-          }, {
-            n: 'memberTypes',
-            ti: {
-              t: 'l',
-              bti: 'QName'
-            },
-            an: {
-              lp: 'memberTypes'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'ComplexType',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'simpleContent',
-            ti: '.SimpleContent'
-          }, {
-            n: 'complexContent',
-            ti: '.ComplexContent'
-          }, {
-            n: 'group',
-            ti: '.GroupRef'
-          }, {
-            n: 'all',
-            ti: '.All'
-          }, {
-            n: 'choice',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'sequence',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'attributeOrAttributeGroup',
-            col: true,
-            etis: [{
-                en: 'attribute',
-                ti: '.Attribute'
-              }, {
-                en: 'attributeGroup',
-                ti: '.AttributeGroupRef'
-              }],
-            t: 'es'
-          }, {
-            n: 'anyAttribute',
-            ti: '.Wildcard'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'mixed',
-            ti: 'Boolean',
-            an: {
-              lp: 'mixed'
-            },
-            t: 'a'
-          }, {
-            n: '_abstract',
-            ti: 'Boolean',
-            an: {
-              lp: 'abstract'
-            },
-            t: 'a'
-          }, {
-            n: '_final',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'final'
-            },
-            t: 'a'
-          }, {
-            n: 'block',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'block'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Attribute',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'simpleType',
-            ti: '.LocalSimpleType'
-          }, {
-            n: 'type',
-            ti: 'QName',
-            an: {
-              lp: 'type'
-            },
-            t: 'a'
-          }, {
-            n: 'use',
-            an: {
-              lp: 'use'
-            },
-            t: 'a'
-          }, {
-            n: '_default',
-            an: {
-              lp: 'default'
-            },
-            t: 'a'
-          }, {
-            n: 'fixed',
-            an: {
-              lp: 'fixed'
-            },
-            t: 'a'
-          }, {
-            n: 'form',
-            an: {
-              lp: 'form'
-            },
-            t: 'a'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'ref',
-            ti: 'QName',
-            an: {
-              lp: 'ref'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Annotated',
-        bti: '.OpenAttrs',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'annotation',
-            ti: '.Annotation'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Keyref',
-        bti: '.Keybase',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'refer',
-            ti: 'QName',
-            an: {
-              lp: 'refer'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SimpleExtensionType',
-        bti: '.ExtensionType'
-      }, {
-        ln: 'RestrictionType',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'group',
-            ti: '.GroupRef'
-          }, {
-            n: 'all',
-            ti: '.All'
-          }, {
-            n: 'choice',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'sequence',
-            ti: '.ExplicitGroup'
-          }, {
-            n: 'simpleType',
-            ti: '.LocalSimpleType'
-          }, {
-            n: 'facets',
-            col: true,
-            mx: false,
-            dom: false,
-            typed: false,
-            etis: [{
-                en: 'maxExclusive',
-                ti: '.Facet'
-              }, {
-                en: 'enumeration',
-                ti: '.NoFixedFacet'
-              }, {
-                en: 'minLength',
-                ti: '.NumFacet'
-              }, {
-                en: 'minExclusive',
-                ti: '.Facet'
-              }, {
-                en: 'totalDigits',
-                ti: '.TotalDigits'
-              }, {
-                en: 'fractionDigits',
-                ti: '.NumFacet'
-              }, {
-                en: 'pattern',
-                ti: '.Pattern'
-              }, {
-                en: 'length',
-                ti: '.NumFacet'
-              }, {
-                en: 'maxLength',
-                ti: '.NumFacet'
-              }, {
-                en: 'whiteSpace',
-                ti: '.WhiteSpace'
-              }, {
-                en: 'minInclusive',
-                ti: '.Facet'
-              }, {
-                en: 'maxInclusive',
-                ti: '.Facet'
-              }],
-            t: 'ers'
-          }, {
-            n: 'attributeOrAttributeGroup',
-            col: true,
-            etis: [{
-                en: 'attribute',
-                ti: '.Attribute'
-              }, {
-                en: 'attributeGroup',
-                ti: '.AttributeGroupRef'
-              }],
-            t: 'es'
-          }, {
-            n: 'anyAttribute',
-            ti: '.Wildcard'
-          }, {
-            n: 'base',
-            ti: 'QName',
-            an: {
-              lp: 'base'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Annotation',
-        bti: '.OpenAttrs',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'appinfoOrDocumentation',
-            col: true,
-            etis: [{
-                en: 'appinfo',
-                ti: '.Appinfo'
-              }, {
-                en: 'documentation',
-                ti: '.Documentation'
-              }],
-            t: 'es'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Pattern',
-        bti: '.NoFixedFacet'
-      }, {
-        ln: 'ExplicitGroup',
-        bti: '.Group'
-      }, {
-        ln: 'SimpleType',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'restriction',
-            ti: '.Restriction'
-          }, {
-            n: 'list',
-            ti: '.List'
-          }, {
-            n: 'union',
-            ti: '.Union'
-          }, {
-            n: '_final',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'final'
-            },
-            t: 'a'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Appinfo',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'source',
-            an: {
-              lp: 'source'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'TopLevelAttribute',
-        bti: '.Attribute'
-      }, {
-        ln: 'Schema',
-        bti: '.OpenAttrs',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'includeOrImportOrRedefine',
-            col: true,
-            etis: [{
-                en: 'include',
-                ti: '.Include'
-              }, {
-                en: 'import',
-                ti: '.Import'
-              }, {
-                en: 'redefine',
-                ti: '.Redefine'
-              }, {
-                en: 'annotation',
-                ti: '.Annotation'
-              }],
-            t: 'es'
-          }, {
-            n: 'simpleTypeOrComplexTypeOrGroup',
-            col: true,
-            etis: [{
-                en: 'simpleType',
-                ti: '.TopLevelSimpleType'
-              }, {
-                en: 'complexType',
-                ti: '.TopLevelComplexType'
-              }, {
-                en: 'group',
-                ti: '.NamedGroup'
-              }, {
-                en: 'attributeGroup',
-                ti: '.NamedAttributeGroup'
-              }, {
-                en: 'element',
-                ti: '.TopLevelElement'
-              }, {
-                en: 'attribute',
-                ti: '.TopLevelAttribute'
-              }, {
-                en: 'notation',
-                ti: '.Notation'
-              }, {
-                en: 'annotation',
-                ti: '.Annotation'
-              }],
-            t: 'es'
-          }, {
-            n: 'targetNamespace',
-            an: {
-              lp: 'targetNamespace'
-            },
-            t: 'a'
-          }, {
-            n: 'version',
-            an: {
-              lp: 'version'
-            },
-            t: 'a'
-          }, {
-            n: 'finalDefault',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'finalDefault'
-            },
-            t: 'a'
-          }, {
-            n: 'blockDefault',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'blockDefault'
-            },
-            t: 'a'
-          }, {
-            n: 'attributeFormDefault',
-            an: {
-              lp: 'attributeFormDefault'
-            },
-            t: 'a'
-          }, {
-            n: 'elementFormDefault',
-            an: {
-              lp: 'elementFormDefault'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SimpleExplicitGroup',
-        bti: '.ExplicitGroup'
       }, {
         ln: 'Element',
         bti: '.Annotated',
@@ -675,22 +119,17 @@ var XSD_1_0_Module_Factory = function () {
             n: 'complexType',
             ti: '.LocalComplexType'
           }, {
-            n: 'identityConstraint',
+            n: 'unique',
             col: true,
-            mx: false,
-            dom: false,
-            typed: false,
-            etis: [{
-                en: 'keyref',
-                ti: '.Keyref'
-              }, {
-                en: 'key',
-                ti: '.Keybase'
-              }, {
-                en: 'unique',
-                ti: '.Keybase'
-              }],
-            t: 'ers'
+            ti: '.Keybase'
+          }, {
+            n: 'keyref',
+            col: true,
+            ti: '.Keyref'
+          }, {
+            n: 'key',
+            col: true,
+            ti: '.Keybase'
           }, {
             n: 'type',
             ti: 'QName',
@@ -783,64 +222,11 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'WhiteSpace',
-        bti: '.Facet'
+        ln: 'RealGroup',
+        bti: '.Group'
       }, {
-        ln: 'List',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'simpleType',
-            ti: '.LocalSimpleType'
-          }, {
-            n: 'itemType',
-            ti: 'QName',
-            an: {
-              lp: 'itemType'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Any',
-        bti: '.Wildcard',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'minOccurs',
-            ti: 'Integer',
-            an: {
-              lp: 'minOccurs'
-            },
-            t: 'a'
-          }, {
-            n: 'maxOccurs',
-            an: {
-              lp: 'maxOccurs'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'OpenAttrs',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }]
-      }, {
-        ln: 'SimpleContent',
-        bti: '.Annotated',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'restriction',
-            ti: '.SimpleRestrictionType'
-          }, {
-            n: 'extension',
-            ti: '.SimpleExtensionType'
-          }]
+        ln: 'ComplexRestrictionType',
+        bti: '.RestrictionType'
       }, {
         ln: 'Notation',
         bti: '.Annotated',
@@ -867,10 +253,37 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'TotalDigits',
-        bti: '.NumFacet'
+        ln: 'LocalElement',
+        bti: '.Element'
       }, {
-        ln: 'Restriction',
+        ln: 'Union',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'simpleType',
+            col: true,
+            ti: '.LocalSimpleType'
+          }, {
+            n: 'memberTypes',
+            ti: {
+              t: 'l',
+              bti: 'QName'
+            },
+            an: {
+              lp: 'memberTypes'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'ExplicitGroup',
+        bti: '.Group'
+      }, {
+        ln: 'All',
+        bti: '.ExplicitGroup'
+      }, {
+        ln: 'List',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
@@ -879,68 +292,18 @@ var XSD_1_0_Module_Factory = function () {
             n: 'simpleType',
             ti: '.LocalSimpleType'
           }, {
-            n: 'facets',
-            col: true,
-            mx: false,
-            dom: false,
-            typed: false,
-            etis: [{
-                en: 'maxExclusive',
-                ti: '.Facet'
-              }, {
-                en: 'enumeration',
-                ti: '.NoFixedFacet'
-              }, {
-                en: 'minLength',
-                ti: '.NumFacet'
-              }, {
-                en: 'minExclusive',
-                ti: '.Facet'
-              }, {
-                en: 'totalDigits',
-                ti: '.TotalDigits'
-              }, {
-                en: 'fractionDigits',
-                ti: '.NumFacet'
-              }, {
-                en: 'pattern',
-                ti: '.Pattern'
-              }, {
-                en: 'length',
-                ti: '.NumFacet'
-              }, {
-                en: 'maxLength',
-                ti: '.NumFacet'
-              }, {
-                en: 'whiteSpace',
-                ti: '.WhiteSpace'
-              }, {
-                en: 'minInclusive',
-                ti: '.Facet'
-              }, {
-                en: 'maxInclusive',
-                ti: '.Facet'
-              }],
-            t: 'ers'
-          }, {
-            n: 'base',
+            n: 'itemType',
             ti: 'QName',
             an: {
-              lp: 'base'
+              lp: 'itemType'
             },
             t: 'a'
           }]
       }, {
-        ln: 'LocalComplexType',
-        bti: '.ComplexType'
+        ln: 'NumFacet',
+        bti: '.Facet'
       }, {
-        ln: 'NamedAttributeGroup',
-        bti: '.AttributeGroup'
-      }, {
-        ln: 'TopLevelComplexType',
-        bti: '.ComplexType'
-      }, {
-        ln: 'Field',
+        ln: 'Selector',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
@@ -953,36 +316,47 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Keybase',
+        ln: 'TopLevelAttribute',
+        bti: '.Attribute'
+      }, {
+        ln: 'ExtensionType',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'selector',
-            ti: '.Selector'
+            n: 'group',
+            ti: '.GroupRef'
           }, {
-            n: 'field',
+            n: 'all',
+            ti: '.All'
+          }, {
+            n: 'choice',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'sequence',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'attribute',
             col: true,
-            ti: '.Field'
+            ti: '.Attribute'
           }, {
-            n: 'name',
+            n: 'attributeGroup',
+            col: true,
+            ti: '.AttributeGroupRef'
+          }, {
+            n: 'anyAttribute',
+            ti: '.Wildcard'
+          }, {
+            n: 'base',
+            ti: 'QName',
             an: {
-              lp: 'name'
+              lp: 'base'
             },
             t: 'a'
           }]
       }, {
-        ln: 'LocalElement',
-        bti: '.Element'
-      }, {
-        ln: 'ComplexRestrictionType',
-        bti: '.RestrictionType'
-      }, {
-        ln: 'AttributeGroupRef',
-        bti: '.AttributeGroup'
-      }, {
-        ln: 'TopLevelSimpleType',
+        ln: 'LocalSimpleType',
         bti: '.SimpleType'
       }, {
         ln: 'Group',
@@ -991,31 +365,29 @@ var XSD_1_0_Module_Factory = function () {
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'particle',
+            n: 'group',
             col: true,
-            mx: false,
-            dom: false,
-            typed: false,
-            etis: [{
-                en: 'sequence',
-                ti: '.ExplicitGroup'
-              }, {
-                en: 'element',
-                ti: '.LocalElement'
-              }, {
-                en: 'group',
-                ti: '.GroupRef'
-              }, {
-                en: 'choice',
-                ti: '.ExplicitGroup'
-              }, {
-                en: 'all',
-                ti: '.All'
-              }, {
-                en: 'any',
-                ti: '.Any'
-              }],
-            t: 'ers'
+            ti: '.GroupRef'
+          }, {
+            n: 'sequence',
+            col: true,
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'any',
+            col: true,
+            ti: '.Any'
+          }, {
+            n: 'choice',
+            col: true,
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'element',
+            col: true,
+            ti: '.LocalElement'
+          }, {
+            n: 'all',
+            col: true,
+            ti: '.All'
           }, {
             n: 'name',
             an: {
@@ -1044,22 +416,291 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'ComplexType',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'simpleContent',
+            ti: '.SimpleContent'
+          }, {
+            n: 'complexContent',
+            ti: '.ComplexContent'
+          }, {
+            n: 'group',
+            ti: '.GroupRef'
+          }, {
+            n: 'all',
+            ti: '.All'
+          }, {
+            n: 'choice',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'sequence',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'attribute',
+            col: true,
+            ti: '.Attribute'
+          }, {
+            n: 'attributeGroup',
+            col: true,
+            ti: '.AttributeGroupRef'
+          }, {
+            n: 'anyAttribute',
+            ti: '.Wildcard'
+          }, {
+            n: 'name',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }, {
+            n: 'mixed',
+            ti: 'Boolean',
+            an: {
+              lp: 'mixed'
+            },
+            t: 'a'
+          }, {
+            n: '_abstract',
+            ti: 'Boolean',
+            an: {
+              lp: 'abstract'
+            },
+            t: 'a'
+          }, {
+            n: '_final',
+            ti: {
+              t: 'l'
+            },
+            an: {
+              lp: 'final'
+            },
+            t: 'a'
+          }, {
+            n: 'block',
+            ti: {
+              t: 'l'
+            },
+            an: {
+              lp: 'block'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Any',
+        bti: '.Wildcard',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'minOccurs',
+            ti: 'Integer',
+            an: {
+              lp: 'minOccurs'
+            },
+            t: 'a'
+          }, {
+            n: 'maxOccurs',
+            an: {
+              lp: 'maxOccurs'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'RestrictionType',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'group',
+            ti: '.GroupRef'
+          }, {
+            n: 'all',
+            ti: '.All'
+          }, {
+            n: 'choice',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'sequence',
+            ti: '.ExplicitGroup'
+          }, {
+            n: 'simpleType',
+            ti: '.LocalSimpleType'
+          }, {
+            n: 'enumeration',
+            col: true,
+            ti: '.NoFixedFacet'
+          }, {
+            n: 'pattern',
+            col: true,
+            ti: '.Pattern'
+          }, {
+            n: 'minExclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'minInclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'minLength',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'fractionDigits',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'whiteSpace',
+            col: true,
+            ti: '.WhiteSpace'
+          }, {
+            n: 'maxExclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'maxInclusive',
+            col: true,
+            ti: '.Facet'
+          }, {
+            n: 'length',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'totalDigits',
+            col: true,
+            ti: '.TotalDigits'
+          }, {
+            n: 'maxLength',
+            col: true,
+            ti: '.NumFacet'
+          }, {
+            n: 'attribute',
+            col: true,
+            ti: '.Attribute'
+          }, {
+            n: 'attributeGroup',
+            col: true,
+            ti: '.AttributeGroupRef'
+          }, {
+            n: 'anyAttribute',
+            ti: '.Wildcard'
+          }, {
+            n: 'base',
+            ti: 'QName',
+            an: {
+              lp: 'base'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'NamedAttributeGroup',
+        bti: '.AttributeGroup'
+      }, {
+        ln: 'Redefine',
+        bti: '.OpenAttrs',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'annotation',
+            col: true,
+            ti: '.Annotation'
+          }, {
+            n: 'simpleType',
+            col: true,
+            ti: '.TopLevelSimpleType'
+          }, {
+            n: 'complexType',
+            col: true,
+            ti: '.TopLevelComplexType'
+          }, {
+            n: 'group',
+            col: true,
+            ti: '.NamedGroup'
+          }, {
+            n: 'attributeGroup',
+            col: true,
+            ti: '.NamedAttributeGroup'
+          }, {
+            n: 'schemaLocation',
+            an: {
+              lp: 'schemaLocation'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'OpenAttrs',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }]
+      }, {
+        ln: 'WhiteSpace',
+        bti: '.Facet'
+      }, {
+        ln: 'Wildcard',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'namespace',
+            ti: {
+              t: 'l'
+            },
+            an: {
+              lp: 'namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'processContents',
+            an: {
+              lp: 'processContents'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'SimpleContent',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'restriction',
+            ti: '.SimpleRestrictionType'
+          }, {
+            n: 'extension',
+            ti: '.SimpleExtensionType'
+          }]
+      }, {
+        ln: 'TopLevelComplexType',
+        bti: '.ComplexType'
+      }, {
         ln: 'AttributeGroup',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'attributeOrAttributeGroup',
+            n: 'attribute',
             col: true,
-            etis: [{
-                en: 'attribute',
-                ti: '.Attribute'
-              }, {
-                en: 'attributeGroup',
-                ti: '.AttributeGroupRef'
-              }],
-            t: 'es'
+            ti: '.Attribute'
+          }, {
+            n: 'attributeGroup',
+            col: true,
+            ti: '.AttributeGroupRef'
           }, {
             n: 'anyAttribute',
             ti: '.Wildcard'
@@ -1078,8 +719,107 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'GroupRef',
-        bti: '.RealGroup'
+        ln: 'SimpleRestrictionType',
+        bti: '.RestrictionType'
+      }, {
+        ln: 'SimpleExplicitGroup',
+        bti: '.ExplicitGroup'
+      }, {
+        ln: 'TopLevelElement',
+        bti: '.Element'
+      }, {
+        ln: 'Keybase',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'selector',
+            ti: '.Selector'
+          }, {
+            n: 'field',
+            col: true,
+            ti: '.Field'
+          }, {
+            n: 'name',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Import',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'namespace',
+            an: {
+              lp: 'namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'schemaLocation',
+            an: {
+              lp: 'schemaLocation'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Attribute',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'simpleType',
+            ti: '.LocalSimpleType'
+          }, {
+            n: 'type',
+            ti: 'QName',
+            an: {
+              lp: 'type'
+            },
+            t: 'a'
+          }, {
+            n: 'use',
+            an: {
+              lp: 'use'
+            },
+            t: 'a'
+          }, {
+            n: '_default',
+            an: {
+              lp: 'default'
+            },
+            t: 'a'
+          }, {
+            n: 'fixed',
+            an: {
+              lp: 'fixed'
+            },
+            t: 'a'
+          }, {
+            n: 'form',
+            an: {
+              lp: 'form'
+            },
+            t: 'a'
+          }, {
+            n: 'name',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }, {
+            n: 'ref',
+            ti: 'QName',
+            an: {
+              lp: 'ref'
+            },
+            t: 'a'
+          }]
       }, {
         ln: 'Facet',
         bti: '.Annotated',
@@ -1101,97 +841,348 @@ var XSD_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'SimpleRestrictionType',
-        bti: '.RestrictionType'
+        ln: 'SimpleExtensionType',
+        bti: '.ExtensionType'
       }, {
-        ln: 'ComplexContent',
+        ln: 'Include',
+        bti: '.Annotated',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'schemaLocation',
+            an: {
+              lp: 'schemaLocation'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Pattern',
+        bti: '.NoFixedFacet'
+      }, {
+        ln: 'Appinfo',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'source',
+            an: {
+              lp: 'source'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Annotated',
+        bti: '.OpenAttrs',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'annotation',
+            ti: '.Annotation'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'SimpleType',
         bti: '.Annotated',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
             n: 'restriction',
-            ti: '.ComplexRestrictionType'
+            ti: '.Restriction'
           }, {
-            n: 'extension',
-            ti: '.ExtensionType'
+            n: 'list',
+            ti: '.List'
           }, {
-            n: 'mixed',
-            ti: 'Boolean',
+            n: 'union',
+            ti: '.Union'
+          }, {
+            n: '_final',
+            ti: {
+              t: 'l'
+            },
             an: {
-              lp: 'mixed'
+              lp: 'final'
+            },
+            t: 'a'
+          }, {
+            n: 'name',
+            an: {
+              lp: 'name'
             },
             t: 'a'
           }]
+      }, {
+        ln: 'TotalDigits',
+        bti: '.NumFacet'
+      }, {
+        ln: 'Annotation',
+        bti: '.OpenAttrs',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'appinfo',
+            col: true,
+            ti: '.Appinfo'
+          }, {
+            n: 'documentation',
+            col: true,
+            ti: '.Documentation'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'NarrowMaxMin',
+        bti: '.LocalElement'
+      }, {
+        ln: 'NoFixedFacet',
+        bti: '.Facet'
+      }, {
+        ln: 'LocalComplexType',
+        bti: '.ComplexType'
+      }, {
+        ln: 'Documentation',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'source',
+            an: {
+              lp: 'source'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Keyref',
+        bti: '.Keybase',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'refer',
+            ti: 'QName',
+            an: {
+              lp: 'refer'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Schema',
+        bti: '.OpenAttrs',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'include',
+            col: true,
+            ti: '.Include'
+          }, {
+            n: '_import',
+            col: true,
+            en: 'import',
+            ti: '.Import'
+          }, {
+            n: 'redefine',
+            col: true,
+            ti: '.Redefine'
+          }, {
+            n: 'simpleType',
+            col: true,
+            ti: '.TopLevelSimpleType'
+          }, {
+            n: 'complexType',
+            col: true,
+            ti: '.TopLevelComplexType'
+          }, {
+            n: 'group',
+            col: true,
+            ti: '.NamedGroup'
+          }, {
+            n: 'attributeGroup',
+            col: true,
+            ti: '.NamedAttributeGroup'
+          }, {
+            n: 'element',
+            col: true,
+            ti: '.TopLevelElement'
+          }, {
+            n: 'attribute',
+            col: true,
+            ti: '.TopLevelAttribute'
+          }, {
+            n: 'notation',
+            col: true,
+            ti: '.Notation'
+          }, {
+            n: 'annotation',
+            col: true,
+            ti: '.Annotation'
+          }, {
+            n: 'targetNamespace',
+            an: {
+              lp: 'targetNamespace'
+            },
+            t: 'a'
+          }, {
+            n: 'version',
+            an: {
+              lp: 'version'
+            },
+            t: 'a'
+          }, {
+            n: 'finalDefault',
+            ti: {
+              t: 'l'
+            },
+            an: {
+              lp: 'finalDefault'
+            },
+            t: 'a'
+          }, {
+            n: 'blockDefault',
+            ti: {
+              t: 'l'
+            },
+            an: {
+              lp: 'blockDefault'
+            },
+            t: 'a'
+          }, {
+            n: 'attributeFormDefault',
+            an: {
+              lp: 'attributeFormDefault'
+            },
+            t: 'a'
+          }, {
+            n: 'elementFormDefault',
+            an: {
+              lp: 'elementFormDefault'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'AttributeGroupRef',
+        bti: '.AttributeGroup'
+      }, {
+        ln: 'NamedGroup',
+        bti: '.RealGroup'
+      }, {
+        t: 'enum',
+        ln: 'FormChoice',
+        vs: ['qualified', 'unqualified']
       }, {
         t: 'enum',
         ln: 'DerivationControl',
         vs: ['substitution', 'extension', 'restriction', 'list', 'union']
       }, {
         t: 'enum',
-        ln: 'ReducedDerivationControl',
-        vs: ['extension', 'restriction']
-      }, {
-        t: 'enum',
         ln: 'TypeDerivationControl',
         vs: ['extension', 'restriction', 'list', 'union']
       }, {
         t: 'enum',
-        ln: 'FormChoice',
-        vs: ['qualified', 'unqualified']
+        ln: 'ReducedDerivationControl',
+        vs: ['extension', 'restriction']
       }],
     eis: [{
-        en: 'minExclusive',
-        ti: '.Facet'
-      }, {
-        en: 'restriction',
-        ti: '.Restriction'
-      }, {
-        en: 'redefine',
-        ti: '.Redefine'
-      }, {
-        en: 'selector',
-        ti: '.Selector'
-      }, {
         en: 'any',
         ti: '.Any'
-      }, {
-        en: 'all',
-        ti: '.All'
-      }, {
-        en: 'simpleContent',
-        ti: '.SimpleContent'
-      }, {
-        en: 'attributeGroup',
-        ti: '.NamedAttributeGroup'
-      }, {
-        en: 'group',
-        ti: '.GroupRef',
-        sc: '.Group'
-      }, {
-        en: 'keyref',
-        ti: '.Keyref'
-      }, {
-        en: 'group',
-        ti: '.NamedGroup'
       }, {
         en: 'length',
         ti: '.NumFacet'
       }, {
-        en: 'complexType',
-        ti: '.TopLevelComplexType'
+        en: 'redefine',
+        ti: '.Redefine'
+      }, {
+        en: 'key',
+        ti: '.Keybase'
       }, {
         en: 'choice',
         ti: '.ExplicitGroup'
       }, {
+        en: 'maxInclusive',
+        ti: '.Facet'
+      }, {
+        en: 'maxExclusive',
+        ti: '.Facet'
+      }, {
+        en: 'whiteSpace',
+        ti: '.WhiteSpace'
+      }, {
+        en: 'list',
+        ti: '.List'
+      }, {
+        en: 'group',
+        ti: '.NamedGroup'
+      }, {
+        en: 'minExclusive',
+        ti: '.Facet'
+      }, {
+        en: 'simpleContent',
+        ti: '.SimpleContent'
+      }, {
+        en: 'unique',
+        ti: '.Keybase'
+      }, {
+        en: 'element',
+        ti: '.LocalElement',
+        sc: '.Group'
+      }, {
+        en: 'pattern',
+        ti: '.Pattern'
+      }, {
+        en: 'keyref',
+        ti: '.Keyref'
+      }, {
+        en: 'element',
+        ti: '.TopLevelElement'
+      }, {
+        en: 'union',
+        ti: '.Union'
+      }, {
         en: 'fractionDigits',
         ti: '.NumFacet'
-      }, {
-        en: 'enumeration',
-        ti: '.NoFixedFacet'
-      }, {
-        en: 'documentation',
-        ti: '.Documentation'
       }, {
         en: 'totalDigits',
         ti: '.TotalDigits'
@@ -1199,78 +1190,72 @@ var XSD_1_0_Module_Factory = function () {
         en: 'schema',
         ti: '.Schema'
       }, {
-        en: 'list',
-        ti: '.List'
-      }, {
-        en: 'appinfo',
-        ti: '.Appinfo'
-      }, {
-        en: 'anyAttribute',
-        ti: '.Wildcard'
-      }, {
-        en: 'minInclusive',
-        ti: '.Facet'
-      }, {
-        en: 'element',
-        ti: '.LocalElement',
-        sc: '.Group'
-      }, {
-        en: 'include',
-        ti: '.Include'
-      }, {
-        en: 'union',
-        ti: '.Union'
-      }, {
-        en: 'annotation',
-        ti: '.Annotation'
-      }, {
         en: 'complexContent',
         ti: '.ComplexContent'
       }, {
-        en: 'maxExclusive',
-        ti: '.Facet'
+        en: 'selector',
+        ti: '.Selector'
       }, {
-        en: 'maxInclusive',
-        ti: '.Facet'
-      }, {
-        en: 'unique',
-        ti: '.Keybase'
-      }, {
-        en: 'sequence',
-        ti: '.ExplicitGroup'
-      }, {
-        en: 'field',
-        ti: '.Field'
+        en: 'restriction',
+        ti: '.Restriction'
       }, {
         en: 'notation',
         ti: '.Notation'
       }, {
-        en: 'pattern',
-        ti: '.Pattern'
-      }, {
         en: 'attribute',
         ti: '.TopLevelAttribute'
       }, {
-        en: 'key',
-        ti: '.Keybase'
+        en: 'group',
+        ti: '.GroupRef',
+        sc: '.Group'
+      }, {
+        en: 'enumeration',
+        ti: '.NoFixedFacet'
       }, {
         en: 'maxLength',
         ti: '.NumFacet'
       }, {
-        en: 'whiteSpace',
-        ti: '.WhiteSpace'
+        en: 'sequence',
+        ti: '.ExplicitGroup'
       }, {
-        en: 'import',
-        ti: '.Import'
+        en: 'minInclusive',
+        ti: '.Facet'
       }, {
-        en: 'element',
-        ti: '.TopLevelElement'
+        en: 'attributeGroup',
+        ti: '.NamedAttributeGroup'
+      }, {
+        en: 'complexType',
+        ti: '.TopLevelComplexType'
       }, {
         en: 'minLength',
         ti: '.NumFacet'
       }, {
+        en: 'documentation',
+        ti: '.Documentation'
+      }, {
+        en: 'include',
+        ti: '.Include'
+      }, {
+        en: 'annotation',
+        ti: '.Annotation'
+      }, {
+        en: 'all',
+        ti: '.All'
+      }, {
+        en: 'import',
+        ti: '.Import'
+      }, {
         en: 'simpleType',
         ti: '.TopLevelSimpleType'
+      }, {
+        en: 'anyAttribute',
+        ti: '.Wildcard'
+      }, {
+        en: 'appinfo',
+        ti: '.Appinfo'
+      }, {
+        en: 'field',
+        ti: '.Field'
       }]
   };
   return {

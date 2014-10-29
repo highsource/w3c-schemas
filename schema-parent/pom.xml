@@ -64,6 +64,7 @@
 							<arg>-Xinject-code</arg>
 							<arg>-Xinheritance</arg>
 							<arg>-Xfluent-api</arg>
+							<arg>-Xsimplify</arg>
 							<!--arg>-Xvisitor</arg-->
 							<arg>-Xjsonix</arg>
 							<arg>-Xjsonix-compact</arg>

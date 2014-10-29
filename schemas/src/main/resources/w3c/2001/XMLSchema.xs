@@ -243,8 +243,7 @@
        <xs:element ref="xs:include"/>
        <xs:element ref="xs:import"/>
        <xs:element ref="xs:redefine"/>
-       <!-- ** -->	
-       <!--xs:element ref="xs:annotation"/-->
+       <xs:element ref="xs:annotation"/>
       </xs:choice>
       <xs:sequence minOccurs="0" maxOccurs="unbounded">
        <xs:group ref="xs:schemaTop"/>

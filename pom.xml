@@ -62,7 +62,7 @@
 	</modules>
 	<properties> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
-		<jaxb2-basics.version>0.9.0</jaxb2-basics.version>
+		<jaxb2-basics.version>0.9.1-SNAPSHOT</jaxb2-basics.version>
 		<jaxb-ri.version>2.2.7</jaxb-ri.version>
 		<jaxb-api.version>2.2.11</jaxb-api.version>
 		<maven-jaxb2-plugin.version>0.10.0</maven-jaxb2-plugin.version>
