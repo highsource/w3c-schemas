@@ -24,7 +24,8 @@
 		"XLink",
 		"XML Schema",
 		"XSD",
-		"Atom"
+		"Atom",
+		"XHTML"
 	],
 	"homepage": "https://github.com/highsource/w3c-schemas",
 	"bugs" : {

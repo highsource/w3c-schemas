@@ -3,7 +3,10 @@ W3C Schemas
 
 Jsonix mappings for W3C Schemas:
 
+* Atom_1_0
+* XHTML_1_0_Strict
 * XLink_1_0
+* XSD_1_0
 
 Usage:
 

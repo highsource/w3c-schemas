@@ -58,6 +58,7 @@
 		<module>xlink</module>
 		<module>atom</module>
 		<module>XMLSchema</module>
+		<module>xhtml</module>
 		<module>scripts</module>
 	</modules>
 	<properties> 

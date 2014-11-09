@@ -1,0 +1,11 @@
+<jaxb:bindings version="1.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jsonix="http://jsonix.highsource.org/customizations"
+	jaxb:extensionBindingPrefixes="jsonix">
+
+	<jaxb:bindings schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd" node="/xs:schema">
+		<jsonix:packageMapping packageName="org.hisrc.w3c.xhtml.v_1_0_strict" spaceName="XHTML_1_0_Strict"/>
+	</jaxb:bindings>
+</jaxb:bindings>
+
+
