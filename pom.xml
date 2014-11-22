@@ -55,10 +55,11 @@
 		<!-- Schemas -->
 		<module>schemas</module>
 		<module>schema-parent</module>
-		<module>xlink</module>
 		<module>atom</module>
-		<module>XMLSchema</module>
+		<module>ws-addr</module>
 		<module>xhtml</module>
+		<module>xlink</module>
+		<module>XMLSchema</module>
 		<module>scripts</module>
 	</modules>
 	<properties> 

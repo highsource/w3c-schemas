@@ -1,7 +1,8 @@
 var schemas = [
-	"XLink_1_0",
 	"Atom_1_0",
-	"XHTML_1_0_Strict"
+	"WS_Addr_1_0_Core",
+	"XHTML_1_0_Strict",
+	"XLink_1_0",
 	"XSD_1_0"
 ];
 for (var index = 0; index < schemas.length; index++)

@@ -1,0 +1,78 @@
+<jaxb:bindings version="1.0"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:simplify="http://jaxb2-commons.dev.java.net/basic/simplify"
+	jaxb:extensionBindingPrefixes="xjc simplify">
+
+	<jaxb:bindings schemaLocation="http://www.w3.org/2005/08/addressing/ws-addr.xsd" node="/xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="org.hisrc.w3c.wsaddr.v_1_0_core"/>
+		</jaxb:schemaBindings>
+
+		<!--jaxb:bindings node="xs:element[@name='schema']/xs:complexType">
+			<simplify:property name="includeOrImportOrRedefine">
+				<simplify:as-element-property/>
+			</simplify:property>
+			<simplify:property name="simpleTypeOrComplexTypeOrGroup">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:element[@name='annotation']/xs:complexType">
+			<simplify:property name="appinfoOrDocumentation">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:element[@name='redefine']/xs:complexType">
+			<simplify:property name="annotationOrSimpleTypeOrComplexType">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='attributeGroup']">
+			<simplify:property name="attributeOrAttributeGroup">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='complexType']">
+			<simplify:property name="attributeOrAttributeGroup">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='extensionType']">
+			<simplify:property name="attributeOrAttributeGroup">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='restrictionType']">
+			<simplify:property name="attributeOrAttributeGroup">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:element[@name='restriction']/xs:complexType">
+			<simplify:property name="facets">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='restrictionType']">
+			<simplify:property name="facets">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='element']">
+			<simplify:property name="identityConstraint">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='group']">
+			<simplify:property name="particle">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings-->
+
+	</jaxb:bindings>
+
+</jaxb:bindings>
+
+
