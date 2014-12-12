@@ -4,48 +4,6 @@ var XLink_1_0_Module_Factory = function () {
     dens: 'http:\/\/www.w3.org\/1999\/xlink',
     dans: 'http:\/\/www.w3.org\/1999\/xlink',
     tis: [{
-        ln: 'LocatorType',
-        ps: [{
-            n: 'locatorTitle',
-            col: true,
-            en: 'title',
-            ti: '.TitleEltType'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
-            t: 'a'
-          }]
-      }, {
-        ln: 'ResourceType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
-            t: 'a'
-          }]
-      }, {
         ln: 'ArcType',
         ps: [{
             n: 'locatorTitle',
@@ -72,23 +30,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'to',
-            t: 'a'
-          }]
-      }, {
-        ln: 'TitleEltType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
             t: 'a'
           }]
       }, {
@@ -121,6 +62,42 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'TitleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'ResourceType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
         ln: 'Simple',
         ps: [{
             n: 'content',
@@ -149,6 +126,29 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'LocatorType',
+        ps: [{
+            n: 'locatorTitle',
+            col: true,
+            en: 'title',
+            ti: '.TitleEltType'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
         t: 'enum',
         ln: 'TypeType',
         vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
@@ -162,8 +162,8 @@ var XLink_1_0_Module_Factory = function () {
         vs: ['new', 'replace', 'embed', 'other', 'none']
       }],
     eis: [{
-        en: 'locator',
-        ti: '.LocatorType'
+        en: 'title',
+        ti: '.TitleEltType'
       }, {
         en: 'resource',
         ti: '.ResourceType'
@@ -171,8 +171,8 @@ var XLink_1_0_Module_Factory = function () {
         en: 'arc',
         ti: '.ArcType'
       }, {
-        en: 'title',
-        ti: '.TitleEltType'
+        en: 'locator',
+        ti: '.LocatorType'
       }]
   };
   return {
