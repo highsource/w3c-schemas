@@ -3,6 +3,15 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
     n: 'WS_Addr_1_0_Core',
     dens: 'http:\/\/www.w3.org\/2005\/08\/addressing',
     tis: [{
+        ln: 'AttributedURIType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'value',
+            t: 'v'
+          }]
+      }, {
         ln: 'RelatesToType',
         ps: [{
             n: 'otherAttributes',
@@ -18,14 +27,17 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'AttributedAnyType',
+        ln: 'ProblemActionType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'any',
-            mx: false,
-            t: 'ae'
+            n: 'action',
+            en: 'Action',
+            ti: '.AttributedURIType'
+          }, {
+            n: 'soapAction',
+            en: 'SoapAction'
           }]
       }, {
         ln: 'MetadataType',
@@ -39,15 +51,6 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             t: 'ae'
           }]
       }, {
-        ln: 'AttributedURIType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'value',
-            t: 'v'
-          }]
-      }, {
         ln: 'ReferenceParametersType',
         ps: [{
             n: 'otherAttributes',
@@ -57,16 +60,6 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             col: true,
             mx: false,
             t: 'ae'
-          }]
-      }, {
-        ln: 'AttributedQNameType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'value',
-            ti: 'QName',
-            t: 'v'
           }]
       }, {
         ln: 'AttributedUnsignedLongType',
@@ -79,17 +72,24 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             t: 'v'
           }]
       }, {
-        ln: 'ProblemActionType',
+        ln: 'AttributedQNameType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'action',
-            en: 'Action',
-            ti: '.AttributedURIType'
+            n: 'value',
+            ti: 'QName',
+            t: 'v'
+          }]
+      }, {
+        ln: 'AttributedAnyType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
           }, {
-            n: 'soapAction',
-            en: 'SoapAction'
+            n: 'any',
+            mx: false,
+            t: 'ae'
           }]
       }, {
         ln: 'EndpointReferenceType',
@@ -116,47 +116,47 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
           }]
       }],
     eis: [{
+        en: 'ProblemAction',
+        ti: '.ProblemActionType'
+      }, {
         en: 'MessageID',
         ti: '.AttributedURIType'
       }, {
         en: 'RelatesTo',
         ti: '.RelatesToType'
       }, {
-        en: 'Metadata',
-        ti: '.MetadataType'
-      }, {
-        en: 'Action',
-        ti: '.AttributedURIType'
+        en: 'ProblemHeader',
+        ti: '.AttributedAnyType'
       }, {
         en: 'EndpointReference',
         ti: '.EndpointReferenceType'
       }, {
-        en: 'From',
+        en: 'FaultTo',
         ti: '.EndpointReferenceType'
       }, {
-        en: 'RetryAfter',
-        ti: '.AttributedUnsignedLongType'
+        en: 'Metadata',
+        ti: '.MetadataType'
       }, {
-        en: 'FaultTo',
+        en: 'From',
         ti: '.EndpointReferenceType'
       }, {
         en: 'ProblemIRI',
         ti: '.AttributedURIType'
       }, {
+        en: 'ProblemHeaderQName',
+        ti: '.AttributedQNameType'
+      }, {
         en: 'To',
         ti: '.AttributedURIType'
       }, {
-        en: 'ProblemHeader',
-        ti: '.AttributedAnyType'
+        en: 'RetryAfter',
+        ti: '.AttributedUnsignedLongType'
       }, {
         en: 'ReplyTo',
         ti: '.EndpointReferenceType'
       }, {
-        en: 'ProblemAction',
-        ti: '.ProblemActionType'
-      }, {
-        en: 'ProblemHeaderQName',
-        ti: '.AttributedQNameType'
+        en: 'Action',
+        ti: '.AttributedURIType'
       }]
   };
   return {
