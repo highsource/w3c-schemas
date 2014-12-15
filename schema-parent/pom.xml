@@ -30,7 +30,7 @@
 						<bindingDirectory>src/main/resources</bindingDirectory-->
 						<!--catalog>src/main/resources/catalog.cat</catalog-->
 						<useDependenciesAsEpisodes>true</useDependenciesAsEpisodes>
-						<!--strict>false</strict-->
+						<strict>false</strict>
 						<extension>true</extension>
 						<schemaIncludes/>
 						<bindings>
@@ -54,6 +54,7 @@
 							</catalog>
 						</catalogs>
 						<args>
+							<arg>-XfixJAXB1058</arg>
 							<arg>-XtoString</arg>
 							<arg>-Xequals</arg>
 							<arg>-XhashCode</arg>
