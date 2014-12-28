@@ -2,7 +2,7 @@
 
 `w3c-schemas` package provides [Jsonix](https://github.com/highsource/jsonix) XML-JSON bindings for some of the XML Schemas defined by W3C.
 
-This allows converting between XML (conforming to one of these schemas) and JSON in pure JavaScript.
+This allows converting between XML (conforming to one of these schemas) and JSON in with pure JavaScript.
 
 Supports the following schemas:
 

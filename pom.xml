@@ -2,8 +2,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.hisrc.w3c</groupId>
 	<artifactId>w3c-schemas-project</artifactId>
-	<version>1.0.3-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>W3C Schemas Project</name>
 	<url>https://github.com/highsource/w3c-schemas</url>
@@ -39,14 +40,14 @@
 	</scm>
 	<modules>
 		<!-- Schemas -->
-		<module>schemas</module>
-		<module>schema-parent</module>
 		<module>atom</module>
+		<module>schema-parent</module>
+		<module>schemas</module>
+		<module>scripts</module>
 		<module>ws-addr</module>
 		<module>xhtml</module>
 		<module>xlink</module>
 		<module>XMLSchema</module>
-		<module>scripts</module>
 	</modules>
 	<profiles>
 		<profile>
