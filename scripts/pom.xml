@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.hisrc.w3c</groupId>
 		<artifactId>w3c-schemas-project</artifactId>
-		<version>1.0.3</version>
+		<version>1.0.4-SNAPSHOT</version>
 	</parent>
 	<build>
 		<defaultGoal>install</defaultGoal>
