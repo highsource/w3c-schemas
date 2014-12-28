@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.hisrc.w3c</groupId>
 		<artifactId>w3c-schemas-project</artifactId>
-		<version>1.0.2</version>
+		<version>1.0.3-SNAPSHOT</version>
 	</parent>
 	<build>
 		<defaultGoal>install</defaultGoal>
@@ -87,7 +87,7 @@
 							</arguments>
 						</configuration>
 					</execution>
-					<!--execution>
+					<execution>
 						<id>publish</id>
 						<phase>deploy</phase>
 						<goals>
@@ -100,7 +100,7 @@
 								<argument>.</argument>
 							</arguments>
 						</configuration>
-					</execution-->
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>

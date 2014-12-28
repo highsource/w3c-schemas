@@ -1,6 +1,6 @@
 {
 	"name": "w3c-schemas",
-	"version": "1.0.2-SNAPSHOT",
+	"version": "1.0.2",
 	"description": "Jsonix XML-JSON mappings for W3C Schemas.",
 	"keywords": [
 		"json",

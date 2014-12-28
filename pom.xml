@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.hisrc.w3c</groupId>
 	<artifactId>w3c-schemas-project</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>W3C Schemas Project</name>
 	<url>https://github.com/highsource/w3c-schemas</url>
-	<description>W3C Schemas.</description>
+	<description>W3C Schemas project provides JAXB and Jsonix bindings for some of the XML Schemas defined by W3C.</description>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -40,14 +40,14 @@
 	</scm>
 	<modules>
 		<!-- Schemas -->
-		<module>atom</module>
 		<module>schema-parent</module>
 		<module>schemas</module>
-		<module>scripts</module>
+		<module>atom</module>
 		<module>ws-addr</module>
 		<module>xhtml</module>
 		<module>xlink</module>
 		<module>XMLSchema</module>
+		<module>scripts</module>
 	</modules>
 	<profiles>
 		<profile>

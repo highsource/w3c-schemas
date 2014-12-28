@@ -1,6 +1,6 @@
 # W3C Schemas
 
-W3C Schemas project provides [JAXB](https://jaxb.java.net/) and [Jsonix](https://github.com/highsource/jsonix) Xbindings for some of the XML Schemas defined by W3C.
+W3C Schemas project provides [JAXB](https://jaxb.java.net/) and [Jsonix](https://github.com/highsource/jsonix) bindings for some of the XML Schemas defined by W3C.
 
 This allows converting between XML (conforming to one of these schemas) and Java objects in Java or JSON in JavaScript.
 
