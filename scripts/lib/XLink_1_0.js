@@ -33,35 +33,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ArcType',
-        ps: [{
-            n: 'locatorTitle',
-            col: true,
-            en: 'title',
-            ti: '.TitleEltType'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            t: 'a'
-          }, {
-            n: 'actuate',
-            t: 'a'
-          }, {
-            n: 'from',
-            t: 'a'
-          }, {
-            n: 'to',
-            t: 'a'
-          }]
-      }, {
         ln: 'LocatorType',
         ps: [{
             n: 'locatorTitle',
@@ -85,7 +56,7 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ResourceType',
+        ln: 'TitleEltType',
         ps: [{
             n: 'content',
             col: true,
@@ -94,13 +65,11 @@ var XLink_1_0_Module_Factory = function () {
             n: 'type',
             t: 'a'
           }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
             t: 'a'
           }]
       }, {
@@ -132,7 +101,7 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'TitleEltType',
+        ln: 'ResourceType',
         ps: [{
             n: 'content',
             col: true,
@@ -141,25 +110,56 @@ var XLink_1_0_Module_Factory = function () {
             n: 'type',
             t: 'a'
           }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
+        ln: 'ArcType',
+        ps: [{
+            n: 'locatorTitle',
+            col: true,
+            en: 'title',
+            ti: '.TitleEltType'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            t: 'a'
+          }, {
+            n: 'from',
+            t: 'a'
+          }, {
+            n: 'to',
             t: 'a'
           }]
       }, {
         t: 'enum',
-        ln: 'ShowType',
-        vs: ['new', 'replace', 'embed', 'other', 'none']
+        ln: 'TypeType',
+        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
         t: 'enum',
         ln: 'ActuateType',
         vs: ['onLoad', 'onRequest', 'other', 'none']
       }, {
         t: 'enum',
-        ln: 'TypeType',
-        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+        ln: 'ShowType',
+        vs: ['new', 'replace', 'embed', 'other', 'none']
       }],
     eis: [{
         en: 'resource',
@@ -168,11 +168,11 @@ var XLink_1_0_Module_Factory = function () {
         en: 'arc',
         ti: '.ArcType'
       }, {
-        en: 'title',
-        ti: '.TitleEltType'
-      }, {
         en: 'locator',
         ti: '.LocatorType'
+      }, {
+        en: 'title',
+        ti: '.TitleEltType'
       }]
   };
   return {
