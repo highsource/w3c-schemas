@@ -1,6 +1,5 @@
 {
 	"name": "w3c-schemas",
-	"version": "1.0.2",
 	"homepage": "https://github.com/highsource/w3c-schemas",
 	"authors": [
 		"Alexey Valikov"
@@ -26,18 +25,33 @@
 		"jaxb",
 		"jsonix",
 		"mapping",
-		"XLink"
+		"atom",
+		"ws-addr",
+		"ws-addressing",
+		"ws addressing",
+		"xhtml",
+		"xlink",
+		"xmlschema",
+		"xml schema",
+		"xsd"
 	],
 	"license": "BSD-3-Clause",
 	"ignore": [ "**/.*",
+		"atom",
+		"schema-parent",
 		"schemas",
-		"xlink",
-		"README.md",
-		"pom.xml",
 		"scripts/node_modules",
 		"scripts/target",
 		"scripts/test",
 		"scripts/mnpm.bat",
-		"scripts/pom.xml"
+		"scripts/pom.xml",
+		"ws-addr",
+		"xhtml",
+		"xlink",
+		"XMLSchema",
+		"pom.xml",
+		"qrelease.bat",
+		"README.md",
+		"release.bat"
 	]
 }

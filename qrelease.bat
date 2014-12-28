@@ -2,25 +2,37 @@ setlocal
 echo Setting JAVA_HOME to %JAVA6_HOME%.
 set JAVA_HOME=%JAVA6_HOME%
 
-echo Performing a clean build.
+echo Performing a short clean build.
 rem pause
 call mvn clean install -DperformRelease
-echo Clean build completed.
+echo Short clean build completed.
+rem pause
+
+echo Performing a full clean build.
+rem pause
+call mvn clean install -DperformRelease -Pall
+echo Full clean build completed.
 rem pause
 
 echo Setting new version to %1.
 rem pause
-call mvn versions:set -DnewVersion=%1
+call mvn versions:set -Pall -DnewVersion=%1
 echo Version was set to %1.
 rem pause
-call mvn versions:commit
+call mvn versions:commit -Pall
 echo Version %1 committed.
 rem pause
 
-echo Performing a clean build.
+echo Performing a short clean build.
 rem pause
 call mvn clean install -DperformRelease
-echo Clean build completed.
+echo Short clean build completed.
+rem pause
+
+echo Performing a full clean build.
+rem pause
+call mvn clean install -Pall -DperformRelease
+echo Full clean build completed.
 rem pause
 
 echo Checking in version %1.
@@ -42,26 +54,33 @@ git push --tags origin master
 echo Version %1 was pushed.
 rem pause
 
-echo Performing clean deploy.
+echo Performing full clean deploy.
 rem pause
-call mvn -DperformRelease -Psonatype-oss-release clean deploy
-echo Clean deploy done.
+call mvn -DperformRelease -Psonatype-oss-release,all clean deploy
+echo Full clean deploy done.
 rem pause
 
 echo Setting new version to %2.
 rem pause
-call mvn versions:set -DnewVersion=%2
+call mvn versions:set -Pall -DnewVersion=%2
 echo Version was set to %2.
 rem pause
-call mvn versions:commit
+call mvn versions:commit -Pall
 echo Version %2 was committed.
 rem pause
 
-echo Performing a clean build.
+echo Performing a short clean build.
 rem pause
 call mvn clean install -DperformRelease
-echo Clean build completed.
+echo Short clean build completed.
 rem pause
+
+echo Performing a full clean build.
+rem pause
+call mvn clean install -DperformRelease -Pall
+echo Full clean build completed.
+rem pause
+
 
 echo Checking in version %2.
 rem pause
