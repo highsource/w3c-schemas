@@ -60,14 +60,14 @@ var Atom_1_0_Module_Factory = function () {
           }]
       }],
     eis: [{
-        en: 'email'
-      }, {
         en: 'uri'
+      }, {
+        en: 'name'
+      }, {
+        en: 'email'
       }, {
         en: 'link',
         ti: '.Link'
-      }, {
-        en: 'name'
       }, {
         en: 'author',
         ti: '.AtomPersonConstruct'
