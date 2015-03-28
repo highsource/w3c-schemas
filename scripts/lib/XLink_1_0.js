@@ -21,26 +21,32 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'LocatorType',
+        ln: 'Extended',
         ps: [{
-            n: 'locatorTitle',
+            n: 'extendedModel',
             col: true,
-            en: 'title',
-            ti: '.TitleEltType'
+            etis: [{
+                en: 'title',
+                ti: '.TitleEltType'
+              }, {
+                en: 'resource',
+                ti: '.ResourceType'
+              }, {
+                en: 'locator',
+                ti: '.LocatorType'
+              }, {
+                en: 'arc',
+                ti: '.ArcType'
+              }],
+            t: 'es'
           }, {
             n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
             t: 'a'
           }, {
             n: 'role',
             t: 'a'
           }, {
             n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
             t: 'a'
           }]
       }, {
@@ -73,32 +79,26 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Extended',
+        ln: 'LocatorType',
         ps: [{
-            n: 'extendedModel',
+            n: 'locatorTitle',
             col: true,
-            etis: [{
-                en: 'title',
-                ti: '.TitleEltType'
-              }, {
-                en: 'resource',
-                ti: '.ResourceType'
-              }, {
-                en: 'locator',
-                ti: '.LocatorType'
-              }, {
-                en: 'arc',
-                ti: '.ArcType'
-              }],
-            t: 'es'
+            en: 'title',
+            ti: '.TitleEltType'
           }, {
             n: 'type',
+            t: 'a'
+          }, {
+            n: 'href',
             t: 'a'
           }, {
             n: 'role',
             t: 'a'
           }, {
             n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
             t: 'a'
           }]
       }, {
@@ -150,29 +150,29 @@ var XLink_1_0_Module_Factory = function () {
           }]
       }, {
         t: 'enum',
-        ln: 'ShowType',
-        vs: ['new', 'replace', 'embed', 'other', 'none']
+        ln: 'TypeType',
+        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
         t: 'enum',
         ln: 'ActuateType',
         vs: ['onLoad', 'onRequest', 'other', 'none']
       }, {
         t: 'enum',
-        ln: 'TypeType',
-        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+        ln: 'ShowType',
+        vs: ['new', 'replace', 'embed', 'other', 'none']
       }],
     eis: [{
-        en: 'arc',
-        ti: '.ArcType'
+        en: 'title',
+        ti: '.TitleEltType'
       }, {
         en: 'resource',
         ti: '.ResourceType'
       }, {
-        en: 'title',
-        ti: '.TitleEltType'
-      }, {
         en: 'locator',
         ti: '.LocatorType'
+      }, {
+        en: 'arc',
+        ti: '.ArcType'
       }]
   };
   return {

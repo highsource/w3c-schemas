@@ -3,6 +3,65 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
     n: 'WS_Addr_1_0_Core',
     dens: 'http:\/\/www.w3.org\/2005\/08\/addressing',
     tis: [{
+        ln: 'AttributedQNameType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'value',
+            ti: 'QName',
+            t: 'v'
+          }]
+      }, {
+        ln: 'ReferenceParametersType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'any',
+            col: true,
+            mx: false,
+            t: 'ae'
+          }]
+      }, {
+        ln: 'RelatesToType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'value',
+            t: 'v'
+          }, {
+            n: 'relationshipType',
+            an: {
+              lp: 'RelationshipType'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'ProblemActionType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'action',
+            en: 'Action',
+            ti: '.AttributedURIType'
+          }, {
+            n: 'soapAction',
+            en: 'SoapAction'
+          }]
+      }, {
+        ln: 'AttributedAnyType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'any',
+            mx: false,
+            t: 'ae'
+          }]
+      }, {
         ln: 'EndpointReferenceType',
         ps: [{
             n: 'otherAttributes',
@@ -36,53 +95,13 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             t: 'v'
           }]
       }, {
-        ln: 'ReferenceParametersType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'any',
-            col: true,
-            mx: false,
-            t: 'ae'
-          }]
-      }, {
-        ln: 'AttributedAnyType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'any',
-            mx: false,
-            t: 'ae'
-          }]
-      }, {
-        ln: 'ProblemActionType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'action',
-            en: 'Action',
-            ti: '.AttributedURIType'
-          }, {
-            n: 'soapAction',
-            en: 'SoapAction'
-          }]
-      }, {
-        ln: 'RelatesToType',
+        ln: 'AttributedURIType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
             n: 'value',
             t: 'v'
-          }, {
-            n: 'relationshipType',
-            an: {
-              lp: 'RelationshipType'
-            },
-            t: 'a'
           }]
       }, {
         ln: 'MetadataType',
@@ -95,59 +114,37 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
             mx: false,
             t: 'ae'
           }]
-      }, {
-        ln: 'AttributedURIType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'value',
-            t: 'v'
-          }]
-      }, {
-        ln: 'AttributedQNameType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'value',
-            ti: 'QName',
-            t: 'v'
-          }]
       }],
     eis: [{
-        en: 'From',
-        ti: '.EndpointReferenceType'
-      }, {
-        en: 'ProblemHeader',
-        ti: '.AttributedAnyType'
+        en: 'ProblemIRI',
+        ti: '.AttributedURIType'
       }, {
         en: 'Action',
         ti: '.AttributedURIType'
       }, {
-        en: 'Metadata',
-        ti: '.MetadataType'
+        en: 'From',
+        ti: '.EndpointReferenceType'
       }, {
-        en: 'RelatesTo',
-        ti: '.RelatesToType'
-      }, {
-        en: 'ProblemHeaderQName',
-        ti: '.AttributedQNameType'
+        en: 'To',
+        ti: '.AttributedURIType'
       }, {
         en: 'EndpointReference',
+        ti: '.EndpointReferenceType'
+      }, {
+        en: 'ReplyTo',
         ti: '.EndpointReferenceType'
       }, {
         en: 'MessageID',
         ti: '.AttributedURIType'
       }, {
-        en: 'To',
-        ti: '.AttributedURIType'
-      }, {
-        en: 'ReplyTo',
-        ti: '.EndpointReferenceType'
+        en: 'ProblemHeader',
+        ti: '.AttributedAnyType'
       }, {
         en: 'FaultTo',
         ti: '.EndpointReferenceType'
+      }, {
+        en: 'RelatesTo',
+        ti: '.RelatesToType'
       }, {
         en: 'RetryAfter',
         ti: '.AttributedUnsignedLongType'
@@ -155,8 +152,11 @@ var WS_Addr_1_0_Core_Module_Factory = function () {
         en: 'ProblemAction',
         ti: '.ProblemActionType'
       }, {
-        en: 'ProblemIRI',
-        ti: '.AttributedURIType'
+        en: 'Metadata',
+        ti: '.MetadataType'
+      }, {
+        en: 'ProblemHeaderQName',
+        ti: '.AttributedQNameType'
       }]
   };
   return {
