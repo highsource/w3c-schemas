@@ -1,0 +1,1 @@
+diff -urN ../resources-original/w3c w3c > ../../../src/main/patches/w3c.patch

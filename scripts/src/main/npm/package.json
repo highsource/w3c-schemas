@@ -53,7 +53,7 @@
 		"test" : "nodeunit tests/tests.js"
 	},
 	"dependencies": {
-		"jsonix": "2.x.x"
+		"jsonix": ">=${jsonix.version}"
 	},
 	"devDependencies" : {
 		"nodeunit" : "0.x.x",
