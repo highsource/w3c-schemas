@@ -11,11 +11,11 @@ var Atom_1_0_Module_Factory = function () {
             mx: false,
             dom: false,
             etis: [{
-                en: 'email'
-              }, {
                 en: 'uri'
               }, {
                 en: 'name'
+              }, {
+                en: 'email'
               }],
             t: 'ers'
           }]
