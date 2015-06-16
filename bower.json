@@ -5,6 +5,7 @@
 		"Alexey Valikov"
 	],
 	"description": "Jsonix mappings for W3C Schemas.",
+  	"main": "scripts/w3c-schemas.js",
 	"keywords" : [
 		"json",
 		"xml",
