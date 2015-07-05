@@ -34,25 +34,12 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Extended',
-        tn: 'extended',
+        ln: 'ResourceType',
+        tn: 'resourceType',
         ps: [{
-            n: 'extendedModel',
+            n: 'content',
             col: true,
-            etis: [{
-                en: 'title',
-                ti: '.TitleEltType'
-              }, {
-                en: 'resource',
-                ti: '.ResourceType'
-              }, {
-                en: 'locator',
-                ti: '.LocatorType'
-              }, {
-                en: 'arc',
-                ti: '.ArcType'
-              }],
-            t: 'es'
+            t: 'ae'
           }, {
             n: 'type',
             t: 'a'
@@ -61,6 +48,27 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            t: 'a'
+          }]
+      }, {
+        ln: 'TitleEltType',
+        tn: 'titleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
             t: 'a'
           }]
       }, {
@@ -93,6 +101,36 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'Extended',
+        tn: 'extended',
+        ps: [{
+            n: 'extendedModel',
+            col: true,
+            etis: [{
+                en: 'title',
+                ti: '.TitleEltType'
+              }, {
+                en: 'resource',
+                ti: '.ResourceType'
+              }, {
+                en: 'locator',
+                ti: '.LocatorType'
+              }, {
+                en: 'arc',
+                ti: '.ArcType'
+              }],
+            t: 'es'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }]
+      }, {
         ln: 'LocatorType',
         tn: 'locatorType',
         ps: [{
@@ -117,60 +155,19 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'TitleEltType',
-        tn: 'titleEltType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'ResourceType',
-        tn: 'resourceType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
-            t: 'a'
-          }]
-      }, {
         t: 'enum',
-        ln: 'ActuateType',
-        vs: ['onLoad', 'onRequest', 'other', 'none']
+        ln: 'TypeType',
+        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
         t: 'enum',
         ln: 'ShowType',
         vs: ['new', 'replace', 'embed', 'other', 'none']
       }, {
         t: 'enum',
-        ln: 'TypeType',
-        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+        ln: 'ActuateType',
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }],
     eis: [{
-        en: 'arc',
-        ti: '.ArcType'
-      }, {
         en: 'locator',
         ti: '.LocatorType'
       }, {
@@ -179,6 +176,9 @@ var XLink_1_0_Module_Factory = function () {
       }, {
         en: 'resource',
         ti: '.ResourceType'
+      }, {
+        en: 'arc',
+        ti: '.ArcType'
       }]
   };
   return {
