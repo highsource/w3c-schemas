@@ -5,7 +5,13 @@
 		"Alexey Valikov"
 	],
 	"description": "Jsonix mappings for W3C Schemas.",
-  	"main": "scripts/w3c-schemas.js",
+  	"main": [
+		"scripts/lib/Atom_1_0",
+		"scripts/lib/WS_Addr_1_0_Core",
+		"scripts/lib/XHTML_1_0_Strict",
+		"scripts/lib/XLink_1_0",
+		"scripts/lib/XSD_1_0"
+	],
 	"keywords" : [
 		"json",
 		"xml",
@@ -42,16 +48,17 @@
 		"schemas",
 		"scripts/node_modules",
 		"scripts/target",
-		"scripts/test",
+		"scripts/src",
+		"scripts/tests",
 		"scripts/mnpm.bat",
 		"scripts/pom.xml",
 		"ws-addr",
 		"xhtml",
 		"xlink",
 		"XMLSchema",
+		"full-build-1.6.bat",
 		"pom.xml",
 		"qrelease.bat",
-		"README.md",
 		"release.bat"
 	]
 }
