@@ -9,10 +9,10 @@ public class IsSetMethodsGeneratedTest {
 
     @Test
     public void testIsSet() throws Exception {
-        Wildcard envelopeType = new Wildcard();
-        Assert.assertFalse(envelopeType.isSetNamespace());
+        Wildcard wildcard = new Wildcard();
+        Assert.assertFalse(wildcard.isSetNamespace());
 
-        envelopeType.getNamespace().add("http://www.opengis.net/ows/2.0");
-        Assert.assertTrue(envelopeType.isSetNamespace());
+        wildcard.getNamespace().add("http://www.opengis.net/ows/2.0");
+        Assert.assertTrue(wildcard.isSetNamespace());
     }
 }
