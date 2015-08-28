@@ -3,23 +3,6 @@ var Atom_1_0_Module_Factory = function () {
     n: 'Atom_1_0',
     dens: 'http:\/\/www.w3.org\/2005\/Atom',
     tis: [{
-        ln: 'AtomPersonConstruct',
-        tn: 'atomPersonConstruct',
-        ps: [{
-            n: 'nameOrUriOrEmail',
-            col: true,
-            mx: false,
-            dom: false,
-            etis: [{
-                en: 'email'
-              }, {
-                en: 'uri'
-              }, {
-                en: 'name'
-              }],
-            t: 'ers'
-          }]
-      }, {
         ln: 'Link',
         tn: null,
         ps: [{
@@ -59,19 +42,36 @@ var Atom_1_0_Module_Factory = function () {
             },
             t: 'a'
           }]
+      }, {
+        ln: 'AtomPersonConstruct',
+        tn: 'atomPersonConstruct',
+        ps: [{
+            n: 'nameOrUriOrEmail',
+            col: true,
+            mx: false,
+            dom: false,
+            etis: [{
+                en: 'name'
+              }, {
+                en: 'uri'
+              }, {
+                en: 'email'
+              }],
+            t: 'ers'
+          }]
       }],
     eis: [{
-        en: 'email'
-      }, {
-        en: 'name'
-      }, {
         en: 'link',
         ti: '.Link'
+      }, {
+        en: 'uri'
       }, {
         en: 'author',
         ti: '.AtomPersonConstruct'
       }, {
-        en: 'uri'
+        en: 'name'
+      }, {
+        en: 'email'
       }]
   };
   return {

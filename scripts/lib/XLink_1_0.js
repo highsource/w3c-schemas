@@ -34,15 +34,20 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ArcType',
-        tn: 'arcType',
+        ln: 'Simple',
+        tn: 'simple',
         ps: [{
-            n: 'locatorTitle',
+            n: 'content',
             col: true,
-            en: 'title',
-            ti: '.TitleEltType'
+            t: 'ae'
           }, {
             n: 'type',
+            t: 'a'
+          }, {
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
             t: 'a'
           }, {
             n: 'arcrole',
@@ -55,12 +60,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'actuate',
-            t: 'a'
-          }, {
-            n: 'from',
-            t: 'a'
-          }, {
-            n: 'to',
             t: 'a'
           }]
       }, {
@@ -108,35 +107,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Simple',
-        tn: 'simple',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            t: 'a'
-          }, {
-            n: 'actuate',
-            t: 'a'
-          }]
-      }, {
         ln: 'TitleEltType',
         tn: 'titleEltType',
         ps: [{
@@ -155,9 +125,35 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        t: 'enum',
-        ln: 'ActuateType',
-        vs: ['onLoad', 'onRequest', 'other', 'none']
+        ln: 'ArcType',
+        tn: 'arcType',
+        ps: [{
+            n: 'locatorTitle',
+            col: true,
+            en: 'title',
+            ti: '.TitleEltType'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            t: 'a'
+          }, {
+            n: 'from',
+            t: 'a'
+          }, {
+            n: 'to',
+            t: 'a'
+          }]
       }, {
         t: 'enum',
         ln: 'ShowType',
@@ -166,19 +162,23 @@ var XLink_1_0_Module_Factory = function () {
         t: 'enum',
         ln: 'TypeType',
         vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+      }, {
+        t: 'enum',
+        ln: 'ActuateType',
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }],
     eis: [{
-        en: 'locator',
-        ti: '.LocatorType'
+        en: 'title',
+        ti: '.TitleEltType'
       }, {
         en: 'arc',
         ti: '.ArcType'
       }, {
+        en: 'locator',
+        ti: '.LocatorType'
+      }, {
         en: 'resource',
         ti: '.ResourceType'
-      }, {
-        en: 'title',
-        ti: '.TitleEltType'
       }]
   };
   return {
