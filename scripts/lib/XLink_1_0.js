@@ -4,24 +4,6 @@ var XLink_1_0_Module_Factory = function () {
     dens: 'http:\/\/www.w3.org\/1999\/xlink',
     dans: 'http:\/\/www.w3.org\/1999\/xlink',
     tis: [{
-        ln: 'TitleEltType',
-        tn: 'titleEltType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'Extended',
         tn: 'extended',
         ps: [{
@@ -49,35 +31,6 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'title',
-            t: 'a'
-          }]
-      }, {
-        ln: 'Simple',
-        tn: 'simple',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            t: 'a'
-          }, {
-            n: 'actuate',
             t: 'a'
           }]
       }, {
@@ -155,6 +108,53 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'Simple',
+        tn: 'simple',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            t: 'a'
+          }]
+      }, {
+        ln: 'TitleEltType',
+        tn: 'titleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
         t: 'enum',
         ln: 'ActuateType',
         vs: ['onLoad', 'onRequest', 'other', 'none']
@@ -168,17 +168,17 @@ var XLink_1_0_Module_Factory = function () {
         vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }],
     eis: [{
-        en: 'resource',
-        ti: '.ResourceType'
-      }, {
         en: 'locator',
         ti: '.LocatorType'
       }, {
-        en: 'title',
-        ti: '.TitleEltType'
-      }, {
         en: 'arc',
         ti: '.ArcType'
+      }, {
+        en: 'resource',
+        ti: '.ResourceType'
+      }, {
+        en: 'title',
+        ti: '.TitleEltType'
       }]
   };
   return {
