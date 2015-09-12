@@ -2,6 +2,123 @@
 {
     "id":"http://www.w3.org/1999/xlink#",
     "definitions":{
+        "Extended":{
+            "type":"object",
+            "title":"Extended",
+            "required":[
+                "type"
+            ],
+            "properties":{
+                "extendedModel":{
+                    "title":"extendedModel",
+                    "allOf":[
+                        {
+                            "type":"array",
+                            "items":{
+                                "anyOf":[
+                                    {
+                                        "anyOf":[
+                                            {
+                                                "$ref":"#/definitions/TitleEltType"
+                                            }
+                                        ],
+                                        "elementName":{
+                                            "localPart":"title",
+                                            "namespaceURI":"http://www.w3.org/1999/xlink"
+                                        }
+                                    },
+                                    {
+                                        "anyOf":[
+                                            {
+                                                "$ref":"#/definitions/ResourceType"
+                                            }
+                                        ],
+                                        "elementName":{
+                                            "localPart":"resource",
+                                            "namespaceURI":"http://www.w3.org/1999/xlink"
+                                        }
+                                    },
+                                    {
+                                        "anyOf":[
+                                            {
+                                                "$ref":"#/definitions/LocatorType"
+                                            }
+                                        ],
+                                        "elementName":{
+                                            "localPart":"locator",
+                                            "namespaceURI":"http://www.w3.org/1999/xlink"
+                                        }
+                                    },
+                                    {
+                                        "anyOf":[
+                                            {
+                                                "$ref":"#/definitions/ArcType"
+                                            }
+                                        ],
+                                        "elementName":{
+                                            "localPart":"arc",
+                                            "namespaceURI":"http://www.w3.org/1999/xlink"
+                                        }
+                                    }
+                                ]
+                            },
+                            "minItems":0
+                        }
+                    ],
+                    "propertyType":"elements"
+                },
+                "type":{
+                    "title":"type",
+                    "allOf":[
+                        {
+                            "$ref":"#/definitions/TypeType"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"type",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                },
+                "role":{
+                    "title":"role",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"role",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                },
+                "title":{
+                    "title":"title",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"title",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"extended",
+                "namespaceURI":"http://www.w3.org/1999/xlink"
+            },
+            "propertiesOrder":[
+                "extendedModel",
+                "type",
+                "role",
+                "title"
+            ]
+        },
         "TitleEltType":{
             "type":"object",
             "title":"TitleEltType",
@@ -76,29 +193,41 @@
                 "lang"
             ]
         },
-        "ArcType":{
+        "ResourceType":{
             "type":"object",
-            "title":"ArcType",
+            "title":"ResourceType",
             "required":[
                 "type"
             ],
             "properties":{
-                "locatorTitle":{
-                    "title":"locatorTitle",
+                "content":{
+                    "title":"content",
                     "allOf":[
                         {
                             "type":"array",
                             "items":{
-                                "$ref":"#/definitions/TitleEltType"
-                            },
-                            "minItems":0
+                                "anyOf":[
+                                    {
+                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    {
+                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                    },
+                                    {
+                                        "type":"object",
+                                        "properties":{
+                                            "name":{
+                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                            },
+                                            "value":{
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     ],
-                    "propertyType":"element",
-                    "elementName":{
-                        "localPart":"title",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
+                    "propertyType":"anyElement"
                 },
                 "type":{
                     "title":"type",
@@ -113,8 +242,8 @@
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 },
-                "arcrole":{
-                    "title":"arcrole",
+                "role":{
+                    "title":"role",
                     "allOf":[
                         {
                             "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
@@ -122,7 +251,7 @@
                     ],
                     "propertyType":"attribute",
                     "attributeName":{
-                        "localPart":"arcrole",
+                        "localPart":"role",
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 },
@@ -139,34 +268,8 @@
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 },
-                "show":{
-                    "title":"show",
-                    "allOf":[
-                        {
-                            "$ref":"#/definitions/ShowType"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"show",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "actuate":{
-                    "title":"actuate",
-                    "allOf":[
-                        {
-                            "$ref":"#/definitions/ActuateType"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"actuate",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "from":{
-                    "title":"from",
+                "label":{
+                    "title":"label",
                     "allOf":[
                         {
                             "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
@@ -174,38 +277,22 @@
                     ],
                     "propertyType":"attribute",
                     "attributeName":{
-                        "localPart":"from",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "to":{
-                    "title":"to",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"to",
+                        "localPart":"label",
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 }
             },
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"arcType",
+                "localPart":"resourceType",
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             },
             "propertiesOrder":[
-                "locatorTitle",
+                "content",
                 "type",
-                "arcrole",
+                "role",
                 "title",
-                "show",
-                "actuate",
-                "from",
-                "to"
+                "label"
             ]
         },
         "Simple":{
@@ -349,172 +436,29 @@
                 "actuate"
             ]
         },
-        "ResourceType":{
+        "ArcType":{
             "type":"object",
-            "title":"ResourceType",
+            "title":"ArcType",
             "required":[
                 "type"
             ],
             "properties":{
-                "content":{
-                    "title":"content",
+                "locatorTitle":{
+                    "title":"locatorTitle",
                     "allOf":[
                         {
                             "type":"array",
                             "items":{
-                                "anyOf":[
-                                    {
-                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                                    },
-                                    {
-                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                    },
-                                    {
-                                        "type":"object",
-                                        "properties":{
-                                            "name":{
-                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                            },
-                                            "value":{
-                                            }
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ],
-                    "propertyType":"anyElement"
-                },
-                "type":{
-                    "title":"type",
-                    "allOf":[
-                        {
-                            "$ref":"#/definitions/TypeType"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"type",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "role":{
-                    "title":"role",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"role",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "title":{
-                    "title":"title",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"title",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                },
-                "label":{
-                    "title":"label",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"label",
-                        "namespaceURI":"http://www.w3.org/1999/xlink"
-                    }
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"resourceType",
-                "namespaceURI":"http://www.w3.org/1999/xlink"
-            },
-            "propertiesOrder":[
-                "content",
-                "type",
-                "role",
-                "title",
-                "label"
-            ]
-        },
-        "Extended":{
-            "type":"object",
-            "title":"Extended",
-            "required":[
-                "type"
-            ],
-            "properties":{
-                "extendedModel":{
-                    "title":"extendedModel",
-                    "allOf":[
-                        {
-                            "type":"array",
-                            "items":{
-                                "anyOf":[
-                                    {
-                                        "anyOf":[
-                                            {
-                                                "$ref":"#/definitions/TitleEltType"
-                                            }
-                                        ],
-                                        "elementName":{
-                                            "localPart":"title",
-                                            "namespaceURI":"http://www.w3.org/1999/xlink"
-                                        }
-                                    },
-                                    {
-                                        "anyOf":[
-                                            {
-                                                "$ref":"#/definitions/ResourceType"
-                                            }
-                                        ],
-                                        "elementName":{
-                                            "localPart":"resource",
-                                            "namespaceURI":"http://www.w3.org/1999/xlink"
-                                        }
-                                    },
-                                    {
-                                        "anyOf":[
-                                            {
-                                                "$ref":"#/definitions/LocatorType"
-                                            }
-                                        ],
-                                        "elementName":{
-                                            "localPart":"locator",
-                                            "namespaceURI":"http://www.w3.org/1999/xlink"
-                                        }
-                                    },
-                                    {
-                                        "anyOf":[
-                                            {
-                                                "$ref":"#/definitions/ArcType"
-                                            }
-                                        ],
-                                        "elementName":{
-                                            "localPart":"arc",
-                                            "namespaceURI":"http://www.w3.org/1999/xlink"
-                                        }
-                                    }
-                                ]
+                                "$ref":"#/definitions/TitleEltType"
                             },
                             "minItems":0
                         }
                     ],
-                    "propertyType":"elements"
+                    "propertyType":"element",
+                    "elementName":{
+                        "localPart":"title",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
                 },
                 "type":{
                     "title":"type",
@@ -529,8 +473,8 @@
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 },
-                "role":{
-                    "title":"role",
+                "arcrole":{
+                    "title":"arcrole",
                     "allOf":[
                         {
                             "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
@@ -538,7 +482,7 @@
                     ],
                     "propertyType":"attribute",
                     "attributeName":{
-                        "localPart":"role",
+                        "localPart":"arcrole",
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
                 },
@@ -554,18 +498,74 @@
                         "localPart":"title",
                         "namespaceURI":"http://www.w3.org/1999/xlink"
                     }
+                },
+                "show":{
+                    "title":"show",
+                    "allOf":[
+                        {
+                            "$ref":"#/definitions/ShowType"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"show",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                },
+                "actuate":{
+                    "title":"actuate",
+                    "allOf":[
+                        {
+                            "$ref":"#/definitions/ActuateType"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"actuate",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                },
+                "from":{
+                    "title":"from",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"from",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
+                },
+                "to":{
+                    "title":"to",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"to",
+                        "namespaceURI":"http://www.w3.org/1999/xlink"
+                    }
                 }
             },
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"extended",
+                "localPart":"arcType",
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             },
             "propertiesOrder":[
-                "extendedModel",
+                "locatorTitle",
                 "type",
-                "role",
-                "title"
+                "arcrole",
+                "title",
+                "show",
+                "actuate",
+                "from",
+                "to"
             ]
         },
         "LocatorType":{
@@ -685,18 +685,6 @@
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             }
         },
-        "ActuateType":{
-            "allOf":[
-                {
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                }
-            ],
-            "typeType":"enumInfo",
-            "typeName":{
-                "localPart":"actuateType",
-                "namespaceURI":"http://www.w3.org/1999/xlink"
-            }
-        },
         "ShowType":{
             "allOf":[
                 {
@@ -706,6 +694,18 @@
             "typeType":"enumInfo",
             "typeName":{
                 "localPart":"showType",
+                "namespaceURI":"http://www.w3.org/1999/xlink"
+            }
+        },
+        "ActuateType":{
+            "allOf":[
+                {
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                }
+            ],
+            "typeType":"enumInfo",
+            "typeName":{
+                "localPart":"actuateType",
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             }
         }
@@ -723,21 +723,6 @@
             },
             "elementName":{
                 "localPart":"arc",
-                "namespaceURI":"http://www.w3.org/1999/xlink"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                },
-                "value":{
-                    "$ref":"#/definitions/TitleEltType"
-                }
-            },
-            "elementName":{
-                "localPart":"title",
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             }
         },
@@ -768,6 +753,21 @@
             },
             "elementName":{
                 "localPart":"locator",
+                "namespaceURI":"http://www.w3.org/1999/xlink"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                },
+                "value":{
+                    "$ref":"#/definitions/TitleEltType"
+                }
+            },
+            "elementName":{
+                "localPart":"title",
                 "namespaceURI":"http://www.w3.org/1999/xlink"
             }
         }

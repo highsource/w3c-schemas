@@ -2,6 +2,42 @@
 {
     "id":"http://www.w3.org/2005/08/addressing#",
     "definitions":{
+        "AttributedQNameType":{
+            "type":"object",
+            "title":"AttributedQNameType",
+            "properties":{
+                "otherAttributes":{
+                    "title":"otherAttributes",
+                    "allOf":[
+                        {
+                            "type":"object",
+                            "additionalProperties":{
+                                "type":"string"
+                            }
+                        }
+                    ],
+                    "propertyType":"anyAttribute"
+                },
+                "value":{
+                    "title":"value",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        }
+                    ],
+                    "propertyType":"value"
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"AttributedQNameType",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "value"
+            ]
+        },
         "RelatesToType":{
             "type":"object",
             "title":"RelatesToType",
@@ -52,9 +88,9 @@
                 "relationshipType"
             ]
         },
-        "ReferenceParametersType":{
+        "MetadataType":{
             "type":"object",
-            "title":"ReferenceParametersType",
+            "title":"MetadataType",
             "properties":{
                 "otherAttributes":{
                     "title":"otherAttributes",
@@ -98,7 +134,96 @@
             },
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"ReferenceParametersType",
+                "localPart":"MetadataType",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "any"
+            ]
+        },
+        "AttributedURIType":{
+            "type":"object",
+            "title":"AttributedURIType",
+            "properties":{
+                "otherAttributes":{
+                    "title":"otherAttributes",
+                    "allOf":[
+                        {
+                            "type":"object",
+                            "additionalProperties":{
+                                "type":"string"
+                            }
+                        }
+                    ],
+                    "propertyType":"anyAttribute"
+                },
+                "value":{
+                    "title":"value",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType":"value"
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"AttributedURIType",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "value"
+            ]
+        },
+        "AttributedAnyType":{
+            "type":"object",
+            "title":"AttributedAnyType",
+            "required":[
+                "any"
+            ],
+            "properties":{
+                "otherAttributes":{
+                    "title":"otherAttributes",
+                    "allOf":[
+                        {
+                            "type":"object",
+                            "additionalProperties":{
+                                "type":"string"
+                            }
+                        }
+                    ],
+                    "propertyType":"anyAttribute"
+                },
+                "any":{
+                    "title":"any",
+                    "allOf":[
+                        {
+                            "anyOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                },
+                                {
+                                    "type":"object",
+                                    "properties":{
+                                        "name":{
+                                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                        },
+                                        "value":{
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "propertyType":"anyElement"
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"AttributedAnyType",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             },
             "propertiesOrder":[
@@ -205,6 +330,60 @@
                 "any"
             ]
         },
+        "ReferenceParametersType":{
+            "type":"object",
+            "title":"ReferenceParametersType",
+            "properties":{
+                "otherAttributes":{
+                    "title":"otherAttributes",
+                    "allOf":[
+                        {
+                            "type":"object",
+                            "additionalProperties":{
+                                "type":"string"
+                            }
+                        }
+                    ],
+                    "propertyType":"anyAttribute"
+                },
+                "any":{
+                    "title":"any",
+                    "allOf":[
+                        {
+                            "type":"array",
+                            "items":{
+                                "anyOf":[
+                                    {
+                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                    },
+                                    {
+                                        "type":"object",
+                                        "properties":{
+                                            "name":{
+                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                            },
+                                            "value":{
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            "minItems":0
+                        }
+                    ],
+                    "propertyType":"anyElement"
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"ReferenceParametersType",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "any"
+            ]
+        },
         "ProblemActionType":{
             "type":"object",
             "title":"ProblemActionType",
@@ -259,149 +438,6 @@
                 "soapAction"
             ]
         },
-        "AttributedQNameType":{
-            "type":"object",
-            "title":"AttributedQNameType",
-            "properties":{
-                "otherAttributes":{
-                    "title":"otherAttributes",
-                    "allOf":[
-                        {
-                            "type":"object",
-                            "additionalProperties":{
-                                "type":"string"
-                            }
-                        }
-                    ],
-                    "propertyType":"anyAttribute"
-                },
-                "value":{
-                    "title":"value",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        }
-                    ],
-                    "propertyType":"value"
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"AttributedQNameType",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "value"
-            ]
-        },
-        "MetadataType":{
-            "type":"object",
-            "title":"MetadataType",
-            "properties":{
-                "otherAttributes":{
-                    "title":"otherAttributes",
-                    "allOf":[
-                        {
-                            "type":"object",
-                            "additionalProperties":{
-                                "type":"string"
-                            }
-                        }
-                    ],
-                    "propertyType":"anyAttribute"
-                },
-                "any":{
-                    "title":"any",
-                    "allOf":[
-                        {
-                            "type":"array",
-                            "items":{
-                                "anyOf":[
-                                    {
-                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                    },
-                                    {
-                                        "type":"object",
-                                        "properties":{
-                                            "name":{
-                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                            },
-                                            "value":{
-                                            }
-                                        }
-                                    }
-                                ]
-                            },
-                            "minItems":0
-                        }
-                    ],
-                    "propertyType":"anyElement"
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"MetadataType",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any"
-            ]
-        },
-        "AttributedAnyType":{
-            "type":"object",
-            "title":"AttributedAnyType",
-            "required":[
-                "any"
-            ],
-            "properties":{
-                "otherAttributes":{
-                    "title":"otherAttributes",
-                    "allOf":[
-                        {
-                            "type":"object",
-                            "additionalProperties":{
-                                "type":"string"
-                            }
-                        }
-                    ],
-                    "propertyType":"anyAttribute"
-                },
-                "any":{
-                    "title":"any",
-                    "allOf":[
-                        {
-                            "anyOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                },
-                                {
-                                    "type":"object",
-                                    "properties":{
-                                        "name":{
-                                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                        },
-                                        "value":{
-                                        }
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "propertyType":"anyElement"
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"AttributedAnyType",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any"
-            ]
-        },
         "AttributedUnsignedLongType":{
             "type":"object",
             "title":"AttributedUnsignedLongType",
@@ -437,42 +473,6 @@
                 "otherAttributes",
                 "value"
             ]
-        },
-        "AttributedURIType":{
-            "type":"object",
-            "title":"AttributedURIType",
-            "properties":{
-                "otherAttributes":{
-                    "title":"otherAttributes",
-                    "allOf":[
-                        {
-                            "type":"object",
-                            "additionalProperties":{
-                                "type":"string"
-                            }
-                        }
-                    ],
-                    "propertyType":"anyAttribute"
-                },
-                "value":{
-                    "title":"value",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                        }
-                    ],
-                    "propertyType":"value"
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"AttributedURIType",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "value"
-            ]
         }
     },
     "anyOf":[
@@ -483,11 +483,11 @@
                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                 },
                 "value":{
-                    "$ref":"#/definitions/EndpointReferenceType"
+                    "$ref":"#/definitions/AttributedQNameType"
                 }
             },
             "elementName":{
-                "localPart":"From",
+                "localPart":"ProblemHeaderQName",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             }
         },
@@ -498,11 +498,41 @@
                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                 },
                 "value":{
-                    "$ref":"#/definitions/ProblemActionType"
+                    "$ref":"#/definitions/AttributedURIType"
                 }
             },
             "elementName":{
-                "localPart":"ProblemAction",
+                "localPart":"Action",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                },
+                "value":{
+                    "$ref":"#/definitions/AttributedAnyType"
+                }
+            },
+            "elementName":{
+                "localPart":"ProblemHeader",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                },
+                "value":{
+                    "$ref":"#/definitions/AttributedURIType"
+                }
+            },
+            "elementName":{
+                "localPart":"ProblemIRI",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             }
         },
@@ -543,21 +573,6 @@
                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                 },
                 "value":{
-                    "$ref":"#/definitions/AttributedURIType"
-                }
-            },
-            "elementName":{
-                "localPart":"MessageID",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                },
-                "value":{
                     "$ref":"#/definitions/AttributedUnsignedLongType"
                 }
             },
@@ -573,11 +588,26 @@
                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                 },
                 "value":{
-                    "$ref":"#/definitions/AttributedAnyType"
+                    "$ref":"#/definitions/EndpointReferenceType"
                 }
             },
             "elementName":{
-                "localPart":"ProblemHeader",
+                "localPart":"From",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                },
+                "value":{
+                    "$ref":"#/definitions/RelatesToType"
+                }
+            },
+            "elementName":{
+                "localPart":"RelatesTo",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             }
         },
@@ -622,51 +652,6 @@
                 }
             },
             "elementName":{
-                "localPart":"Action",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                },
-                "value":{
-                    "$ref":"#/definitions/AttributedURIType"
-                }
-            },
-            "elementName":{
-                "localPart":"ProblemIRI",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                },
-                "value":{
-                    "$ref":"#/definitions/RelatesToType"
-                }
-            },
-            "elementName":{
-                "localPart":"RelatesTo",
-                "namespaceURI":"http://www.w3.org/2005/08/addressing"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                },
-                "value":{
-                    "$ref":"#/definitions/AttributedURIType"
-                }
-            },
-            "elementName":{
                 "localPart":"To",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             }
@@ -678,11 +663,26 @@
                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                 },
                 "value":{
-                    "$ref":"#/definitions/AttributedQNameType"
+                    "$ref":"#/definitions/ProblemActionType"
                 }
             },
             "elementName":{
-                "localPart":"ProblemHeaderQName",
+                "localPart":"ProblemAction",
+                "namespaceURI":"http://www.w3.org/2005/08/addressing"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                },
+                "value":{
+                    "$ref":"#/definitions/AttributedURIType"
+                }
+            },
+            "elementName":{
+                "localPart":"MessageID",
                 "namespaceURI":"http://www.w3.org/2005/08/addressing"
             }
         }
