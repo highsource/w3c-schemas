@@ -3,724 +3,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
     n: 'XHTML_1_0_Strict',
     dens: 'http:\/\/www.w3.org\/1999\/xhtml',
     tis: [{
-        ln: 'I',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Address',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'PreContent',
-        tn: 'pre.content',
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'a',
-                ti: '.A'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
-              }, {
-                en: 'strong',
-                ti: '.Strong'
-              }, {
-                en: 'sup',
-                ti: '.Sup'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }, {
-                en: 'map',
-                ti: '.Map'
-              }, {
-                en: 'tt',
-                ti: '.Tt'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }],
-            t: 'ers'
-          }]
-      }, {
-        ln: 'Table',
-        tn: null,
-        ps: [{
-            n: 'caption',
-            ti: '.Caption'
-          }, {
-            n: 'col',
-            mno: 0,
-            col: true,
-            ti: '.Col'
-          }, {
-            n: 'colgroup',
-            mno: 0,
-            col: true,
-            ti: '.Colgroup'
-          }, {
-            n: 'thead',
-            ti: '.Thead'
-          }, {
-            n: 'tfoot',
-            ti: '.Tfoot'
-          }, {
-            n: 'tbody',
-            rq: true,
-            col: true,
-            ti: '.Tbody'
-          }, {
-            n: 'tr',
-            rq: true,
-            col: true,
-            ti: '.Tr'
-          }, {
-            n: 'summary',
-            an: {
-              lp: 'summary'
-            },
-            t: 'a'
-          }, {
-            n: 'width',
-            an: {
-              lp: 'width'
-            },
-            t: 'a'
-          }, {
-            n: 'border',
-            ti: 'Integer',
-            an: {
-              lp: 'border'
-            },
-            t: 'a'
-          }, {
-            n: 'frame',
-            an: {
-              lp: 'frame'
-            },
-            t: 'a'
-          }, {
-            n: 'rules',
-            an: {
-              lp: 'rules'
-            },
-            t: 'a'
-          }, {
-            n: 'cellspacing',
-            an: {
-              lp: 'cellspacing'
-            },
-            t: 'a'
-          }, {
-            n: 'cellpadding',
-            an: {
-              lp: 'cellpadding'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'H1',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Th',
+        ln: 'Div',
         tn: null,
         bti: '.Flow',
         ps: [{
-            n: 'abbr',
-            an: {
-              lp: 'abbr'
-            },
-            t: 'a'
-          }, {
-            n: 'axis',
-            an: {
-              lp: 'axis'
-            },
-            t: 'a'
-          }, {
-            n: 'headers',
-            ti: 'IDREFS',
-            an: {
-              lp: 'headers'
-            },
-            t: 'a'
-          }, {
-            n: 'scope',
-            an: {
-              lp: 'scope'
-            },
-            t: 'a'
-          }, {
-            n: 'rowspan',
-            ti: 'Integer',
-            an: {
-              lp: 'rowspan'
-            },
-            t: 'a'
-          }, {
-            n: 'colspan',
-            ti: 'Integer',
-            an: {
-              lp: 'colspan'
-            },
-            t: 'a'
-          }, {
-            n: 'align',
-            an: {
-              lp: 'align'
-            },
-            t: 'a'
-          }, {
-            n: '_char',
-            an: {
-              lp: 'char'
-            },
-            t: 'a'
-          }, {
-            n: 'charoff',
-            an: {
-              lp: 'charoff'
-            },
-            t: 'a'
-          }, {
-            n: 'valign',
-            an: {
-              lp: 'valign'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -736,6 +24,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -800,7 +117,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Tfoot',
+        ln: 'Tbody',
         tn: null,
         ps: [{
             n: 'tr',
@@ -808,53 +125,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             col: true,
             ti: '.Tr'
           }, {
-            n: 'align',
-            an: {
-              lp: 'align'
-            },
-            t: 'a'
-          }, {
-            n: '_char',
-            an: {
-              lp: 'char'
-            },
-            t: 'a'
-          }, {
-            n: 'charoff',
-            an: {
-              lp: 'charoff'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -870,6 +142,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -938,41 +239,32 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'valign'
             },
             t: 'a'
+          }, {
+            n: 'align',
+            an: {
+              lp: 'align'
+            },
+            t: 'a'
+          }, {
+            n: '_char',
+            an: {
+              lp: 'char'
+            },
+            t: 'a'
+          }, {
+            n: 'charoff',
+            an: {
+              lp: 'charoff'
+            },
+            t: 'a'
           }]
       }, {
-        ln: 'Abbr',
+        ln: 'Samp',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -991,235 +283,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Fieldset',
-        tn: null,
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'form',
-                ti: '.Form'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'fieldset',
-                ti: '.Fieldset'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'a',
-                ti: '.A'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'sup',
-                ti: '.Sup'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }, {
-                en: 'map',
-                ti: '.Map'
-              }, {
-                en: 'h6',
-                ti: '.H6'
-              }, {
-                en: 'dl',
-                ti: '.Dl'
-              }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'h2',
-                ti: '.H2'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
-              }, {
-                en: 'strong',
-                ti: '.Strong'
-              }, {
-                en: 'legend',
-                ti: '.Legend'
-              }, {
-                en: 'tt',
-                ti: '.Tt'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }],
-            t: 'ers'
-          }, {
             n: 'id',
             ti: 'ID',
             an: {
@@ -1229,7 +292,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -1245,25 +309,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'title',
             an: {
               lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
             },
             t: 'a'
           }, {
@@ -1339,6 +384,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'axis',
+            ti: 'AnySimpleType',
             an: {
               lp: 'axis'
             },
@@ -1352,54 +398,28 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'scope',
+            ti: 'Token',
             an: {
               lp: 'scope'
             },
             t: 'a'
           }, {
             n: 'rowspan',
-            ti: 'Integer',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'rowspan'
             },
             t: 'a'
           }, {
             n: 'colspan',
-            ti: 'Integer',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'colspan'
             },
             t: 'a'
           }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -1415,6 +435,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -1503,618 +552,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Area',
-        tn: null,
-        ps: [{
-            n: 'shape',
-            an: {
-              lp: 'shape'
-            },
-            t: 'a'
-          }, {
-            n: 'coords',
-            an: {
-              lp: 'coords'
-            },
-            t: 'a'
-          }, {
-            n: 'href',
-            an: {
-              lp: 'href'
-            },
-            t: 'a'
-          }, {
-            n: 'nohref',
-            an: {
-              lp: 'nohref'
-            },
-            t: 'a'
-          }, {
-            n: 'alt',
-            rq: true,
-            an: {
-              lp: 'alt'
-            },
-            t: 'a'
-          }, {
-            n: 'accesskey',
-            an: {
-              lp: 'accesskey'
-            },
-            t: 'a'
-          }, {
-            n: 'tabindex',
-            ti: 'Int',
-            an: {
-              lp: 'tabindex'
-            },
-            t: 'a'
-          }, {
-            n: 'onfocus',
-            an: {
-              lp: 'onfocus'
-            },
-            t: 'a'
-          }, {
-            n: 'onblur',
-            an: {
-              lp: 'onblur'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Input',
-        tn: null,
-        ps: [{
-            n: 'type',
-            an: {
-              lp: 'type'
-            },
-            t: 'a'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'value',
-            an: {
-              lp: 'value'
-            },
-            t: 'a'
-          }, {
-            n: 'checked',
-            an: {
-              lp: 'checked'
-            },
-            t: 'a'
-          }, {
-            n: 'disabled',
-            an: {
-              lp: 'disabled'
-            },
-            t: 'a'
-          }, {
-            n: 'readonly',
-            an: {
-              lp: 'readonly'
-            },
-            t: 'a'
-          }, {
-            n: 'size',
-            an: {
-              lp: 'size'
-            },
-            t: 'a'
-          }, {
-            n: 'maxlength',
-            ti: 'Integer',
-            an: {
-              lp: 'maxlength'
-            },
-            t: 'a'
-          }, {
-            n: 'src',
-            an: {
-              lp: 'src'
-            },
-            t: 'a'
-          }, {
-            n: 'alt',
-            an: {
-              lp: 'alt'
-            },
-            t: 'a'
-          }, {
-            n: 'usemap',
-            an: {
-              lp: 'usemap'
-            },
-            t: 'a'
-          }, {
-            n: 'onselect',
-            an: {
-              lp: 'onselect'
-            },
-            t: 'a'
-          }, {
-            n: 'onchange',
-            an: {
-              lp: 'onchange'
-            },
-            t: 'a'
-          }, {
-            n: 'accept',
-            an: {
-              lp: 'accept'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
-            n: 'accesskey',
-            an: {
-              lp: 'accesskey'
-            },
-            t: 'a'
-          }, {
-            n: 'tabindex',
-            ti: 'Int',
-            an: {
-              lp: 'tabindex'
-            },
-            t: 'a'
-          }, {
-            n: 'onfocus',
-            an: {
-              lp: 'onfocus'
-            },
-            t: 'a'
-          }, {
-            n: 'onblur',
-            an: {
-              lp: 'onblur'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Tt',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Cite',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'Style',
         tn: null,
         ps: [{
@@ -2155,6 +592,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -2174,39 +612,37 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Noscript',
+        ln: 'Label',
         tn: null,
-        bti: '.Block',
+        bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
+            n: '_for',
+            ti: 'IDREF',
             an: {
-              lp: 'id'
+              lp: 'for'
             },
             t: 'a'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
+            n: 'accesskey',
             an: {
-              lp: 'class'
+              lp: 'accesskey'
             },
             t: 'a'
           }, {
-            n: 'style',
+            n: 'onfocus',
             an: {
-              lp: 'style'
+              lp: 'onfocus'
             },
             t: 'a'
           }, {
-            n: 'title',
+            n: 'onblur',
             an: {
-              lp: 'title'
+              lp: 'onblur'
             },
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -2222,6 +658,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -2286,39 +751,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'H6',
+        ln: 'Dfn',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -2334,6 +772,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -2403,6 +870,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
         bti: '.Inline',
         ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -2422,66 +890,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
             n: 'id',
             ti: 'ID',
             an: {
@@ -2491,7 +899,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -2507,131 +916,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'title',
             an: {
               lp: 'title'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'FormContent',
-        tn: 'form.content',
-        ps: [{
-            n: 'pOrH1OrH2',
-            mno: 0,
-            col: true,
-            etis: [{
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'h2',
-                ti: '.H2'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'h6',
-                ti: '.H6'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'dl',
-                ti: '.Dl'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'fieldset',
-                ti: '.Fieldset'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }],
-            t: 'es'
-          }]
-      }, {
-        ln: 'Sup',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
             },
             t: 'a'
           }, {
@@ -2705,7 +989,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             ti: '.Col'
           }, {
             n: 'span',
-            ti: 'Integer',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'span'
             },
@@ -2717,119 +1001,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'valign',
-            an: {
-              lp: 'valign'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
             n: 'align',
             an: {
               lp: 'align'
@@ -2847,122 +1018,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'charoff'
             },
             t: 'a'
-          }]
-      }, {
-        ln: 'Tbody',
-        tn: null,
-        ps: [{
-            n: 'tr',
-            rq: true,
-            col: true,
-            ti: '.Tr'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
           }, {
             n: 'valign',
             an: {
@@ -2970,101 +1025,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'align',
-            an: {
-              lp: 'align'
-            },
-            t: 'a'
-          }, {
-            n: '_char',
-            an: {
-              lp: 'char'
-            },
-            t: 'a'
-          }, {
-            n: 'charoff',
-            an: {
-              lp: 'charoff'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Img',
-        tn: null,
-        ps: [{
-            n: 'src',
-            rq: true,
-            an: {
-              lp: 'src'
-            },
-            t: 'a'
-          }, {
-            n: 'alt',
-            rq: true,
-            an: {
-              lp: 'alt'
-            },
-            t: 'a'
-          }, {
-            n: 'longdesc',
-            an: {
-              lp: 'longdesc'
-            },
-            t: 'a'
-          }, {
-            n: 'height',
-            an: {
-              lp: 'height'
-            },
-            t: 'a'
-          }, {
-            n: 'width',
-            an: {
-              lp: 'width'
-            },
-            t: 'a'
-          }, {
-            n: 'usemap',
-            an: {
-              lp: 'usemap'
-            },
-            t: 'a'
-          }, {
-            n: 'ismap',
-            an: {
-              lp: 'ismap'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -3080,6 +1042,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -3140,1075 +1131,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'onkeyup',
             an: {
               lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Br',
-        tn: null,
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Kbd',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Samp',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Del',
-        tn: null,
-        bti: '.Flow',
-        ps: [{
-            n: 'cite',
-            an: {
-              lp: 'cite'
-            },
-            t: 'a'
-          }, {
-            n: 'datetime',
-            ti: 'Calendar',
-            an: {
-              lp: 'datetime'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'H5',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Code',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Dt',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Base',
-        tn: null,
-        ps: [{
-            n: 'href',
-            rq: true,
-            an: {
-              lp: 'href'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'H2',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Script',
-        tn: null,
-        ps: [{
-            n: 'content',
-            t: 'v'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'charset',
-            an: {
-              lp: 'charset'
-            },
-            t: 'a'
-          }, {
-            n: 'type',
-            rq: true,
-            an: {
-              lp: 'type'
-            },
-            t: 'a'
-          }, {
-            n: 'src',
-            an: {
-              lp: 'src'
-            },
-            t: 'a'
-          }, {
-            n: 'defer',
-            an: {
-              lp: 'defer'
-            },
-            t: 'a'
-          }, {
-            n: 'space',
-            an: {
-              lp: 'space',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Option',
-        tn: null,
-        ps: [{
-            n: 'content',
-            t: 'v'
-          }, {
-            n: 'selected',
-            an: {
-              lp: 'selected'
-            },
-            t: 'a'
-          }, {
-            n: 'disabled',
-            an: {
-              lp: 'disabled'
-            },
-            t: 'a'
-          }, {
-            n: 'label',
-            an: {
-              lp: 'label'
-            },
-            t: 'a'
-          }, {
-            n: 'value',
-            an: {
-              lp: 'value'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Html',
-        tn: null,
-        ps: [{
-            n: 'head',
-            rq: true,
-            ti: '.Head'
-          }, {
-            n: 'body',
-            rq: true,
-            ti: '.Body'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
             },
             t: 'a'
           }]
@@ -4220,6 +1142,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'v'
           }, {
             n: 'name',
+            ti: 'AnySimpleType',
             an: {
               lp: 'name'
             },
@@ -4227,7 +1150,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'rows',
             rq: true,
-            ti: 'Integer',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'rows'
             },
@@ -4235,7 +1158,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'cols',
             rq: true,
-            ti: 'Integer',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'cols'
             },
@@ -4265,113 +1188,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
             n: 'accesskey',
             an: {
               lp: 'accesskey'
@@ -4379,7 +1195,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'tabindex',
-            ti: 'Int',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'tabindex'
             },
@@ -4396,58 +1212,134 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'onblur'
             },
             t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
           }]
       }, {
-        ln: 'Optgroup',
+        ln: 'Dl',
         tn: null,
         ps: [{
-            n: 'option',
+            n: 'dtOrDd',
             rq: true,
             col: true,
-            ti: '.Option'
-          }, {
-            n: 'disabled',
-            an: {
-              lp: 'disabled'
-            },
-            t: 'a'
-          }, {
-            n: 'label',
-            rq: true,
-            an: {
-              lp: 'label'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
+            etis: [{
+                en: 'dt',
+                ti: '.Dt'
+              }, {
+                en: 'dd',
+                ti: '.Dd'
+              }],
+            t: 'es'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -4463,6 +1355,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -4527,322 +1448,225 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Var',
-        tn: null,
-        bti: '.Inline',
+        ln: 'Block',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
+            n: 'pOrH1OrH2',
+            mno: 0,
+            col: true,
+            etis: [{
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'div',
+                ti: '.Div'
+              }, {
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'fieldset',
+                ti: '.Fieldset'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'form',
+                ti: '.Form'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }],
+            t: 'es'
           }]
       }, {
-        ln: 'Em',
+        ln: 'Object',
         tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Inline',
         ps: [{
             n: 'content',
             col: true,
             dom: false,
             etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
+                en: 'div',
+                ti: '.Div'
               }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'a',
-                ti: '.A'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
+                en: 'param',
+                ti: '.Param'
               }, {
                 en: 'strong',
                 ti: '.Strong'
               }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'fieldset',
+                ti: '.Fieldset'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'textarea',
+                ti: '.Textarea'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'form',
+                ti: '.Form'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
                 en: 'sup',
                 ti: '.Sup'
               }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'i',
+                ti: '.I'
+              }, {
                 en: 'script',
                 ti: '.Script'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'img',
+                ti: '.Img'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
               }, {
                 en: 'map',
                 ti: '.Map'
@@ -4850,220 +1674,105 @@ var XHTML_1_0_Strict_Module_Factory = function () {
                 en: 'tt',
                 ti: '.Tt'
               }, {
-                en: 'del',
-                ti: '.Del'
+                en: 'a',
+                ti: '.A'
               }, {
-                en: 'ins',
-                ti: '.Ins'
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'input',
+                ti: '.Input'
+              }, {
+                en: 'code',
+                ti: '.Code'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
               }],
             t: 'ers'
-          }]
-      }, {
-        ln: 'Hr',
-        tn: null,
-        ps: [{
-            n: 'id',
-            ti: 'ID',
+          }, {
+            n: 'declare',
             an: {
-              lp: 'id'
+              lp: 'declare'
             },
             t: 'a'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
+            n: 'classid',
             an: {
-              lp: 'class'
+              lp: 'classid'
             },
             t: 'a'
           }, {
-            n: 'style',
+            n: 'codebase',
             an: {
-              lp: 'style'
+              lp: 'codebase'
             },
             t: 'a'
           }, {
-            n: 'title',
+            n: 'data',
             an: {
-              lp: 'title'
+              lp: 'data'
             },
             t: 'a'
           }, {
-            n: 'lang',
+            n: 'type',
             an: {
-              lp: 'lang'
+              lp: 'type'
             },
             t: 'a'
           }, {
-            n: 'xmlLang',
+            n: 'codetype',
             an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+              lp: 'codetype'
             },
             t: 'a'
           }, {
-            n: 'dir',
+            n: 'archive',
             an: {
-              lp: 'dir'
+              lp: 'archive'
             },
             t: 'a'
           }, {
-            n: 'onclick',
+            n: 'standby',
             an: {
-              lp: 'onclick'
+              lp: 'standby'
             },
             t: 'a'
           }, {
-            n: 'ondblclick',
+            n: 'height',
             an: {
-              lp: 'ondblclick'
+              lp: 'height'
             },
             t: 'a'
           }, {
-            n: 'onmousedown',
+            n: 'width',
             an: {
-              lp: 'onmousedown'
+              lp: 'width'
             },
             t: 'a'
           }, {
-            n: 'onmouseup',
+            n: 'usemap',
             an: {
-              lp: 'onmouseup'
+              lp: 'usemap'
             },
             t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Select',
-        tn: null,
-        ps: [{
-            n: 'optgroupOrOption',
-            rq: true,
-            col: true,
-            etis: [{
-                en: 'optgroup',
-                ti: '.Optgroup'
-              }, {
-                en: 'option',
-                ti: '.Option'
-              }],
-            t: 'es'
           }, {
             n: 'name',
+            ti: 'NMToken',
             an: {
               lp: 'name'
             },
             t: 'a'
           }, {
-            n: 'size',
-            ti: 'Integer',
-            an: {
-              lp: 'size'
-            },
-            t: 'a'
-          }, {
-            n: 'multiple',
-            an: {
-              lp: 'multiple'
-            },
-            t: 'a'
-          }, {
-            n: 'disabled',
-            an: {
-              lp: 'disabled'
-            },
-            t: 'a'
-          }, {
             n: 'tabindex',
-            ti: 'Int',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'tabindex'
             },
             t: 'a'
           }, {
-            n: 'onfocus',
-            an: {
-              lp: 'onfocus'
-            },
-            t: 'a'
-          }, {
-            n: 'onblur',
-            an: {
-              lp: 'onblur'
-            },
-            t: 'a'
-          }, {
-            n: 'onchange',
-            an: {
-              lp: 'onchange'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -5079,6 +1788,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -5143,10 +1881,77 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Acronym',
+        ln: 'Th',
         tn: null,
-        bti: '.Inline',
+        bti: '.Flow',
         ps: [{
+            n: 'abbr',
+            an: {
+              lp: 'abbr'
+            },
+            t: 'a'
+          }, {
+            n: 'axis',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'axis'
+            },
+            t: 'a'
+          }, {
+            n: 'headers',
+            ti: 'IDREFS',
+            an: {
+              lp: 'headers'
+            },
+            t: 'a'
+          }, {
+            n: 'scope',
+            ti: 'Token',
+            an: {
+              lp: 'scope'
+            },
+            t: 'a'
+          }, {
+            n: 'rowspan',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'rowspan'
+            },
+            t: 'a'
+          }, {
+            n: 'colspan',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'colspan'
+            },
+            t: 'a'
+          }, {
+            n: 'valign',
+            an: {
+              lp: 'valign'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
             n: 'id',
             ti: 'ID',
             an: {
@@ -5156,7 +1961,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -5175,7 +1981,109 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }, {
+            n: 'align',
+            an: {
+              lp: 'align'
+            },
+            t: 'a'
+          }, {
+            n: '_char',
+            an: {
+              lp: 'char'
+            },
+            t: 'a'
+          }, {
+            n: 'charoff',
+            an: {
+              lp: 'charoff'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Col',
+        tn: null,
+        ps: [{
+            n: 'span',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'span'
+            },
+            t: 'a'
+          }, {
+            n: 'width',
+            an: {
+              lp: 'width'
+            },
+            t: 'a'
+          }, {
+            n: 'valign',
+            an: {
+              lp: 'valign'
+            },
+            t: 'a'
+          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -5191,6 +2099,167 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }, {
+            n: 'align',
+            an: {
+              lp: 'align'
+            },
+            t: 'a'
+          }, {
+            n: '_char',
+            an: {
+              lp: 'char'
+            },
+            t: 'a'
+          }, {
+            n: 'charoff',
+            an: {
+              lp: 'charoff'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Sup',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -5270,6 +2339,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               }],
             t: 'es'
           }, {
+            n: 'valign',
+            an: {
+              lp: 'valign'
+            },
+            t: 'a'
+          }, {
             n: 'align',
             an: {
               lp: 'align'
@@ -5288,41 +2363,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'valign',
-            an: {
-              lp: 'valign'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -5338,6 +2380,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -5402,187 +2473,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Col',
-        tn: null,
-        ps: [{
-            n: 'span',
-            ti: 'Integer',
-            an: {
-              lp: 'span'
-            },
-            t: 'a'
-          }, {
-            n: 'width',
-            an: {
-              lp: 'width'
-            },
-            t: 'a'
-          }, {
-            n: 'valign',
-            an: {
-              lp: 'valign'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
-            n: 'align',
-            an: {
-              lp: 'align'
-            },
-            t: 'a'
-          }, {
-            n: '_char',
-            an: {
-              lp: 'char'
-            },
-            t: 'a'
-          }, {
-            n: 'charoff',
-            an: {
-              lp: 'charoff'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'B',
+        ln: 'I',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -5598,6 +2494,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -5662,195 +2587,609 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Object',
+        ln: 'Strong',
         tn: null,
+        bti: '.Inline',
         ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'form',
-                ti: '.Form'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'fieldset',
-                ti: '.Fieldset'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'a',
-                ti: '.A'
-              }, {
-                en: 'param',
-                ti: '.Param'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'sup',
-                ti: '.Sup'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }, {
-                en: 'map',
-                ti: '.Map'
-              }, {
-                en: 'h6',
-                ti: '.H6'
-              }, {
-                en: 'dl',
-                ti: '.Dl'
-              }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'h2',
-                ti: '.H2'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
-              }, {
-                en: 'strong',
-                ti: '.Strong'
-              }, {
-                en: 'tt',
-                ti: '.Tt'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }],
-            t: 'ers'
-          }, {
-            n: 'declare',
+            n: 'lang',
+            ti: 'Language',
             an: {
-              lp: 'declare'
+              lp: 'lang'
             },
             t: 'a'
           }, {
-            n: 'classid',
+            n: 'xmlLang',
             an: {
-              lp: 'classid'
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
             },
             t: 'a'
           }, {
-            n: 'codebase',
+            n: 'dir',
             an: {
-              lp: 'codebase'
+              lp: 'dir'
             },
             t: 'a'
           }, {
-            n: 'data',
+            n: 'id',
+            ti: 'ID',
             an: {
-              lp: 'data'
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Address',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Var',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Del',
+        tn: null,
+        bti: '.Flow',
+        ps: [{
+            n: 'cite',
+            an: {
+              lp: 'cite'
+            },
+            t: 'a'
+          }, {
+            n: 'datetime',
+            ti: 'DateTime',
+            an: {
+              lp: 'datetime'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Ins',
+        tn: null,
+        bti: '.Flow',
+        ps: [{
+            n: 'cite',
+            an: {
+              lp: 'cite'
+            },
+            t: 'a'
+          }, {
+            n: 'datetime',
+            ti: 'DateTime',
+            an: {
+              lp: 'datetime'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'A',
+        tn: null,
+        bti: '.AContent',
+        ps: [{
+            n: 'charset',
+            an: {
+              lp: 'charset'
             },
             t: 'a'
           }, {
@@ -5860,52 +3199,76 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'codetype',
-            an: {
-              lp: 'codetype'
-            },
-            t: 'a'
-          }, {
-            n: 'archive',
-            an: {
-              lp: 'archive'
-            },
-            t: 'a'
-          }, {
-            n: 'standby',
-            an: {
-              lp: 'standby'
-            },
-            t: 'a'
-          }, {
-            n: 'height',
-            an: {
-              lp: 'height'
-            },
-            t: 'a'
-          }, {
-            n: 'width',
-            an: {
-              lp: 'width'
-            },
-            t: 'a'
-          }, {
-            n: 'usemap',
-            an: {
-              lp: 'usemap'
-            },
-            t: 'a'
-          }, {
             n: 'name',
+            ti: 'NMToken',
             an: {
               lp: 'name'
             },
             t: 'a'
           }, {
-            n: 'tabindex',
-            ti: 'Int',
+            n: 'href',
             an: {
-              lp: 'tabindex'
+              lp: 'href'
+            },
+            t: 'a'
+          }, {
+            n: 'hreflang',
+            ti: 'Language',
+            an: {
+              lp: 'hreflang'
+            },
+            t: 'a'
+          }, {
+            n: 'rel',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'rel'
+            },
+            t: 'a'
+          }, {
+            n: 'rev',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'rev'
+            },
+            t: 'a'
+          }, {
+            n: 'shape',
+            ti: 'Token',
+            an: {
+              lp: 'shape'
+            },
+            t: 'a'
+          }, {
+            n: 'coords',
+            an: {
+              lp: 'coords'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
             },
             t: 'a'
           }, {
@@ -5918,7 +3281,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -5937,7 +3301,98 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }, {
+            n: 'accesskey',
+            an: {
+              lp: 'accesskey'
+            },
+            t: 'a'
+          }, {
+            n: 'tabindex',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'tabindex'
+            },
+            t: 'a'
+          }, {
+            n: 'onfocus',
+            an: {
+              lp: 'onfocus'
+            },
+            t: 'a'
+          }, {
+            n: 'onblur',
+            an: {
+              lp: 'onblur'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Span',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -5953,6 +3408,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -6017,175 +3501,34 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Flow',
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'form',
-                ti: '.Form'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'fieldset',
-                ti: '.Fieldset'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'a',
-                ti: '.A'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'sup',
-                ti: '.Sup'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }, {
-                en: 'map',
-                ti: '.Map'
-              }, {
-                en: 'h6',
-                ti: '.H6'
-              }, {
-                en: 'dl',
-                ti: '.Dl'
-              }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'h2',
-                ti: '.H2'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
-              }, {
-                en: 'strong',
-                ti: '.Strong'
-              }, {
-                en: 'tt',
-                ti: '.Tt'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }],
-            t: 'ers'
-          }]
-      }, {
-        ln: 'H3',
+        ln: 'Ol',
         tn: null,
-        bti: '.Inline',
         ps: [{
+            n: 'li',
+            rq: true,
+            col: true,
+            ti: '.Li'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
             n: 'id',
             ti: 'ID',
             an: {
@@ -6195,7 +3538,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -6214,7 +3558,73 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'P',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -6230,6 +3640,342 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Blockquote',
+        tn: null,
+        bti: '.Block',
+        ps: [{
+            n: 'cite',
+            an: {
+              lp: 'cite'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Table',
+        tn: null,
+        ps: [{
+            n: 'caption',
+            ti: '.Caption'
+          }, {
+            n: 'col',
+            mno: 0,
+            col: true,
+            ti: '.Col'
+          }, {
+            n: 'colgroup',
+            mno: 0,
+            col: true,
+            ti: '.Colgroup'
+          }, {
+            n: 'thead',
+            ti: '.Thead'
+          }, {
+            n: 'tfoot',
+            ti: '.Tfoot'
+          }, {
+            n: 'tbody',
+            rq: true,
+            col: true,
+            ti: '.Tbody'
+          }, {
+            n: 'tr',
+            rq: true,
+            col: true,
+            ti: '.Tr'
+          }, {
+            n: 'summary',
+            an: {
+              lp: 'summary'
+            },
+            t: 'a'
+          }, {
+            n: 'width',
+            an: {
+              lp: 'width'
+            },
+            t: 'a'
+          }, {
+            n: 'border',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'border'
+            },
+            t: 'a'
+          }, {
+            n: 'frame',
+            ti: 'Token',
+            an: {
+              lp: 'frame'
+            },
+            t: 'a'
+          }, {
+            n: 'rules',
+            ti: 'Token',
+            an: {
+              lp: 'rules'
+            },
+            t: 'a'
+          }, {
+            n: 'cellspacing',
+            an: {
+              lp: 'cellspacing'
+            },
+            t: 'a'
+          }, {
+            n: 'cellpadding',
+            an: {
+              lp: 'cellpadding'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -6383,6 +4129,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'clazz',
+            ti: 'AnySimpleType',
             an: {
               lp: 'class'
             },
@@ -6401,6 +4148,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'name',
+            ti: 'NMToken',
             an: {
               lp: 'name'
             },
@@ -6467,6 +4215,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -6486,437 +4235,96 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Legend',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'accesskey',
-            an: {
-              lp: 'accesskey'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Blockquote',
-        tn: null,
-        bti: '.Block',
-        ps: [{
-            n: 'cite',
-            an: {
-              lp: 'cite'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Block',
-        ps: [{
-            n: 'pOrH1OrH2',
-            mno: 0,
-            col: true,
-            etis: [{
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'h2',
-                ti: '.H2'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'h6',
-                ti: '.H6'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'dl',
-                ti: '.Dl'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'fieldset',
-                ti: '.Fieldset'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'form',
-                ti: '.Form'
-              }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }],
-            t: 'es'
-          }]
-      }, {
-        ln: 'ButtonContent',
-        tn: 'button.content',
+        ln: 'AContent',
+        tn: 'a.content',
         ps: [{
             n: 'content',
             col: true,
             dom: false,
             etis: [{
-                en: 'blockquote',
-                ti: '.Blockquote'
-              }, {
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'h2',
-                ti: '.H2'
+                en: 'cite',
+                ti: '.Cite'
               }, {
                 en: 'var',
                 ti: '.Var'
               }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'h3',
-                ti: '.H3'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'hr',
-                ti: '.Hr'
-              }, {
-                en: 'table',
-                ti: '.Table'
-              }, {
-                en: 'p',
-                ti: '.P'
-              }, {
-                en: 'div',
-                ti: '.Div'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'pre',
-                ti: '.Pre'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'h4',
-                ti: '.H4'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'ol',
-                ti: '.Ol'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'ul',
-                ti: '.Ul'
-              }, {
-                en: 'address',
-                ti: '.Address'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'h5',
-                ti: '.H5'
-              }, {
-                en: 'br',
-                ti: '.Br'
+                en: 'sup',
+                ti: '.Sup'
               }, {
                 en: 'strong',
                 ti: '.Strong'
               }, {
-                en: 'sup',
-                ti: '.Sup'
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'textarea',
+                ti: '.Textarea'
+              }, {
+                en: 'i',
+                ti: '.I'
               }, {
                 en: 'script',
                 ti: '.Script'
               }, {
-                en: 'dl',
-                ti: '.Dl'
+                en: 'img',
+                ti: '.Img'
               }, {
-                en: 'h6',
-                ti: '.H6'
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
               }, {
                 en: 'map',
                 ti: '.Map'
@@ -6924,58 +4332,486 @@ var XHTML_1_0_Strict_Module_Factory = function () {
                 en: 'tt',
                 ti: '.Tt'
               }, {
-                en: 'del',
-                ti: '.Del'
+                en: 'input',
+                ti: '.Input'
               }, {
-                en: 'noscript',
-                ti: '.Noscript'
-              }, {
-                en: 'h1',
-                ti: '.H1'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
+                en: 'code',
+                ti: '.Code'
               }],
             t: 'ers'
           }]
       }, {
-        ln: 'Ol',
+        ln: 'Option',
         tn: null,
         ps: [{
-            n: 'li',
+            n: 'content',
+            t: 'v'
+          }, {
+            n: 'selected',
+            an: {
+              lp: 'selected'
+            },
+            t: 'a'
+          }, {
+            n: 'disabled',
+            an: {
+              lp: 'disabled'
+            },
+            t: 'a'
+          }, {
+            n: 'label',
+            an: {
+              lp: 'label'
+            },
+            t: 'a'
+          }, {
+            n: 'value',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'value'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Title',
+        tn: null,
+        ps: [{
+            n: 'content',
+            t: 'v'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Cite',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'H1',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Select',
+        tn: null,
+        ps: [{
+            n: 'optgroupOrOption',
             rq: true,
             col: true,
-            ti: '.Li'
+            etis: [{
+                en: 'optgroup',
+                ti: '.Optgroup'
+              }, {
+                en: 'option',
+                ti: '.Option'
+              }],
+            t: 'es'
           }, {
-            n: 'id',
-            ti: 'ID',
+            n: 'name',
+            ti: 'AnySimpleType',
             an: {
-              lp: 'id'
+              lp: 'name'
             },
             t: 'a'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
+            n: 'size',
+            ti: 'NonNegativeInteger',
             an: {
-              lp: 'class'
+              lp: 'size'
             },
             t: 'a'
           }, {
-            n: 'style',
+            n: 'multiple',
             an: {
-              lp: 'style'
+              lp: 'multiple'
             },
             t: 'a'
           }, {
-            n: 'title',
+            n: 'disabled',
             an: {
-              lp: 'title'
+              lp: 'disabled'
+            },
+            t: 'a'
+          }, {
+            n: 'tabindex',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'tabindex'
+            },
+            t: 'a'
+          }, {
+            n: 'onfocus',
+            an: {
+              lp: 'onfocus'
+            },
+            t: 'a'
+          }, {
+            n: 'onblur',
+            an: {
+              lp: 'onblur'
+            },
+            t: 'a'
+          }, {
+            n: 'onchange',
+            an: {
+              lp: 'onchange'
             },
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -6991,6 +4827,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -7055,39 +4920,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Dd',
+        ln: 'Dt',
         tn: null,
-        bti: '.Flow',
+        bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -7103,6 +4941,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -7167,10 +5034,29 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Div',
+        ln: 'Hr',
         tn: null,
-        bti: '.Flow',
         ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
             n: 'id',
             ti: 'ID',
             an: {
@@ -7180,7 +5066,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -7199,7 +5086,73 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'B',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -7215,6 +5168,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -7283,35 +5265,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -7327,6 +5282,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -7391,511 +5375,55 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Body',
-        tn: null,
-        bti: '.Block',
-        ps: [{
-            n: 'onload',
-            an: {
-              lp: 'onload'
-            },
-            t: 'a'
-          }, {
-            n: 'onunload',
-            an: {
-              lp: 'onunload'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'AContent',
-        tn: 'a.content',
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            etis: [{
-                en: 'dfn',
-                ti: '.Dfn'
-              }, {
-                en: 'code',
-                ti: '.Code'
-              }, {
-                en: 'var',
-                ti: '.Var'
-              }, {
-                en: 'i',
-                ti: '.I'
-              }, {
-                en: 'acronym',
-                ti: '.Acronym'
-              }, {
-                en: 'input',
-                ti: '.Input'
-              }, {
-                en: 'button',
-                ti: '.Button'
-              }, {
-                en: 'bdo',
-                ti: '.Bdo'
-              }, {
-                en: 'samp',
-                ti: '.Samp'
-              }, {
-                en: 'big',
-                ti: '.Big'
-              }, {
-                en: 'img',
-                ti: '.Img'
-              }, {
-                en: 'em',
-                ti: '.Em'
-              }, {
-                en: 'select',
-                ti: '.Select'
-              }, {
-                en: 'b',
-                ti: '.B'
-              }, {
-                en: 'kbd',
-                ti: '.Kbd'
-              }, {
-                en: 'small',
-                ti: '.Small'
-              }, {
-                en: 'cite',
-                ti: '.Cite'
-              }, {
-                en: 'sub',
-                ti: '.Sub'
-              }, {
-                en: 'abbr',
-                ti: '.Abbr'
-              }, {
-                en: 'label',
-                ti: '.Label'
-              }, {
-                en: 'textarea',
-                ti: '.Textarea'
-              }, {
-                en: 'span',
-                ti: '.Span'
-              }, {
-                en: 'object',
-                ti: '.Object'
-              }, {
-                en: 'q',
-                ti: '.Q'
-              }, {
-                en: 'br',
-                ti: '.Br'
-              }, {
-                en: 'strong',
-                ti: '.Strong'
-              }, {
-                en: 'sup',
-                ti: '.Sup'
-              }, {
-                en: 'script',
-                ti: '.Script'
-              }, {
-                en: 'map',
-                ti: '.Map'
-              }, {
-                en: 'tt',
-                ti: '.Tt'
-              }, {
-                en: 'del',
-                ti: '.Del'
-              }, {
-                en: 'ins',
-                ti: '.Ins'
-              }],
-            t: 'ers'
-          }]
-      }, {
-        ln: 'Pre',
-        tn: null,
-        bti: '.PreContent',
-        ps: [{
-            n: 'space',
-            an: {
-              lp: 'space',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Li',
-        tn: null,
-        bti: '.Flow',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Dl',
+        ln: 'Img',
         tn: null,
         ps: [{
-            n: 'dtOrDd',
+            n: 'src',
             rq: true,
-            col: true,
-            etis: [{
-                en: 'dt',
-                ti: '.Dt'
-              }, {
-                en: 'dd',
-                ti: '.Dd'
-              }],
-            t: 'es'
-          }, {
-            n: 'id',
-            ti: 'ID',
             an: {
-              lp: 'id'
+              lp: 'src'
             },
             t: 'a'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
+            n: 'alt',
+            rq: true,
             an: {
-              lp: 'class'
+              lp: 'alt'
             },
             t: 'a'
           }, {
-            n: 'style',
+            n: 'longdesc',
             an: {
-              lp: 'style'
+              lp: 'longdesc'
             },
             t: 'a'
           }, {
-            n: 'title',
+            n: 'height',
             an: {
-              lp: 'title'
+              lp: 'height'
+            },
+            t: 'a'
+          }, {
+            n: 'width',
+            an: {
+              lp: 'width'
+            },
+            t: 'a'
+          }, {
+            n: 'usemap',
+            an: {
+              lp: 'usemap'
+            },
+            t: 'a'
+          }, {
+            n: 'ismap',
+            an: {
+              lp: 'ismap'
             },
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -7911,6 +5439,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -7975,179 +5532,205 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Dfn',
+        ln: 'Input',
         tn: null,
-        bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'A',
-        tn: null,
-        bti: '.AContent',
-        ps: [{
-            n: 'charset',
-            an: {
-              lp: 'charset'
-            },
-            t: 'a'
-          }, {
             n: 'type',
+            ti: 'Token',
             an: {
               lp: 'type'
             },
             t: 'a'
           }, {
             n: 'name',
+            ti: 'AnySimpleType',
             an: {
               lp: 'name'
             },
             t: 'a'
           }, {
-            n: 'href',
+            n: 'value',
+            ti: 'AnySimpleType',
             an: {
-              lp: 'href'
+              lp: 'value'
             },
             t: 'a'
           }, {
-            n: 'hreflang',
+            n: 'checked',
             an: {
-              lp: 'hreflang'
+              lp: 'checked'
             },
             t: 'a'
           }, {
-            n: 'rel',
+            n: 'disabled',
+            an: {
+              lp: 'disabled'
+            },
+            t: 'a'
+          }, {
+            n: 'readonly',
+            an: {
+              lp: 'readonly'
+            },
+            t: 'a'
+          }, {
+            n: 'size',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'size'
+            },
+            t: 'a'
+          }, {
+            n: 'maxlength',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'maxlength'
+            },
+            t: 'a'
+          }, {
+            n: 'src',
+            an: {
+              lp: 'src'
+            },
+            t: 'a'
+          }, {
+            n: 'alt',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'alt'
+            },
+            t: 'a'
+          }, {
+            n: 'usemap',
+            an: {
+              lp: 'usemap'
+            },
+            t: 'a'
+          }, {
+            n: 'onselect',
+            an: {
+              lp: 'onselect'
+            },
+            t: 'a'
+          }, {
+            n: 'onchange',
+            an: {
+              lp: 'onchange'
+            },
+            t: 'a'
+          }, {
+            n: 'accept',
+            an: {
+              lp: 'accept'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
-              lp: 'rel'
+              lp: 'class'
             },
             t: 'a'
           }, {
-            n: 'rev',
-            ti: {
-              t: 'l'
-            },
+            n: 'style',
             an: {
-              lp: 'rev'
+              lp: 'style'
             },
             t: 'a'
           }, {
-            n: 'shape',
+            n: 'title',
             an: {
-              lp: 'shape'
+              lp: 'title'
             },
             t: 'a'
           }, {
-            n: 'coords',
+            n: 'onclick',
             an: {
-              lp: 'coords'
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
             },
             t: 'a'
           }, {
@@ -8158,7 +5741,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'tabindex',
-            ti: 'Int',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'tabindex'
             },
@@ -8175,36 +5758,57 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'onblur'
             },
             t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
+          }]
+      }, {
+        ln: 'Form',
+        tn: null,
+        bti: '.FormContent',
+        ps: [{
+            n: 'action',
+            rq: true,
             an: {
-              lp: 'id'
+              lp: 'action'
             },
             t: 'a'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
+            n: 'method',
             an: {
-              lp: 'class'
+              lp: 'method'
             },
             t: 'a'
           }, {
-            n: 'style',
+            n: 'enctype',
             an: {
-              lp: 'style'
+              lp: 'enctype'
             },
             t: 'a'
           }, {
-            n: 'title',
+            n: 'onsubmit',
             an: {
-              lp: 'title'
+              lp: 'onsubmit'
+            },
+            t: 'a'
+          }, {
+            n: 'onreset',
+            an: {
+              lp: 'onreset'
+            },
+            t: 'a'
+          }, {
+            n: 'accept',
+            an: {
+              lp: 'accept'
+            },
+            t: 'a'
+          }, {
+            n: 'acceptCharset',
+            an: {
+              lp: 'accept-charset'
             },
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -8220,6 +5824,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -8292,35 +5925,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             col: true,
             ti: '.Li'
           }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -8336,6 +5942,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -8400,151 +6035,85 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Strong',
-        tn: null,
-        bti: '.Inline',
+        ln: 'FormContent',
+        tn: 'form.content',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
+            n: 'pOrH1OrH2',
+            mno: 0,
+            col: true,
+            etis: [{
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'div',
+                ti: '.Div'
+              }, {
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'fieldset',
+                ti: '.Fieldset'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }],
+            t: 'es'
           }]
       }, {
         ln: 'Big',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -8560,6 +6129,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -8624,13 +6222,77 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Q',
+        ln: 'Link',
         tn: null,
-        bti: '.Inline',
         ps: [{
-            n: 'cite',
+            n: 'charset',
             an: {
-              lp: 'cite'
+              lp: 'charset'
+            },
+            t: 'a'
+          }, {
+            n: 'href',
+            an: {
+              lp: 'href'
+            },
+            t: 'a'
+          }, {
+            n: 'hreflang',
+            ti: 'Language',
+            an: {
+              lp: 'hreflang'
+            },
+            t: 'a'
+          }, {
+            n: 'type',
+            an: {
+              lp: 'type'
+            },
+            t: 'a'
+          }, {
+            n: 'rel',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'rel'
+            },
+            t: 'a'
+          }, {
+            n: 'rev',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'rev'
+            },
+            t: 'a'
+          }, {
+            n: 'media',
+            an: {
+              lp: 'media'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
             },
             t: 'a'
           }, {
@@ -8643,7 +6305,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -8662,7 +6325,166 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Param',
+        tn: null,
+        ps: [{
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'name',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }, {
+            n: 'value',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'value'
+            },
+            t: 'a'
+          }, {
+            n: 'valuetype',
+            an: {
+              lp: 'valuetype'
+            },
+            t: 'a'
+          }, {
+            n: 'type',
+            an: {
+              lp: 'type'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Area',
+        tn: null,
+        ps: [{
+            n: 'shape',
+            ti: 'Token',
+            an: {
+              lp: 'shape'
+            },
+            t: 'a'
+          }, {
+            n: 'coords',
+            an: {
+              lp: 'coords'
+            },
+            t: 'a'
+          }, {
+            n: 'href',
+            an: {
+              lp: 'href'
+            },
+            t: 'a'
+          }, {
+            n: 'nohref',
+            an: {
+              lp: 'nohref'
+            },
+            t: 'a'
+          }, {
+            n: 'alt',
+            rq: true,
+            an: {
+              lp: 'alt'
+            },
+            t: 'a'
+          }, {
+            n: 'accesskey',
+            an: {
+              lp: 'accesskey'
+            },
+            t: 'a'
+          }, {
+            n: 'tabindex',
+            ti: 'NonNegativeInteger',
+            an: {
+              lp: 'tabindex'
+            },
+            t: 'a'
+          }, {
+            n: 'onfocus',
+            an: {
+              lp: 'onfocus'
+            },
+            t: 'a'
+          }, {
+            n: 'onblur',
+            an: {
+              lp: 'onblur'
+            },
+            t: 'a'
+          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -8678,6 +6500,209 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Meta',
+        tn: null,
+        ps: [{
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'httpEquiv',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'http-equiv'
+            },
+            t: 'a'
+          }, {
+            n: 'name',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }, {
+            n: 'content',
+            rq: true,
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'content'
+            },
+            t: 'a'
+          }, {
+            n: 'scheme',
+            ti: 'AnySimpleType',
+            an: {
+              lp: 'scheme'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'H6',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -8747,12 +6772,14 @@ var XHTML_1_0_Strict_Module_Factory = function () {
         bti: '.ButtonContent',
         ps: [{
             n: 'name',
+            ti: 'AnySimpleType',
             an: {
               lp: 'name'
             },
             t: 'a'
           }, {
             n: 'value',
+            ti: 'AnySimpleType',
             an: {
               lp: 'value'
             },
@@ -8770,113 +6797,6 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }, {
             n: 'accesskey',
             an: {
               lp: 'accesskey'
@@ -8884,7 +6804,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'tabindex',
-            ti: 'Int',
+            ti: 'NonNegativeInteger',
             an: {
               lp: 'tabindex'
             },
@@ -8901,41 +6821,9 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'onblur'
             },
             t: 'a'
-          }]
-      }, {
-        ln: 'Sub',
-        tn: null,
-        bti: '.Inline',
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -8951,6 +6839,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -9015,162 +6932,13 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Caption',
+        ln: 'Base',
         tn: null,
-        bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Form',
-        tn: null,
-        bti: '.FormContent',
-        ps: [{
-            n: 'action',
+            n: 'href',
             rq: true,
             an: {
-              lp: 'action'
-            },
-            t: 'a'
-          }, {
-            n: 'method',
-            an: {
-              lp: 'method'
-            },
-            t: 'a'
-          }, {
-            n: 'enctype',
-            an: {
-              lp: 'enctype'
-            },
-            t: 'a'
-          }, {
-            n: 'onsubmit',
-            an: {
-              lp: 'onsubmit'
-            },
-            t: 'a'
-          }, {
-            n: 'onreset',
-            an: {
-              lp: 'onreset'
-            },
-            t: 'a'
-          }, {
-            n: 'accept',
-            an: {
-              lp: 'accept'
-            },
-            t: 'a'
-          }, {
-            n: 'acceptCharset',
-            an: {
-              lp: 'accept-charset'
+              lp: 'href'
             },
             t: 'a'
           }, {
@@ -9180,29 +6948,28 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'id'
             },
             t: 'a'
+          }]
+      }, {
+        ln: 'Html',
+        tn: null,
+        ps: [{
+            n: 'head',
+            rq: true,
+            ti: '.Head'
           }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
+            n: 'body',
+            rq: true,
+            ti: '.Body'
           }, {
-            n: 'style',
+            n: 'id',
+            ti: 'ID',
             an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
+              lp: 'id'
             },
             t: 'a'
           }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -9218,6 +6985,60 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'H3',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -9282,9 +7103,74 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'P',
+        ln: 'Head',
         tn: null,
-        bti: '.Inline',
+        ps: [{
+            n: 'content',
+            rq: true,
+            col: true,
+            mx: false,
+            dom: false,
+            etis: [{
+                en: 'title',
+                ti: '.Title'
+              }, {
+                en: 'link',
+                ti: '.Link'
+              }, {
+                en: 'style',
+                ti: '.Style'
+              }, {
+                en: 'base',
+                ti: '.Base'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'meta',
+                ti: '.Meta'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }],
+            t: 'ers'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'profile',
+            an: {
+              lp: 'profile'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Br',
+        tn: null,
         ps: [{
             n: 'id',
             ti: 'ID',
@@ -9295,7 +7181,226 @@ var XHTML_1_0_Strict_Module_Factory = function () {
           }, {
             n: 'clazz',
             ti: {
-              t: 'l'
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Fieldset',
+        tn: null,
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            etis: [{
+                en: 'div',
+                ti: '.Div'
+              }, {
+                en: 'strong',
+                ti: '.Strong'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'fieldset',
+                ti: '.Fieldset'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'textarea',
+                ti: '.Textarea'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'form',
+                ti: '.Form'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
+                en: 'sup',
+                ti: '.Sup'
+              }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'legend',
+                ti: '.Legend'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'i',
+                ti: '.I'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'img',
+                ti: '.Img'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
+              }, {
+                en: 'map',
+                ti: '.Map'
+              }, {
+                en: 'tt',
+                ti: '.Tt'
+              }, {
+                en: 'a',
+                ti: '.A'
+              }, {
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'input',
+                ti: '.Input'
+              }, {
+                en: 'code',
+                ti: '.Code'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
+              }],
+            t: 'ers'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
             },
             an: {
               lp: 'class'
@@ -9314,7 +7419,73 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Code',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -9330,6 +7501,400 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Noscript',
+        tn: null,
+        bti: '.Block',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Legend',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'accesskey',
+            an: {
+              lp: 'accesskey'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Optgroup',
+        tn: null,
+        ps: [{
+            n: 'option',
+            rq: true,
+            col: true,
+            ti: '.Option'
+          }, {
+            n: 'disabled',
+            an: {
+              lp: 'disabled'
+            },
+            t: 'a'
+          }, {
+            n: 'label',
+            rq: true,
+            an: {
+              lp: 'label'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -9402,35 +7967,8 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             col: true,
             ti: '.Tr'
           }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -9446,6 +7984,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -9534,42 +8101,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Meta',
+        ln: 'Abbr',
         tn: null,
+        bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'httpEquiv',
-            an: {
-              lp: 'http-equiv'
-            },
-            t: 'a'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'content',
-            rq: true,
-            an: {
-              lp: 'content'
-            },
-            t: 'a'
-          }, {
-            n: 'scheme',
-            an: {
-              lp: 'scheme'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -9587,106 +8124,931 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'dir'
             },
             t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
           }]
       }, {
-        ln: 'Head',
+        ln: 'Pre',
+        tn: null,
+        bti: '.PreContent',
+        ps: [{
+            n: 'space',
+            an: {
+              lp: 'space',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Body',
+        tn: null,
+        bti: '.Block',
+        ps: [{
+            n: 'onload',
+            an: {
+              lp: 'onload'
+            },
+            t: 'a'
+          }, {
+            n: 'onunload',
+            an: {
+              lp: 'onunload'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Tfoot',
         tn: null,
         ps: [{
-            n: 'content',
+            n: 'tr',
             rq: true,
             col: true,
-            mx: false,
+            ti: '.Tr'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }, {
+            n: 'align',
+            an: {
+              lp: 'align'
+            },
+            t: 'a'
+          }, {
+            n: '_char',
+            an: {
+              lp: 'char'
+            },
+            t: 'a'
+          }, {
+            n: 'charoff',
+            an: {
+              lp: 'charoff'
+            },
+            t: 'a'
+          }, {
+            n: 'valign',
+            an: {
+              lp: 'valign'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Kbd',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'PreContent',
+        tn: 'pre.content',
+        ps: [{
+            n: 'content',
+            col: true,
             dom: false,
             etis: [{
-                en: 'title',
-                ti: '.Title'
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'sup',
+                ti: '.Sup'
+              }, {
+                en: 'strong',
+                ti: '.Strong'
+              }, {
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'textarea',
+                ti: '.Textarea'
+              }, {
+                en: 'i',
+                ti: '.I'
               }, {
                 en: 'script',
                 ti: '.Script'
               }, {
-                en: 'meta',
-                ti: '.Meta'
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
+              }, {
+                en: 'map',
+                ti: '.Map'
+              }, {
+                en: 'tt',
+                ti: '.Tt'
+              }, {
+                en: 'a',
+                ti: '.A'
+              }, {
+                en: 'input',
+                ti: '.Input'
+              }, {
+                en: 'code',
+                ti: '.Code'
+              }],
+            t: 'ers'
+          }]
+      }, {
+        ln: 'Dd',
+        tn: null,
+        bti: '.Flow',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Inline',
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            etis: [{
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'sup',
+                ti: '.Sup'
+              }, {
+                en: 'strong',
+                ti: '.Strong'
+              }, {
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
               }, {
                 en: 'object',
                 ti: '.Object'
               }, {
-                en: 'link',
-                ti: '.Link'
+                en: 'textarea',
+                ti: '.Textarea'
               }, {
-                en: 'base',
-                ti: '.Base'
+                en: 'i',
+                ti: '.I'
               }, {
-                en: 'style',
-                ti: '.Style'
+                en: 'script',
+                ti: '.Script'
+              }, {
+                en: 'img',
+                ti: '.Img'
+              }, {
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
+              }, {
+                en: 'map',
+                ti: '.Map'
+              }, {
+                en: 'tt',
+                ti: '.Tt'
+              }, {
+                en: 'a',
+                ti: '.A'
+              }, {
+                en: 'input',
+                ti: '.Input'
+              }, {
+                en: 'code',
+                ti: '.Code'
               }],
             t: 'ers'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'profile',
-            an: {
-              lp: 'profile'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
           }]
       }, {
-        ln: 'Span',
+        ln: 'Tt',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -9702,6 +9064,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -9766,358 +9157,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Link',
-        tn: null,
-        ps: [{
-            n: 'charset',
-            an: {
-              lp: 'charset'
-            },
-            t: 'a'
-          }, {
-            n: 'href',
-            an: {
-              lp: 'href'
-            },
-            t: 'a'
-          }, {
-            n: 'hreflang',
-            an: {
-              lp: 'hreflang'
-            },
-            t: 'a'
-          }, {
-            n: 'type',
-            an: {
-              lp: 'type'
-            },
-            t: 'a'
-          }, {
-            n: 'rel',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'rel'
-            },
-            t: 'a'
-          }, {
-            n: 'rev',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'rev'
-            },
-            t: 'a'
-          }, {
-            n: 'media',
-            an: {
-              lp: 'media'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Ins',
-        tn: null,
-        bti: '.Flow',
-        ps: [{
-            n: 'cite',
-            an: {
-              lp: 'cite'
-            },
-            t: 'a'
-          }, {
-            n: 'datetime',
-            ti: 'Calendar',
-            an: {
-              lp: 'datetime'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang'
-            },
-            t: 'a'
-          }, {
-            n: 'xmlLang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }, {
-            n: 'dir',
-            an: {
-              lp: 'dir'
-            },
-            t: 'a'
-          }, {
-            n: 'onclick',
-            an: {
-              lp: 'onclick'
-            },
-            t: 'a'
-          }, {
-            n: 'ondblclick',
-            an: {
-              lp: 'ondblclick'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousedown',
-            an: {
-              lp: 'onmousedown'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseup',
-            an: {
-              lp: 'onmouseup'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseover',
-            an: {
-              lp: 'onmouseover'
-            },
-            t: 'a'
-          }, {
-            n: 'onmousemove',
-            an: {
-              lp: 'onmousemove'
-            },
-            t: 'a'
-          }, {
-            n: 'onmouseout',
-            an: {
-              lp: 'onmouseout'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeypress',
-            an: {
-              lp: 'onkeypress'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeydown',
-            an: {
-              lp: 'onkeydown'
-            },
-            t: 'a'
-          }, {
-            n: 'onkeyup',
-            an: {
-              lp: 'onkeyup'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Param',
-        tn: null,
-        ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'name',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'value',
-            an: {
-              lp: 'value'
-            },
-            t: 'a'
-          }, {
-            n: 'valuetype',
-            an: {
-              lp: 'valuetype'
-            },
-            t: 'a'
-          }, {
-            n: 'type',
-            an: {
-              lp: 'type'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Small',
+        ln: 'Em',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -10133,6 +9178,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -10197,64 +9271,12 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Label',
+        ln: 'Sub',
         tn: null,
         bti: '.Inline',
         ps: [{
-            n: '_for',
-            ti: 'IDREF',
-            an: {
-              lp: 'for'
-            },
-            t: 'a'
-          }, {
-            n: 'accesskey',
-            an: {
-              lp: 'accesskey'
-            },
-            t: 'a'
-          }, {
-            n: 'onfocus',
-            an: {
-              lp: 'onfocus'
-            },
-            t: 'a'
-          }, {
-            n: 'onblur',
-            an: {
-              lp: 'onblur'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'id'
-            },
-            t: 'a'
-          }, {
-            n: 'clazz',
-            ti: {
-              t: 'l'
-            },
-            an: {
-              lp: 'class'
-            },
-            t: 'a'
-          }, {
-            n: 'style',
-            an: {
-              lp: 'style'
-            },
-            t: 'a'
-          }, {
-            n: 'title',
-            an: {
-              lp: 'title'
-            },
-            t: 'a'
-          }, {
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -10270,6 +9292,35 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             n: 'dir',
             an: {
               lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
             },
             t: 'a'
           }, {
@@ -10334,7 +9385,7 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'Title',
+        ln: 'Script',
         tn: null,
         ps: [{
             n: 'content',
@@ -10347,7 +9398,45 @@ var XHTML_1_0_Strict_Module_Factory = function () {
             },
             t: 'a'
           }, {
+            n: 'charset',
+            an: {
+              lp: 'charset'
+            },
+            t: 'a'
+          }, {
+            n: 'type',
+            rq: true,
+            an: {
+              lp: 'type'
+            },
+            t: 'a'
+          }, {
+            n: 'src',
+            an: {
+              lp: 'src'
+            },
+            t: 'a'
+          }, {
+            n: 'defer',
+            an: {
+              lp: 'defer'
+            },
+            t: 'a'
+          }, {
+            n: 'space',
+            an: {
+              lp: 'space',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Caption',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
             n: 'lang',
+            ti: 'Language',
             an: {
               lp: 'lang'
             },
@@ -10365,88 +9454,1125 @@ var XHTML_1_0_Strict_Module_Factory = function () {
               lp: 'dir'
             },
             t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Li',
+        tn: null,
+        bti: '.Flow',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Small',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Acronym',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'Flow',
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            etis: [{
+                en: 'div',
+                ti: '.Div'
+              }, {
+                en: 'strong',
+                ti: '.Strong'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'fieldset',
+                ti: '.Fieldset'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'textarea',
+                ti: '.Textarea'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'form',
+                ti: '.Form'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
+                en: 'sup',
+                ti: '.Sup'
+              }, {
+                en: 'select',
+                ti: '.Select'
+              }, {
+                en: 'label',
+                ti: '.Label'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'button',
+                ti: '.Button'
+              }, {
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'i',
+                ti: '.I'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }, {
+                en: 'img',
+                ti: '.Img'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
+              }, {
+                en: 'map',
+                ti: '.Map'
+              }, {
+                en: 'tt',
+                ti: '.Tt'
+              }, {
+                en: 'a',
+                ti: '.A'
+              }, {
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'input',
+                ti: '.Input'
+              }, {
+                en: 'code',
+                ti: '.Code'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
+              }],
+            t: 'ers'
+          }]
+      }, {
+        ln: 'Q',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'cite',
+            an: {
+              lp: 'cite'
+            },
+            t: 'a'
+          }, {
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'ButtonContent',
+        tn: 'button.content',
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            etis: [{
+                en: 'cite',
+                ti: '.Cite'
+              }, {
+                en: 'var',
+                ti: '.Var'
+              }, {
+                en: 'sup',
+                ti: '.Sup'
+              }, {
+                en: 'hr',
+                ti: '.Hr'
+              }, {
+                en: 'div',
+                ti: '.Div'
+              }, {
+                en: 'strong',
+                ti: '.Strong'
+              }, {
+                en: 'ins',
+                ti: '.Ins'
+              }, {
+                en: 'sub',
+                ti: '.Sub'
+              }, {
+                en: 'table',
+                ti: '.Table'
+              }, {
+                en: 'acronym',
+                ti: '.Acronym'
+              }, {
+                en: 'p',
+                ti: '.P'
+              }, {
+                en: 'dfn',
+                ti: '.Dfn'
+              }, {
+                en: 'b',
+                ti: '.B'
+              }, {
+                en: 'object',
+                ti: '.Object'
+              }, {
+                en: 'i',
+                ti: '.I'
+              }, {
+                en: 'script',
+                ti: '.Script'
+              }, {
+                en: 'h5',
+                ti: '.H5'
+              }, {
+                en: 'img',
+                ti: '.Img'
+              }, {
+                en: 'ol',
+                ti: '.Ol'
+              }, {
+                en: 'h4',
+                ti: '.H4'
+              }, {
+                en: 'span',
+                ti: '.Span'
+              }, {
+                en: 'br',
+                ti: '.Br'
+              }, {
+                en: 'small',
+                ti: '.Small'
+              }, {
+                en: 'abbr',
+                ti: '.Abbr'
+              }, {
+                en: 'address',
+                ti: '.Address'
+              }, {
+                en: 'big',
+                ti: '.Big'
+              }, {
+                en: 'h6',
+                ti: '.H6'
+              }, {
+                en: 'h2',
+                ti: '.H2'
+              }, {
+                en: 'del',
+                ti: '.Del'
+              }, {
+                en: 'noscript',
+                ti: '.Noscript'
+              }, {
+                en: 'bdo',
+                ti: '.Bdo'
+              }, {
+                en: 'h3',
+                ti: '.H3'
+              }, {
+                en: 'em',
+                ti: '.Em'
+              }, {
+                en: 'pre',
+                ti: '.Pre'
+              }, {
+                en: 'kbd',
+                ti: '.Kbd'
+              }, {
+                en: 'q',
+                ti: '.Q'
+              }, {
+                en: 'dl',
+                ti: '.Dl'
+              }, {
+                en: 'h1',
+                ti: '.H1'
+              }, {
+                en: 'samp',
+                ti: '.Samp'
+              }, {
+                en: 'map',
+                ti: '.Map'
+              }, {
+                en: 'tt',
+                ti: '.Tt'
+              }, {
+                en: 'ul',
+                ti: '.Ul'
+              }, {
+                en: 'code',
+                ti: '.Code'
+              }, {
+                en: 'blockquote',
+                ti: '.Blockquote'
+              }],
+            t: 'ers'
+          }]
+      }, {
+        ln: 'H5',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'H2',
+        tn: null,
+        bti: '.Inline',
+        ps: [{
+            n: 'lang',
+            ti: 'Language',
+            an: {
+              lp: 'lang'
+            },
+            t: 'a'
+          }, {
+            n: 'xmlLang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'dir',
+            an: {
+              lp: 'dir'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'id'
+            },
+            t: 'a'
+          }, {
+            n: 'clazz',
+            ti: {
+              t: 'l',
+              bti: 'NMTokens'
+            },
+            an: {
+              lp: 'class'
+            },
+            t: 'a'
+          }, {
+            n: 'style',
+            an: {
+              lp: 'style'
+            },
+            t: 'a'
+          }, {
+            n: 'title',
+            an: {
+              lp: 'title'
+            },
+            t: 'a'
+          }, {
+            n: 'onclick',
+            an: {
+              lp: 'onclick'
+            },
+            t: 'a'
+          }, {
+            n: 'ondblclick',
+            an: {
+              lp: 'ondblclick'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousedown',
+            an: {
+              lp: 'onmousedown'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseup',
+            an: {
+              lp: 'onmouseup'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseover',
+            an: {
+              lp: 'onmouseover'
+            },
+            t: 'a'
+          }, {
+            n: 'onmousemove',
+            an: {
+              lp: 'onmousemove'
+            },
+            t: 'a'
+          }, {
+            n: 'onmouseout',
+            an: {
+              lp: 'onmouseout'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeypress',
+            an: {
+              lp: 'onkeypress'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeydown',
+            an: {
+              lp: 'onkeydown'
+            },
+            t: 'a'
+          }, {
+            n: 'onkeyup',
+            an: {
+              lp: 'onkeyup'
+            },
+            t: 'a'
           }]
       }, {
         t: 'enum',
+        ln: 'Scope',
+        bti: 'Token',
+        vs: ['row', 'col', 'rowgroup', 'colgroup']
+      }, {
+        t: 'enum',
         ln: 'Shape',
+        bti: 'Token',
         vs: ['rect', 'circle', 'poly', 'default']
       }, {
         t: 'enum',
         ln: 'TRules',
+        bti: 'Token',
         vs: ['none', 'groups', 'rows', 'cols', 'all']
       }, {
         t: 'enum',
         ln: 'InputType',
+        bti: 'Token',
         vs: ['text', 'password', 'checkbox', 'radio', 'submit', 'reset', 'file', 'hidden', 'image', 'button']
       }, {
         t: 'enum',
-        ln: 'Scope',
-        vs: ['row', 'col', 'rowgroup', 'colgroup']
-      }, {
-        t: 'enum',
         ln: 'TFrame',
+        bti: 'Token',
         vs: ['void', 'above', 'below', 'hsides', 'lhs', 'rhs', 'vsides', 'box', 'border']
       }],
     eis: [{
-        en: 'style',
-        ti: '.Style'
-      }, {
-        en: 'optgroup',
-        ti: '.Optgroup'
-      }, {
-        en: 'table',
-        ti: '.Table'
-      }, {
-        en: 'select',
-        ti: '.Select'
-      }, {
-        en: 'h2',
-        ti: '.H2'
-      }, {
-        en: 'li',
-        ti: '.Li'
-      }, {
-        en: 'caption',
-        ti: '.Caption'
-      }, {
         en: 'link',
         ti: '.Link'
       }, {
-        en: 'h3',
-        ti: '.H3'
-      }, {
-        en: 'pre',
-        ti: '.Pre'
-      }, {
-        en: 'var',
-        ti: '.Var'
-      }, {
-        en: 'tbody',
-        ti: '.Tbody'
-      }, {
-        en: 'param',
-        ti: '.Param'
-      }, {
-        en: 'head',
-        ti: '.Head'
-      }, {
-        en: 'button',
-        ti: '.Button'
-      }, {
-        en: 'span',
-        ti: '.Span'
-      }, {
-        en: 'base',
-        ti: '.Base'
-      }, {
-        en: 'ol',
-        ti: '.Ol'
-      }, {
-        en: 'p',
-        ti: '.P'
-      }, {
-        en: 'samp',
-        ti: '.Samp'
+        en: 'i',
+        ti: '.I'
       }, {
         en: 'ins',
         ti: '.Ins'
@@ -10454,53 +10580,185 @@ var XHTML_1_0_Strict_Module_Factory = function () {
         en: 'meta',
         ti: '.Meta'
       }, {
-        en: 'option',
-        ti: '.Option'
+        en: 'abbr',
+        ti: '.Abbr'
       }, {
-        en: 'h1',
-        ti: '.H1'
+        en: 'ul',
+        ti: '.Ul'
       }, {
-        en: 'sup',
-        ti: '.Sup'
+        en: 'q',
+        ti: '.Q'
       }, {
-        en: 'body',
-        ti: '.Body'
+        en: 'tfoot',
+        ti: '.Tfoot'
       }, {
-        en: 'form',
-        ti: '.Form'
+        en: 'style',
+        ti: '.Style'
       }, {
-        en: 'td',
-        ti: '.Td'
-      }, {
-        en: 'sub',
-        ti: '.Sub'
-      }, {
-        en: 'thead',
-        ti: '.Thead'
-      }, {
-        en: 'th',
-        ti: '.Th'
-      }, {
-        en: 'dd',
-        ti: '.Dd'
+        en: 'address',
+        ti: '.Address'
       }, {
         en: 'code',
         ti: '.Code'
       }, {
-        en: 'fieldset',
-        ti: '.Fieldset'
+        en: 'a',
+        ti: '.A'
       }, {
-        en: 'hr',
-        ti: '.Hr'
+        en: 'input',
+        ti: '.Input'
+      }, {
+        en: 'script',
+        ti: '.Script'
+      }, {
+        en: 'img',
+        ti: '.Img'
+      }, {
+        en: 'dt',
+        ti: '.Dt'
+      }, {
+        en: 'table',
+        ti: '.Table'
+      }, {
+        en: 'dl',
+        ti: '.Dl'
+      }, {
+        en: 'li',
+        ti: '.Li'
+      }, {
+        en: 'map',
+        ti: '.Map'
+      }, {
+        en: 'big',
+        ti: '.Big'
       }, {
         en: 'colgroup',
         ti: '.Colgroup'
       }, {
+        en: 'bdo',
+        ti: '.Bdo'
+      }, {
+        en: 'base',
+        ti: '.Base'
+      }, {
+        en: 'h6',
+        ti: '.H6'
+      }, {
+        en: 'dfn',
+        ti: '.Dfn'
+      }, {
+        en: 'tbody',
+        ti: '.Tbody'
+      }, {
+        en: 'sup',
+        ti: '.Sup'
+      }, {
+        en: 'tt',
+        ti: '.Tt'
+      }, {
+        en: 'p',
+        ti: '.P'
+      }, {
+        en: 'noscript',
+        ti: '.Noscript'
+      }, {
+        en: 'h2',
+        ti: '.H2'
+      }, {
+        en: 'del',
+        ti: '.Del'
+      }, {
+        en: 'select',
+        ti: '.Select'
+      }, {
+        en: 'em',
+        ti: '.Em'
+      }, {
+        en: 'td',
+        ti: '.Td'
+      }, {
+        en: 'pre',
+        ti: '.Pre'
+      }, {
+        en: 'blockquote',
+        ti: '.Blockquote'
+      }, {
+        en: 'thead',
+        ti: '.Thead'
+      }, {
+        en: 'optgroup',
+        ti: '.Optgroup'
+      }, {
+        en: 'strong',
+        ti: '.Strong'
+      }, {
+        en: 'var',
+        ti: '.Var'
+      }, {
+        en: 'h1',
+        ti: '.H1'
+      }, {
         en: 'label',
         ti: '.Label'
       }, {
-        en: 'dl',
-        ti: '.Dl'
+        en: 'param',
+        ti: '.Param'
+      }, {
+        en: 'th',
+        ti: '.Th'
+      }, {
+        en: 'cite',
+        ti: '.Cite'
+      }, {
+        en: 'h4',
+        ti: '.H4'
+      }, {
+        en: 'col',
+        ti: '.Col'
+      }, {
+        en: 'tr',
+        ti: '.Tr'
+      }, {
+        en: 'dd',
+        ti: '.Dd'
+      }, {
+        en: 'title',
+        ti: '.Title'
+      }, {
+        en: 'body',
+        ti: '.Body'
+      }, {
+        en: 'option',
+        ti: '.Option'
+      }, {
+        en: 'ol',
+        ti: '.Ol'
+      }, {
+        en: 'area',
+        ti: '.Area'
+      }, {
+        en: 'legend',
+        ti: '.Legend'
+      }, {
+        en: 'fieldset',
+        ti: '.Fieldset'
+      }, {
+        en: 'html',
+        ti: '.Html'
+      }, {
+        en: 'form',
+        ti: '.Form'
+      }, {
+        en: 'caption',
+        ti: '.Caption'
+      }, {
+        en: 'h3',
+        ti: '.H3'
+      }, {
+        en: 'span',
+        ti: '.Span'
+      }, {
+        en: 'hr',
+        ti: '.Hr'
       }, {
         en: 'br',
         ti: '.Br'
@@ -10508,116 +10766,38 @@ var XHTML_1_0_Strict_Module_Factory = function () {
         en: 'small',
         ti: '.Small'
       }, {
-        en: 'big',
-        ti: '.Big'
-      }, {
-        en: 'col',
-        ti: '.Col'
-      }, {
-        en: 'blockquote',
-        ti: '.Blockquote'
-      }, {
         en: 'h5',
         ti: '.H5'
-      }, {
-        en: 'title',
-        ti: '.Title'
-      }, {
-        en: 'tfoot',
-        ti: '.Tfoot'
-      }, {
-        en: 'dfn',
-        ti: '.Dfn'
-      }, {
-        en: 'tt',
-        ti: '.Tt'
-      }, {
-        en: 'input',
-        ti: '.Input'
-      }, {
-        en: 'address',
-        ti: '.Address'
-      }, {
-        en: 'i',
-        ti: '.I'
-      }, {
-        en: 'object',
-        ti: '.Object'
-      }, {
-        en: 'area',
-        ti: '.Area'
-      }, {
-        en: 'noscript',
-        ti: '.Noscript'
-      }, {
-        en: 'h6',
-        ti: '.H6'
-      }, {
-        en: 'map',
-        ti: '.Map'
-      }, {
-        en: 'html',
-        ti: '.Html'
-      }, {
-        en: 'b',
-        ti: '.B'
-      }, {
-        en: 'strong',
-        ti: '.Strong'
       }, {
         en: 'kbd',
         ti: '.Kbd'
       }, {
-        en: 'h4',
-        ti: '.H4'
-      }, {
-        en: 'cite',
-        ti: '.Cite'
-      }, {
-        en: 'del',
-        ti: '.Del'
-      }, {
-        en: 'a',
-        ti: '.A'
+        en: 'button',
+        ti: '.Button'
       }, {
         en: 'textarea',
         ti: '.Textarea'
       }, {
+        en: 'b',
+        ti: '.B'
+      }, {
         en: 'acronym',
         ti: '.Acronym'
       }, {
-        en: 'img',
-        ti: '.Img'
-      }, {
-        en: 'script',
-        ti: '.Script'
-      }, {
-        en: 'abbr',
-        ti: '.Abbr'
-      }, {
-        en: 'tr',
-        ti: '.Tr'
-      }, {
-        en: 'ul',
-        ti: '.Ul'
-      }, {
-        en: 'bdo',
-        ti: '.Bdo'
-      }, {
-        en: 'legend',
-        ti: '.Legend'
-      }, {
-        en: 'em',
-        ti: '.Em'
-      }, {
-        en: 'q',
-        ti: '.Q'
-      }, {
-        en: 'dt',
-        ti: '.Dt'
-      }, {
         en: 'div',
         ti: '.Div'
+      }, {
+        en: 'samp',
+        ti: '.Samp'
+      }, {
+        en: 'object',
+        ti: '.Object'
+      }, {
+        en: 'sub',
+        ti: '.Sub'
+      }, {
+        en: 'head',
+        ti: '.Head'
       }]
   };
   return {

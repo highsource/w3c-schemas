@@ -12,11 +12,11 @@ var Atom_1_0_Module_Factory = function () {
             mx: false,
             dom: false,
             etis: [{
-                en: 'uri'
+                en: 'email'
               }, {
                 en: 'name'
               }, {
-                en: 'email'
+                en: 'uri'
               }],
             t: 'ers'
           }]
@@ -26,12 +26,14 @@ var Atom_1_0_Module_Factory = function () {
         ps: [{
             n: 'href',
             rq: true,
+            ti: 'AnySimpleType',
             an: {
               lp: 'href'
             },
             t: 'a'
           }, {
             n: 'rel',
+            ti: 'AnySimpleType',
             an: {
               lp: 'rel'
             },
@@ -50,12 +52,14 @@ var Atom_1_0_Module_Factory = function () {
             t: 'a'
           }, {
             n: 'title',
+            ti: 'AnySimpleType',
             an: {
               lp: 'title'
             },
             t: 'a'
           }, {
             n: 'length',
+            ti: 'AnySimpleType',
             an: {
               lp: 'length'
             },
@@ -66,14 +70,14 @@ var Atom_1_0_Module_Factory = function () {
         en: 'author',
         ti: '.AtomPersonConstruct'
       }, {
-        en: 'uri'
+        en: 'name'
       }, {
         en: 'link',
         ti: '.Link'
       }, {
-        en: 'name'
-      }, {
         en: 'email'
+      }, {
+        en: 'uri'
       }]
   };
   return {
