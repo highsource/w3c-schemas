@@ -4,6 +4,94 @@ var XLink_1_0_Module_Factory = function () {
     dens: 'http:\/\/www.w3.org\/1999\/xlink',
     dans: 'http:\/\/www.w3.org\/1999\/xlink',
     tis: [{
+        ln: 'Simple',
+        tn: 'simple',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            ti: 'Token',
+            t: 'a'
+          }]
+      }, {
+        ln: 'ResourceType',
+        tn: 'resourceType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            rq: true,
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'label',
+            ti: 'NCName',
+            t: 'a'
+          }]
+      }, {
+        ln: 'Extended',
+        tn: 'extended',
+        ps: [{
+            n: 'extendedModel',
+            mno: 0,
+            col: true,
+            etis: [{
+                en: 'title',
+                ti: '.TitleEltType'
+              }, {
+                en: 'resource',
+                ti: '.ResourceType'
+              }, {
+                en: 'locator',
+                ti: '.LocatorType'
+              }, {
+                en: 'arc',
+                ti: '.ArcType'
+              }],
+            t: 'es'
+          }, {
+            n: 'type',
+            rq: true,
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }]
+      }, {
         ln: 'LocatorType',
         tn: 'locatorType',
         ps: [{
@@ -30,6 +118,26 @@ var XLink_1_0_Module_Factory = function () {
           }, {
             n: 'label',
             ti: 'NCName',
+            t: 'a'
+          }]
+      }, {
+        ln: 'TitleEltType',
+        tn: 'titleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            rq: true,
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
             t: 'a'
           }]
       }, {
@@ -70,113 +178,10 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ResourceType',
-        tn: 'resourceType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            rq: true,
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'label',
-            ti: 'NCName',
-            t: 'a'
-          }]
-      }, {
-        ln: 'TitleEltType',
-        tn: 'titleEltType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            rq: true,
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'Simple',
-        tn: 'simple',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'actuate',
-            ti: 'Token',
-            t: 'a'
-          }]
-      }, {
-        ln: 'Extended',
-        tn: 'extended',
-        ps: [{
-            n: 'extendedModel',
-            mno: 0,
-            col: true,
-            etis: [{
-                en: 'title',
-                ti: '.TitleEltType'
-              }, {
-                en: 'resource',
-                ti: '.ResourceType'
-              }, {
-                en: 'locator',
-                ti: '.LocatorType'
-              }, {
-                en: 'arc',
-                ti: '.ArcType'
-              }],
-            t: 'es'
-          }, {
-            n: 'type',
-            rq: true,
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }]
+        t: 'enum',
+        ln: 'ActuateType',
+        bti: 'Token',
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }, {
         t: 'enum',
         ln: 'ShowType',
@@ -187,24 +192,19 @@ var XLink_1_0_Module_Factory = function () {
         ln: 'TypeType',
         bti: 'Token',
         vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
-      }, {
-        t: 'enum',
-        ln: 'ActuateType',
-        bti: 'Token',
-        vs: ['onLoad', 'onRequest', 'other', 'none']
       }],
     eis: [{
+        en: 'resource',
+        ti: '.ResourceType'
+      }, {
         en: 'title',
         ti: '.TitleEltType'
-      }, {
-        en: 'locator',
-        ti: '.LocatorType'
       }, {
         en: 'arc',
         ti: '.ArcType'
       }, {
-        en: 'resource',
-        ti: '.ResourceType'
+        en: 'locator',
+        ti: '.LocatorType'
       }]
   };
   return {
