@@ -1,5 +1,9 @@
 module.exports.Atom_1_0         = require('./lib/Atom_1_0'        ).Atom_1_0        ;
 module.exports.WS_Addr_1_0_Core = require('./lib/WS_Addr_1_0_Core').WS_Addr_1_0_Core;
+module.exports.WSDL_2_0         = require('./lib/WSDL_2_0'        ).WSDL_2_0        ;
+module.exports.WSDL_HTTP_2_0    = require('./lib/WSDL_HTTP_2_0'   ).WSDL_HTTP_2_0   ;
+module.exports.WSDL_RPC_2_0     = require('./lib/WSDL_RPC_2_0'    ).WSDL_RPC_2_0    ;
+module.exports.WSDL_SOAP_2_0    = require('./lib/WSDL_SOAP_2_0'   ).WSDL_SOAP_2_0   ;
 module.exports.XHTML_1_0_Strict = require('./lib/XHTML_1_0_Strict').XHTML_1_0_Strict;
 module.exports.XInclude_1_0     = require('./lib/XInclude_1_0'    ).XInclude_1_0    ;
 module.exports.XLink_1_0        = require('./lib/XLink_1_0'       ).XLink_1_0       ;

@@ -44,7 +44,9 @@
 		<module>schemas</module>
 		<module>atom</module>
 		<module>ws-addr</module>
+		<module>wsdl</module>
 		<module>xhtml</module>
+		<module>xinclude</module>
 		<module>xlink</module>
 		<module>XMLSchema</module>
 		<module>scripts</module>

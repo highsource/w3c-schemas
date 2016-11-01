@@ -1,0 +1,46 @@
+<jaxb:bindings version="1.0"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:simplify="http://jaxb2-commons.dev.java.net/basic/simplify"
+	jaxb:extensionBindingPrefixes="xjc simplify">
+
+	<jaxb:bindings schemaLocation="http://www.w3.org/2007/06/wsdl/wsdl20.xsd" node="/xs:schema">
+		<jaxb:schemaBindings>
+			<jaxb:package name="org.hisrc.w3c.wsdl.v_2_0"/>
+		</jaxb:schemaBindings>
+		<jaxb:bindings node="xs:complexType[@name='BindingOperationType']">
+			<simplify:property name="inputOrOutputOrInfault">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='BindingType']">
+			<simplify:property name="operationOrFaultOrAny">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='InterfaceType']">
+			<simplify:property name="operationOrFaultOrAny">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='InterfaceOperationType']">
+			<simplify:property name="inputOrOutputOrInfault">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='DescriptionType']">
+			<simplify:property name="importOrIncludeOrTypes">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+		<jaxb:bindings node="xs:complexType[@name='ServiceType']">
+			<simplify:property name="endpointOrAny">
+				<simplify:as-element-property/>
+			</simplify:property>
+		</jaxb:bindings>
+	</jaxb:bindings>
+
+</jaxb:bindings>
+
+

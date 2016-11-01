@@ -8,6 +8,10 @@ Supports the following schemas:
 
 * `Atom_1_0`
 * `WS_Addr_1_0_Core`
+* `WSDL_2_0`
+  * `WSDL_HTTP_2_0`
+  * `WSDL_RPC_2_0`
+  * `WSDL_SOAP_2_0`
 * `XHTML_1_0_Strict`
 * `XLink_1_0`
 * `XSD_1_0`

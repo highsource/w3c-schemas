@@ -1,0 +1,18 @@
+
+{
+    "id":"#",
+    "definitions":{
+        "DirectionToken":{
+            "allOf":[
+                {
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/token"
+                }
+            ],
+            "typeType":"enumInfo",
+            "typeName":{
+                "localPart":"directionToken",
+                "namespaceURI":"http://www.w3.org/ns/wsdl/rpc"
+            }
+        }
+    }
+}

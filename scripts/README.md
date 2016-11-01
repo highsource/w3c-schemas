@@ -12,6 +12,10 @@ Supports the following schemas:
 * `XInclude_1_0`
 * `XLink_1_0`
 * `XSD_1_0`
+* `WSDL_2_0`
+  * `WSDL_HTTP_2_0`
+  * `WSDL_RPC__2_0`
+  * `WSDL_SOAP_2_0`
 
 # Example
 
