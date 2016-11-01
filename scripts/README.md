@@ -9,6 +9,7 @@ Supports the following schemas:
 * `Atom_1_0`
 * `WS_Addr_1_0_Core`
 * `XHTML_1_0_Strict`
+* `XInclude_1_0`
 * `XLink_1_0`
 * `XSD_1_0`
 

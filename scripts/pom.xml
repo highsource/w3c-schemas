@@ -58,6 +58,7 @@
 						</goals>
 						<configuration>
 							<artifactItems>
+								<artifactItem><artifactId>xinclude-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>xlink-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>atom-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>ws-addr-v_1_0-core</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>scripts</classifier><type>zip</type></artifactItem>
@@ -76,6 +77,7 @@
 						</goals>
 						<configuration>
 							<artifactItems>
+								<artifactItem><artifactId>xinclude-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>jsonschemas</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>xlink-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>jsonschemas</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>atom-v_1_0</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>jsonschemas</classifier><type>zip</type></artifactItem>
 								<artifactItem><artifactId>ws-addr-v_1_0-core</artifactId><groupId>${project.groupId}</groupId><version>${project.version}</version><classifier>jsonschemas</classifier><type>zip</type></artifactItem>
