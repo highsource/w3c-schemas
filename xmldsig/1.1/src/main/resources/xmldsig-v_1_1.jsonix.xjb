@@ -1,0 +1,14 @@
+<jaxb:bindings version="1.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:jsonix="http://jsonix.highsource.org/customizations"
+	jaxb:extensionBindingPrefixes="jsonix">
+
+	<jaxb:bindings schemaLocation="http://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd" node="/xs:schema">
+		<jsonix:packageMapping packageName="org.hisrc.w3c.xmldsig_core.v_1_1" spaceName="XMLDSig_Core_1_1"/>
+	</jaxb:bindings>
+	<jaxb:bindings schemaLocation="http://www.w3.org/TR/xmldsig-core1/xmldsig11-schema.xsd" node="/xs:schema">
+		<jsonix:packageMapping packageName="org.hisrc.w3c.xmldsig.v_1_1" spaceName="XMLDSig_1_1"/>
+	</jaxb:bindings>
+</jaxb:bindings>
+
+
