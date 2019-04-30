@@ -48,6 +48,7 @@
 		<module>xhtml</module>
 		<module>xinclude</module>
 		<module>xlink</module>
+		<module>xmldsig</module>
 		<module>XMLSchema</module>
 		<module>scripts</module>
 	</modules>
