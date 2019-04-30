@@ -24,21 +24,6 @@
                                             }
                                         },
                                         "elementName":{
-                                            "localPart":"uri",
-                                            "namespaceURI":"http://www.w3.org/2005/Atom"
-                                        }
-                                    },
-                                    {
-                                        "type":"object",
-                                        "properties":{
-                                            "name":{
-                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                            },
-                                            "value":{
-                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                                            }
-                                        },
-                                        "elementName":{
                                             "localPart":"email",
                                             "namespaceURI":"http://www.w3.org/2005/Atom"
                                         }
@@ -55,6 +40,21 @@
                                         },
                                         "elementName":{
                                             "localPart":"name",
+                                            "namespaceURI":"http://www.w3.org/2005/Atom"
+                                        }
+                                    },
+                                    {
+                                        "type":"object",
+                                        "properties":{
+                                            "name":{
+                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                            },
+                                            "value":{
+                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                            }
+                                        },
+                                        "elementName":{
+                                            "localPart":"uri",
                                             "namespaceURI":"http://www.w3.org/2005/Atom"
                                         }
                                     }
@@ -186,6 +186,40 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
+                                        "email"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/2005/Atom"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                }
+            },
+            "elementName":{
+                "localPart":"email",
+                "namespaceURI":"http://www.w3.org/2005/Atom"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
                                         "author"
                                     ]
                                 },
@@ -204,40 +238,6 @@
             },
             "elementName":{
                 "localPart":"author",
-                "namespaceURI":"http://www.w3.org/2005/Atom"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "link"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/2005/Atom"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/Link"
-                }
-            },
-            "elementName":{
-                "localPart":"link",
                 "namespaceURI":"http://www.w3.org/2005/Atom"
             }
         },
@@ -288,7 +288,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "email"
+                                        "link"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -301,11 +301,11 @@
                     ]
                 },
                 "value":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                    "$ref":"#/definitions/Link"
                 }
             },
             "elementName":{
-                "localPart":"email",
+                "localPart":"link",
                 "namespaceURI":"http://www.w3.org/2005/Atom"
             }
         },

@@ -2,14 +2,19 @@
 {
     "id":"http://www.w3.org/ns/wsdl#",
     "definitions":{
-        "ExtensibleDocumentedType":{
+        "ServiceType":{
+            "required":[
+                "endpointOrAny",
+                "name",
+                "_interface"
+            ],
             "allOf":[
                 {
-                    "$ref":"#/definitions/DocumentedType"
+                    "$ref":"#/definitions/ExtensibleDocumentedType"
                 },
                 {
                     "type":"object",
-                    "title":"ExtensibleDocumentedType",
+                    "title":"ServiceType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -22,17 +27,174 @@
                                 }
                             ],
                             "propertyType":"anyAttribute"
+                        },
+                        "endpointOrAny":{
+                            "title":"endpointOrAny",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "anyOf":[
+                                            {
+                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                            },
+                                            {
+                                                "type":"object",
+                                                "properties":{
+                                                    "name":{
+                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                                    },
+                                                    "value":{
+                                                        "$ref":"#/definitions/EndpointType"
+                                                    }
+                                                },
+                                                "elementName":{
+                                                    "localPart":"endpoint",
+                                                    "namespaceURI":"http://www.w3.org/ns/wsdl"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "minItems":1
+                                }
+                            ],
+                            "propertyType":"elementRef",
+                            "elementName":{
+                                "localPart":"endpoint",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "name":{
+                            "title":"name",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"name",
+                                "namespaceURI":""
+                            }
+                        },
+                        "_interface":{
+                            "title":"_interface",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"interface",
+                                "namespaceURI":""
+                            }
                         }
                     }
                 }
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"ExtensibleDocumentedType",
+                "localPart":"ServiceType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
-                "otherAttributes"
+                "otherAttributes",
+                "endpointOrAny",
+                "name",
+                "_interface"
+            ]
+        },
+        "BindingOperationFaultType":{
+            "required":[
+                "ref"
+            ],
+            "allOf":[
+                {
+                    "$ref":"#/definitions/ExtensibleDocumentedType"
+                },
+                {
+                    "type":"object",
+                    "title":"BindingOperationFaultType",
+                    "properties":{
+                        "otherAttributes":{
+                            "title":"otherAttributes",
+                            "allOf":[
+                                {
+                                    "type":"object",
+                                    "additionalProperties":{
+                                        "type":"string"
+                                    }
+                                }
+                            ],
+                            "propertyType":"anyAttribute"
+                        },
+                        "any":{
+                            "title":"any",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "anyOf":[
+                                            {
+                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                            },
+                                            {
+                                                "type":"object",
+                                                "properties":{
+                                                    "name":{
+                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                                    },
+                                                    "value":{
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "minItems":0
+                                }
+                            ],
+                            "propertyType":"anyElement"
+                        },
+                        "ref":{
+                            "title":"ref",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"ref",
+                                "namespaceURI":""
+                            }
+                        },
+                        "messageLabel":{
+                            "title":"messageLabel",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"messageLabel",
+                                "namespaceURI":""
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"BindingOperationFaultType",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "any",
+                "ref",
+                "messageLabel"
             ]
         },
         "MessageRefFaultType":{
@@ -127,9 +289,9 @@
                 "messageLabel"
             ]
         },
-        "BindingOperationType":{
+        "IncludeType":{
             "required":[
-                "ref"
+                "location"
             ],
             "allOf":[
                 {
@@ -137,214 +299,7 @@
                 },
                 {
                     "type":"object",
-                    "title":"BindingOperationType",
-                    "properties":{
-                        "otherAttributes":{
-                            "title":"otherAttributes",
-                            "allOf":[
-                                {
-                                    "type":"object",
-                                    "additionalProperties":{
-                                        "type":"string"
-                                    }
-                                }
-                            ],
-                            "propertyType":"anyAttribute"
-                        },
-                        "infault":{
-                            "title":"infault",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/BindingOperationFaultType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"infault",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "output":{
-                            "title":"output",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/BindingOperationMessageType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"output",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "input":{
-                            "title":"input",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/BindingOperationMessageType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"input",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "outfault":{
-                            "title":"outfault",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/BindingOperationFaultType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"outfault",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "ref":{
-                            "title":"ref",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"ref",
-                                "namespaceURI":""
-                            }
-                        }
-                    }
-                }
-            ],
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"BindingOperationType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "infault",
-                "output",
-                "input",
-                "outfault",
-                "ref"
-            ]
-        },
-        "MessageRefType":{
-            "allOf":[
-                {
-                    "$ref":"#/definitions/ExtensibleDocumentedType"
-                },
-                {
-                    "type":"object",
-                    "title":"MessageRefType",
-                    "properties":{
-                        "otherAttributes":{
-                            "title":"otherAttributes",
-                            "allOf":[
-                                {
-                                    "type":"object",
-                                    "additionalProperties":{
-                                        "type":"string"
-                                    }
-                                }
-                            ],
-                            "propertyType":"anyAttribute"
-                        },
-                        "any":{
-                            "title":"any",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "anyOf":[
-                                            {
-                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                            },
-                                            {
-                                                "type":"object",
-                                                "properties":{
-                                                    "name":{
-                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                                    },
-                                                    "value":{
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    "minItems":0
-                                }
-                            ],
-                            "propertyType":"anyElement"
-                        },
-                        "messageLabel":{
-                            "title":"messageLabel",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"messageLabel",
-                                "namespaceURI":""
-                            }
-                        },
-                        "element":{
-                            "title":"element",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"element",
-                                "namespaceURI":""
-                            }
-                        }
-                    }
-                }
-            ],
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"MessageRefType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any",
-                "messageLabel",
-                "element"
-            ]
-        },
-        "ImportType":{
-            "required":[
-                "namespace"
-            ],
-            "allOf":[
-                {
-                    "$ref":"#/definitions/ExtensibleDocumentedType"
-                },
-                {
-                    "type":"object",
-                    "title":"ImportType",
+                    "title":"IncludeType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -378,19 +333,6 @@
                             ],
                             "propertyType":"anyElement"
                         },
-                        "namespace":{
-                            "title":"namespace",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"namespace",
-                                "namespaceURI":""
-                            }
-                        },
                         "location":{
                             "title":"location",
                             "allOf":[
@@ -409,13 +351,12 @@
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"ImportType",
+                "localPart":"IncludeType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
                 "any",
-                "namespace",
                 "location"
             ]
         },
@@ -511,7 +452,34 @@
                 "element"
             ]
         },
-        "BindingFaultType":{
+        "ExtensionElement":{
+            "type":"object",
+            "title":"ExtensionElement",
+            "properties":{
+                "required":{
+                    "title":"required",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"required",
+                        "namespaceURI":"http://www.w3.org/ns/wsdl"
+                    }
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"ExtensionElement",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "required"
+            ]
+        },
+        "BindingOperationType":{
             "required":[
                 "ref"
             ],
@@ -521,7 +489,7 @@
                 },
                 {
                     "type":"object",
-                    "title":"BindingFaultType",
+                    "title":"BindingOperationType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -535,32 +503,69 @@
                             ],
                             "propertyType":"anyAttribute"
                         },
-                        "any":{
-                            "title":"any",
+                        "outfault":{
+                            "title":"outfault",
                             "allOf":[
                                 {
                                     "type":"array",
                                     "items":{
-                                        "anyOf":[
-                                            {
-                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                            },
-                                            {
-                                                "type":"object",
-                                                "properties":{
-                                                    "name":{
-                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                                    },
-                                                    "value":{
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    "minItems":0
+                                        "$ref":"#/definitions/BindingOperationFaultType"
+                                    }
                                 }
                             ],
-                            "propertyType":"anyElement"
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"outfault",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "input":{
+                            "title":"input",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/BindingOperationMessageType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"input",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "output":{
+                            "title":"output",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/BindingOperationMessageType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"output",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "infault":{
+                            "title":"infault",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/BindingOperationFaultType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"infault",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
                         },
                         "ref":{
                             "title":"ref",
@@ -580,195 +585,16 @@
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"BindingFaultType",
+                "localPart":"BindingOperationType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "any",
+                "outfault",
+                "input",
+                "output",
+                "infault",
                 "ref"
-            ]
-        },
-        "BindingOperationMessageType":{
-            "allOf":[
-                {
-                    "$ref":"#/definitions/ExtensibleDocumentedType"
-                },
-                {
-                    "type":"object",
-                    "title":"BindingOperationMessageType",
-                    "properties":{
-                        "otherAttributes":{
-                            "title":"otherAttributes",
-                            "allOf":[
-                                {
-                                    "type":"object",
-                                    "additionalProperties":{
-                                        "type":"string"
-                                    }
-                                }
-                            ],
-                            "propertyType":"anyAttribute"
-                        },
-                        "any":{
-                            "title":"any",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "anyOf":[
-                                            {
-                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                            },
-                                            {
-                                                "type":"object",
-                                                "properties":{
-                                                    "name":{
-                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                                    },
-                                                    "value":{
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    "minItems":0
-                                }
-                            ],
-                            "propertyType":"anyElement"
-                        },
-                        "messageLabel":{
-                            "title":"messageLabel",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"messageLabel",
-                                "namespaceURI":""
-                            }
-                        }
-                    }
-                }
-            ],
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"BindingOperationMessageType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any",
-                "messageLabel"
-            ]
-        },
-        "EndpointType":{
-            "required":[
-                "name",
-                "binding"
-            ],
-            "allOf":[
-                {
-                    "$ref":"#/definitions/ExtensibleDocumentedType"
-                },
-                {
-                    "type":"object",
-                    "title":"EndpointType",
-                    "properties":{
-                        "otherAttributes":{
-                            "title":"otherAttributes",
-                            "allOf":[
-                                {
-                                    "type":"object",
-                                    "additionalProperties":{
-                                        "type":"string"
-                                    }
-                                }
-                            ],
-                            "propertyType":"anyAttribute"
-                        },
-                        "any":{
-                            "title":"any",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "anyOf":[
-                                            {
-                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                            },
-                                            {
-                                                "type":"object",
-                                                "properties":{
-                                                    "name":{
-                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                                    },
-                                                    "value":{
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    },
-                                    "minItems":0
-                                }
-                            ],
-                            "propertyType":"anyElement"
-                        },
-                        "name":{
-                            "title":"name",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"name",
-                                "namespaceURI":""
-                            }
-                        },
-                        "binding":{
-                            "title":"binding",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"binding",
-                                "namespaceURI":""
-                            }
-                        },
-                        "address":{
-                            "title":"address",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"address",
-                                "namespaceURI":""
-                            }
-                        }
-                    }
-                }
-            ],
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"EndpointType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any",
-                "name",
-                "binding",
-                "address"
             ]
         },
         "InterfaceType":{
@@ -795,22 +621,6 @@
                             ],
                             "propertyType":"anyAttribute"
                         },
-                        "fault":{
-                            "title":"fault",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/InterfaceFaultType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"fault",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
                         "operation":{
                             "title":"operation",
                             "allOf":[
@@ -824,6 +634,22 @@
                             "propertyType":"element",
                             "elementName":{
                                 "localPart":"operation",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "fault":{
+                            "title":"fault",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/InterfaceFaultType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"fault",
                                 "namespaceURI":"http://www.w3.org/ns/wsdl"
                             }
                         },
@@ -882,38 +708,131 @@
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "fault",
                 "operation",
+                "fault",
                 "name",
                 "_extends",
                 "styleDefault"
             ]
         },
-        "ExtensionElement":{
+        "DocumentedType":{
             "type":"object",
-            "title":"ExtensionElement",
+            "title":"DocumentedType",
             "properties":{
-                "required":{
-                    "title":"required",
+                "documentation":{
+                    "title":"documentation",
                     "allOf":[
                         {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                            "type":"array",
+                            "items":{
+                                "$ref":"#/definitions/DocumentationType"
+                            },
+                            "minItems":0
                         }
                     ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"required",
+                    "propertyType":"element",
+                    "elementName":{
+                        "localPart":"documentation",
                         "namespaceURI":"http://www.w3.org/ns/wsdl"
                     }
                 }
             },
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"ExtensionElement",
+                "localPart":"DocumentedType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
-                "required"
+                "documentation"
+            ]
+        },
+        "MessageRefType":{
+            "allOf":[
+                {
+                    "$ref":"#/definitions/ExtensibleDocumentedType"
+                },
+                {
+                    "type":"object",
+                    "title":"MessageRefType",
+                    "properties":{
+                        "otherAttributes":{
+                            "title":"otherAttributes",
+                            "allOf":[
+                                {
+                                    "type":"object",
+                                    "additionalProperties":{
+                                        "type":"string"
+                                    }
+                                }
+                            ],
+                            "propertyType":"anyAttribute"
+                        },
+                        "any":{
+                            "title":"any",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "anyOf":[
+                                            {
+                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                            },
+                                            {
+                                                "type":"object",
+                                                "properties":{
+                                                    "name":{
+                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                                    },
+                                                    "value":{
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "minItems":0
+                                }
+                            ],
+                            "propertyType":"anyElement"
+                        },
+                        "messageLabel":{
+                            "title":"messageLabel",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"messageLabel",
+                                "namespaceURI":""
+                            }
+                        },
+                        "element":{
+                            "title":"element",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"element",
+                                "namespaceURI":""
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"MessageRefType",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "any",
+                "messageLabel",
+                "element"
             ]
         },
         "BindingType":{
@@ -1029,9 +948,99 @@
                 "_interface"
             ]
         },
-        "DescriptionType":{
+        "ExtensibleDocumentedType":{
+            "allOf":[
+                {
+                    "$ref":"#/definitions/DocumentedType"
+                },
+                {
+                    "type":"object",
+                    "title":"ExtensibleDocumentedType",
+                    "properties":{
+                        "otherAttributes":{
+                            "title":"otherAttributes",
+                            "allOf":[
+                                {
+                                    "type":"object",
+                                    "additionalProperties":{
+                                        "type":"string"
+                                    }
+                                }
+                            ],
+                            "propertyType":"anyAttribute"
+                        }
+                    }
+                }
+            ],
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"ExtensibleDocumentedType",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "otherAttributes"
+            ]
+        },
+        "DocumentationType":{
+            "type":"object",
+            "title":"DocumentationType",
+            "properties":{
+                "otherAttributes":{
+                    "title":"otherAttributes",
+                    "allOf":[
+                        {
+                            "type":"object",
+                            "additionalProperties":{
+                                "type":"string"
+                            }
+                        }
+                    ],
+                    "propertyType":"anyAttribute"
+                },
+                "content":{
+                    "title":"content",
+                    "allOf":[
+                        {
+                            "type":"array",
+                            "items":{
+                                "anyOf":[
+                                    {
+                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    {
+                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                    },
+                                    {
+                                        "type":"object",
+                                        "properties":{
+                                            "name":{
+                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                            },
+                                            "value":{
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "propertyType":"anyElement"
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"DocumentationType",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "content"
+            ]
+        },
+        "EndpointType":{
             "required":[
-                "targetNamespace"
+                "name",
+                "binding"
             ],
             "allOf":[
                 {
@@ -1039,7 +1048,7 @@
                 },
                 {
                     "type":"object",
-                    "title":"DescriptionType",
+                    "title":"EndpointType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -1053,104 +1062,61 @@
                             ],
                             "propertyType":"anyAttribute"
                         },
-                        "include":{
-                            "title":"include",
+                        "any":{
+                            "title":"any",
                             "allOf":[
                                 {
                                     "type":"array",
                                     "items":{
-                                        "$ref":"#/definitions/IncludeType"
-                                    }
+                                        "anyOf":[
+                                            {
+                                                "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
+                                            },
+                                            {
+                                                "type":"object",
+                                                "properties":{
+                                                    "name":{
+                                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                                    },
+                                                    "value":{
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "minItems":0
                                 }
                             ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"include",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
+                            "propertyType":"anyElement"
                         },
-                        "types":{
-                            "title":"types",
+                        "name":{
+                            "title":"name",
                             "allOf":[
                                 {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/TypesType"
-                                    }
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
                                 }
                             ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"types",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"name",
+                                "namespaceURI":""
                             }
                         },
                         "binding":{
                             "title":"binding",
                             "allOf":[
                                 {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/BindingType"
-                                    }
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                                 }
                             ],
-                            "propertyType":"element",
-                            "elementName":{
+                            "propertyType":"attribute",
+                            "attributeName":{
                                 "localPart":"binding",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                                "namespaceURI":""
                             }
                         },
-                        "_import":{
-                            "title":"_import",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/ImportType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"import",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "_interface":{
-                            "title":"_interface",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/InterfaceType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"interface",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "service":{
-                            "title":"service",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/ServiceType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"service",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
-                        "targetNamespace":{
-                            "title":"targetNamespace",
+                        "address":{
+                            "title":"address",
                             "allOf":[
                                 {
                                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
@@ -1158,7 +1124,7 @@
                             ],
                             "propertyType":"attribute",
                             "attributeName":{
-                                "localPart":"targetNamespace",
+                                "localPart":"address",
                                 "namespaceURI":""
                             }
                         }
@@ -1167,18 +1133,15 @@
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"DescriptionType",
+                "localPart":"EndpointType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "include",
-                "types",
+                "any",
+                "name",
                 "binding",
-                "_import",
-                "_interface",
-                "service",
-                "targetNamespace"
+                "address"
             ]
         },
         "InterfaceOperationType":{
@@ -1205,22 +1168,6 @@
                             ],
                             "propertyType":"anyAttribute"
                         },
-                        "outfault":{
-                            "title":"outfault",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
-                                        "$ref":"#/definitions/MessageRefFaultType"
-                                    }
-                                }
-                            ],
-                            "propertyType":"element",
-                            "elementName":{
-                                "localPart":"outfault",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
-                        },
                         "input":{
                             "title":"input",
                             "allOf":[
@@ -1234,6 +1181,22 @@
                             "propertyType":"element",
                             "elementName":{
                                 "localPart":"input",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "outfault":{
+                            "title":"outfault",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/MessageRefFaultType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"outfault",
                                 "namespaceURI":"http://www.w3.org/ns/wsdl"
                             }
                         },
@@ -1331,8 +1294,8 @@
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "outfault",
                 "input",
+                "outfault",
                 "infault",
                 "output",
                 "name",
@@ -1341,48 +1304,14 @@
                 "style"
             ]
         },
-        "DocumentedType":{
-            "type":"object",
-            "title":"DocumentedType",
-            "properties":{
-                "documentation":{
-                    "title":"documentation",
-                    "allOf":[
-                        {
-                            "type":"array",
-                            "items":{
-                                "$ref":"#/definitions/DocumentationType"
-                            },
-                            "minItems":0
-                        }
-                    ],
-                    "propertyType":"element",
-                    "elementName":{
-                        "localPart":"documentation",
-                        "namespaceURI":"http://www.w3.org/ns/wsdl"
-                    }
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"DocumentedType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "documentation"
-            ]
-        },
-        "IncludeType":{
-            "required":[
-                "location"
-            ],
+        "BindingOperationMessageType":{
             "allOf":[
                 {
                     "$ref":"#/definitions/ExtensibleDocumentedType"
                 },
                 {
                     "type":"object",
-                    "title":"IncludeType",
+                    "title":"BindingOperationMessageType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -1402,79 +1331,6 @@
                                 {
                                     "type":"array",
                                     "items":{
-                                        "type":"object",
-                                        "properties":{
-                                            "name":{
-                                                "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                            },
-                                            "value":{
-                                            }
-                                        }
-                                    },
-                                    "minItems":0
-                                }
-                            ],
-                            "propertyType":"anyElement"
-                        },
-                        "location":{
-                            "title":"location",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"location",
-                                "namespaceURI":""
-                            }
-                        }
-                    }
-                }
-            ],
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"IncludeType",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "propertiesOrder":[
-                "otherAttributes",
-                "any",
-                "location"
-            ]
-        },
-        "ServiceType":{
-            "required":[
-                "endpointOrAny",
-                "name",
-                "_interface"
-            ],
-            "allOf":[
-                {
-                    "$ref":"#/definitions/ExtensibleDocumentedType"
-                },
-                {
-                    "type":"object",
-                    "title":"ServiceType",
-                    "properties":{
-                        "otherAttributes":{
-                            "title":"otherAttributes",
-                            "allOf":[
-                                {
-                                    "type":"object",
-                                    "additionalProperties":{
-                                        "type":"string"
-                                    }
-                                }
-                            ],
-                            "propertyType":"anyAttribute"
-                        },
-                        "endpointOrAny":{
-                            "title":"endpointOrAny",
-                            "allOf":[
-                                {
-                                    "type":"array",
-                                    "items":{
                                         "anyOf":[
                                             {
                                                 "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
@@ -1486,27 +1342,18 @@
                                                         "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
                                                     },
                                                     "value":{
-                                                        "$ref":"#/definitions/EndpointType"
                                                     }
-                                                },
-                                                "elementName":{
-                                                    "localPart":"endpoint",
-                                                    "namespaceURI":"http://www.w3.org/ns/wsdl"
                                                 }
                                             }
                                         ]
                                     },
-                                    "minItems":1
+                                    "minItems":0
                                 }
                             ],
-                            "propertyType":"elementRef",
-                            "elementName":{
-                                "localPart":"endpoint",
-                                "namespaceURI":"http://www.w3.org/ns/wsdl"
-                            }
+                            "propertyType":"anyElement"
                         },
-                        "name":{
-                            "title":"name",
+                        "messageLabel":{
+                            "title":"messageLabel",
                             "allOf":[
                                 {
                                     "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
@@ -1514,20 +1361,7 @@
                             ],
                             "propertyType":"attribute",
                             "attributeName":{
-                                "localPart":"name",
-                                "namespaceURI":""
-                            }
-                        },
-                        "_interface":{
-                            "title":"_interface",
-                            "allOf":[
-                                {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                                }
-                            ],
-                            "propertyType":"attribute",
-                            "attributeName":{
-                                "localPart":"interface",
+                                "localPart":"messageLabel",
                                 "namespaceURI":""
                             }
                         }
@@ -1536,14 +1370,13 @@
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"ServiceType",
+                "localPart":"BindingOperationMessageType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "endpointOrAny",
-                "name",
-                "_interface"
+                "any",
+                "messageLabel"
             ]
         },
         "TypesType":{
@@ -1600,36 +1433,36 @@
                 "any"
             ]
         },
-        "DocumentationType":{
-            "type":"object",
-            "title":"DocumentationType",
-            "properties":{
-                "otherAttributes":{
-                    "title":"otherAttributes",
-                    "allOf":[
-                        {
-                            "type":"object",
-                            "additionalProperties":{
-                                "type":"string"
-                            }
-                        }
-                    ],
-                    "propertyType":"anyAttribute"
+        "ImportType":{
+            "required":[
+                "namespace"
+            ],
+            "allOf":[
+                {
+                    "$ref":"#/definitions/ExtensibleDocumentedType"
                 },
-                "content":{
-                    "title":"content",
-                    "allOf":[
-                        {
-                            "type":"array",
-                            "items":{
-                                "anyOf":[
-                                    {
-                                        "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                                    },
-                                    {
-                                        "$ref":"http://www.jsonix.org/jsonschemas/jsonix/Jsonix.jsonschema#/definitions/dom"
-                                    },
-                                    {
+                {
+                    "type":"object",
+                    "title":"ImportType",
+                    "properties":{
+                        "otherAttributes":{
+                            "title":"otherAttributes",
+                            "allOf":[
+                                {
+                                    "type":"object",
+                                    "additionalProperties":{
+                                        "type":"string"
+                                    }
+                                }
+                            ],
+                            "propertyType":"anyAttribute"
+                        },
+                        "any":{
+                            "title":"any",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
                                         "type":"object",
                                         "properties":{
                                             "name":{
@@ -1638,25 +1471,54 @@
                                             "value":{
                                             }
                                         }
-                                    }
-                                ]
+                                    },
+                                    "minItems":0
+                                }
+                            ],
+                            "propertyType":"anyElement"
+                        },
+                        "namespace":{
+                            "title":"namespace",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"namespace",
+                                "namespaceURI":""
+                            }
+                        },
+                        "location":{
+                            "title":"location",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
+                                }
+                            ],
+                            "propertyType":"attribute",
+                            "attributeName":{
+                                "localPart":"location",
+                                "namespaceURI":""
                             }
                         }
-                    ],
-                    "propertyType":"anyElement"
+                    }
                 }
-            },
+            ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"DocumentationType",
+                "localPart":"ImportType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "content"
+                "any",
+                "namespace",
+                "location"
             ]
         },
-        "BindingOperationFaultType":{
+        "BindingFaultType":{
             "required":[
                 "ref"
             ],
@@ -1666,7 +1528,7 @@
                 },
                 {
                     "type":"object",
-                    "title":"BindingOperationFaultType",
+                    "title":"BindingFaultType",
                     "properties":{
                         "otherAttributes":{
                             "title":"otherAttributes",
@@ -1719,17 +1581,151 @@
                                 "localPart":"ref",
                                 "namespaceURI":""
                             }
-                        },
-                        "messageLabel":{
-                            "title":"messageLabel",
+                        }
+                    }
+                }
+            ],
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"BindingFaultType",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "propertiesOrder":[
+                "otherAttributes",
+                "any",
+                "ref"
+            ]
+        },
+        "DescriptionType":{
+            "required":[
+                "targetNamespace"
+            ],
+            "allOf":[
+                {
+                    "$ref":"#/definitions/ExtensibleDocumentedType"
+                },
+                {
+                    "type":"object",
+                    "title":"DescriptionType",
+                    "properties":{
+                        "otherAttributes":{
+                            "title":"otherAttributes",
                             "allOf":[
                                 {
-                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
+                                    "type":"object",
+                                    "additionalProperties":{
+                                        "type":"string"
+                                    }
+                                }
+                            ],
+                            "propertyType":"anyAttribute"
+                        },
+                        "types":{
+                            "title":"types",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/TypesType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"types",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "include":{
+                            "title":"include",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/IncludeType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"include",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "binding":{
+                            "title":"binding",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/BindingType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"binding",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "_import":{
+                            "title":"_import",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/ImportType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"import",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "service":{
+                            "title":"service",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/ServiceType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"service",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "_interface":{
+                            "title":"_interface",
+                            "allOf":[
+                                {
+                                    "type":"array",
+                                    "items":{
+                                        "$ref":"#/definitions/InterfaceType"
+                                    }
+                                }
+                            ],
+                            "propertyType":"element",
+                            "elementName":{
+                                "localPart":"interface",
+                                "namespaceURI":"http://www.w3.org/ns/wsdl"
+                            }
+                        },
+                        "targetNamespace":{
+                            "title":"targetNamespace",
+                            "allOf":[
+                                {
+                                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
                                 }
                             ],
                             "propertyType":"attribute",
                             "attributeName":{
-                                "localPart":"messageLabel",
+                                "localPart":"targetNamespace",
                                 "namespaceURI":""
                             }
                         }
@@ -1738,18 +1734,161 @@
             ],
             "typeType":"classInfo",
             "typeName":{
-                "localPart":"BindingOperationFaultType",
+                "localPart":"DescriptionType",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "propertiesOrder":[
                 "otherAttributes",
-                "any",
-                "ref",
-                "messageLabel"
+                "types",
+                "include",
+                "binding",
+                "_import",
+                "service",
+                "_interface",
+                "targetNamespace"
             ]
         }
     },
     "anyOf":[
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "binding"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/BindingType"
+                }
+            },
+            "elementName":{
+                "localPart":"binding",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "fault"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/BindingFaultType"
+                }
+            },
+            "elementName":{
+                "localPart":"fault",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "scope":{
+                "$ref":"#/definitions/BindingType"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "endpoint"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/EndpointType"
+                }
+            },
+            "elementName":{
+                "localPart":"endpoint",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "types"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/TypesType"
+                }
+            },
+            "elementName":{
+                "localPart":"types",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            }
+        },
         {
             "type":"object",
             "properties":{
@@ -1781,145 +1920,6 @@
             },
             "elementName":{
                 "localPart":"service",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "operation"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/BindingOperationType"
-                }
-            },
-            "elementName":{
-                "localPart":"operation",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "scope":{
-                "$ref":"#/definitions/BindingType"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "description"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/DescriptionType"
-                }
-            },
-            "elementName":{
-                "localPart":"description",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "interface"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/InterfaceType"
-                }
-            },
-            "elementName":{
-                "localPart":"interface",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "include"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/IncludeType"
-                }
-            },
-            "elementName":{
-                "localPart":"include",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             }
         },
@@ -1973,7 +1973,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "output"
+                                        "interface"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -1986,15 +1986,12 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/BindingOperationMessageType"
+                    "$ref":"#/definitions/InterfaceType"
                 }
             },
             "elementName":{
-                "localPart":"output",
+                "localPart":"interface",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "scope":{
-                "$ref":"#/definitions/BindingOperationType"
             }
         },
         {
@@ -2047,7 +2044,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "binding"
+                                        "include"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -2060,12 +2057,86 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/BindingType"
+                    "$ref":"#/definitions/IncludeType"
                 }
             },
             "elementName":{
-                "localPart":"binding",
+                "localPart":"include",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "output"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/MessageRefType"
+                }
+            },
+            "elementName":{
+                "localPart":"output",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "scope":{
+                "$ref":"#/definitions/InterfaceOperationType"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "fault"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/InterfaceFaultType"
+                }
+            },
+            "elementName":{
+                "localPart":"fault",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "scope":{
+                "$ref":"#/definitions/InterfaceType"
             }
         },
         {
@@ -2094,7 +2165,7 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/MessageRefFaultType"
+                    "$ref":"#/definitions/BindingOperationFaultType"
                 }
             },
             "elementName":{
@@ -2102,7 +2173,7 @@
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "scope":{
-                "$ref":"#/definitions/InterfaceOperationType"
+                "$ref":"#/definitions/BindingOperationType"
             }
         },
         {
@@ -2168,7 +2239,7 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/BindingOperationFaultType"
+                    "$ref":"#/definitions/MessageRefFaultType"
                 }
             },
             "elementName":{
@@ -2176,81 +2247,7 @@
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "scope":{
-                "$ref":"#/definitions/BindingOperationType"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "fault"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/BindingFaultType"
-                }
-            },
-            "elementName":{
-                "localPart":"fault",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "scope":{
-                "$ref":"#/definitions/BindingType"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "outfault"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/BindingOperationFaultType"
-                }
-            },
-            "elementName":{
-                "localPart":"outfault",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "scope":{
-                "$ref":"#/definitions/BindingOperationType"
+                "$ref":"#/definitions/InterfaceOperationType"
             }
         },
         {
@@ -2300,77 +2297,6 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "fault"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/InterfaceFaultType"
-                }
-            },
-            "elementName":{
-                "localPart":"fault",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            },
-            "scope":{
-                "$ref":"#/definitions/InterfaceType"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "endpoint"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/ns/wsdl"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/EndpointType"
-                }
-            },
-            "elementName":{
-                "localPart":"endpoint",
-                "namespaceURI":"http://www.w3.org/ns/wsdl"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
                                         "output"
                                     ]
                                 },
@@ -2384,7 +2310,7 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/MessageRefType"
+                    "$ref":"#/definitions/BindingOperationMessageType"
                 }
             },
             "elementName":{
@@ -2392,7 +2318,7 @@
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
             },
             "scope":{
-                "$ref":"#/definitions/InterfaceOperationType"
+                "$ref":"#/definitions/BindingOperationType"
             }
         },
         {
@@ -2445,6 +2371,43 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
+                                        "operation"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/BindingOperationType"
+                }
+            },
+            "elementName":{
+                "localPart":"operation",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "scope":{
+                "$ref":"#/definitions/BindingType"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
                                         "documentation"
                                     ]
                                 },
@@ -2479,7 +2442,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "types"
+                                        "description"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -2492,12 +2455,49 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/TypesType"
+                    "$ref":"#/definitions/DescriptionType"
                 }
             },
             "elementName":{
-                "localPart":"types",
+                "localPart":"description",
                 "namespaceURI":"http://www.w3.org/ns/wsdl"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "outfault"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/ns/wsdl"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/BindingOperationFaultType"
+                }
+            },
+            "elementName":{
+                "localPart":"outfault",
+                "namespaceURI":"http://www.w3.org/ns/wsdl"
+            },
+            "scope":{
+                "$ref":"#/definitions/BindingOperationType"
             }
         }
     ]

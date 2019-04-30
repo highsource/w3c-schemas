@@ -3,11 +3,63 @@ var WSDL_2_0_Module_Factory = function () {
     n: 'WSDL_2_0',
     dens: 'http:\/\/www.w3.org\/ns\/wsdl',
     tis: [{
-        ln: 'ExtensibleDocumentedType',
-        bti: '.DocumentedType',
+        ln: 'ServiceType',
+        bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
+          }, {
+            n: 'endpointOrAny',
+            rq: true,
+            col: true,
+            mx: false,
+            en: 'endpoint',
+            ti: '.EndpointType',
+            t: 'er'
+          }, {
+            n: 'name',
+            rq: true,
+            ti: 'NCName',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
+          }, {
+            n: '_interface',
+            rq: true,
+            ti: 'QName',
+            an: {
+              lp: 'interface'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'BindingOperationFaultType',
+        bti: '.ExtensibleDocumentedType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'any',
+            mno: 0,
+            col: true,
+            mx: false,
+            t: 'ae'
+          }, {
+            n: 'ref',
+            rq: true,
+            ti: 'QName',
+            an: {
+              lp: 'ref'
+            },
+            t: 'a'
+          }, {
+            n: 'messageLabel',
+            ti: 'NCName',
+            an: {
+              lp: 'messageLabel'
+            },
+            t: 'a'
           }]
       }, {
         ln: 'MessageRefFaultType',
@@ -38,64 +90,7 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'BindingOperationType',
-        bti: '.ExtensibleDocumentedType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'infault',
-            col: true,
-            ti: '.BindingOperationFaultType'
-          }, {
-            n: 'output',
-            col: true,
-            ti: '.BindingOperationMessageType'
-          }, {
-            n: 'input',
-            col: true,
-            ti: '.BindingOperationMessageType'
-          }, {
-            n: 'outfault',
-            col: true,
-            ti: '.BindingOperationFaultType'
-          }, {
-            n: 'ref',
-            rq: true,
-            ti: 'QName',
-            an: {
-              lp: 'ref'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'MessageRefType',
-        bti: '.ExtensibleDocumentedType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'any',
-            mno: 0,
-            col: true,
-            mx: false,
-            t: 'ae'
-          }, {
-            n: 'messageLabel',
-            ti: 'NCName',
-            an: {
-              lp: 'messageLabel'
-            },
-            t: 'a'
-          }, {
-            n: 'element',
-            an: {
-              lp: 'element'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'ImportType',
+        ln: 'IncludeType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
@@ -108,14 +103,8 @@ var WSDL_2_0_Module_Factory = function () {
             mx: false,
             t: 'ae'
           }, {
-            n: 'namespace',
-            rq: true,
-            an: {
-              lp: 'namespace'
-            },
-            t: 'a'
-          }, {
             n: 'location',
+            rq: true,
             an: {
               lp: 'location'
             },
@@ -149,17 +138,38 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'BindingFaultType',
+        ln: 'ExtensionElement',
+        ps: [{
+            n: 'required',
+            ti: 'Boolean',
+            an: {
+              lp: 'required',
+              ns: 'http:\/\/www.w3.org\/ns\/wsdl'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'BindingOperationType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'any',
-            mno: 0,
+            n: 'outfault',
             col: true,
-            mx: false,
-            t: 'ae'
+            ti: '.BindingOperationFaultType'
+          }, {
+            n: 'input',
+            col: true,
+            ti: '.BindingOperationMessageType'
+          }, {
+            n: 'output',
+            col: true,
+            ti: '.BindingOperationMessageType'
+          }, {
+            n: 'infault',
+            col: true,
+            ti: '.BindingOperationFaultType'
           }, {
             n: 'ref',
             rq: true,
@@ -170,74 +180,19 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'BindingOperationMessageType',
-        bti: '.ExtensibleDocumentedType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'any',
-            mno: 0,
-            col: true,
-            mx: false,
-            t: 'ae'
-          }, {
-            n: 'messageLabel',
-            ti: 'NCName',
-            an: {
-              lp: 'messageLabel'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'EndpointType',
-        bti: '.ExtensibleDocumentedType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'any',
-            mno: 0,
-            col: true,
-            mx: false,
-            t: 'ae'
-          }, {
-            n: 'name',
-            rq: true,
-            ti: 'NCName',
-            an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: 'binding',
-            rq: true,
-            ti: 'QName',
-            an: {
-              lp: 'binding'
-            },
-            t: 'a'
-          }, {
-            n: 'address',
-            an: {
-              lp: 'address'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'InterfaceType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'fault',
-            col: true,
-            ti: '.InterfaceFaultType'
-          }, {
             n: 'operation',
             col: true,
             ti: '.InterfaceOperationType'
+          }, {
+            n: 'fault',
+            col: true,
+            ti: '.InterfaceFaultType'
           }, {
             n: 'name',
             rq: true,
@@ -267,13 +222,36 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'ExtensionElement',
+        ln: 'DocumentedType',
         ps: [{
-            n: 'required',
-            ti: 'Boolean',
+            n: 'documentation',
+            mno: 0,
+            col: true,
+            ti: '.DocumentationType'
+          }]
+      }, {
+        ln: 'MessageRefType',
+        bti: '.ExtensibleDocumentedType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'any',
+            mno: 0,
+            col: true,
+            mx: false,
+            t: 'ae'
+          }, {
+            n: 'messageLabel',
+            ti: 'NCName',
             an: {
-              lp: 'required',
-              ns: 'http:\/\/www.w3.org\/ns\/wsdl'
+              lp: 'messageLabel'
+            },
+            t: 'a'
+          }, {
+            n: 'element',
+            an: {
+              lp: 'element'
             },
             t: 'a'
           }]
@@ -315,42 +293,54 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'DescriptionType',
+        ln: 'ExtensibleDocumentedType',
+        bti: '.DocumentedType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }]
+      }, {
+        ln: 'DocumentationType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
+          }, {
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }]
+      }, {
+        ln: 'EndpointType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'include',
+            n: 'any',
+            mno: 0,
             col: true,
-            ti: '.IncludeType'
+            mx: false,
+            t: 'ae'
           }, {
-            n: 'types',
-            col: true,
-            ti: '.TypesType'
+            n: 'name',
+            rq: true,
+            ti: 'NCName',
+            an: {
+              lp: 'name'
+            },
+            t: 'a'
           }, {
             n: 'binding',
-            col: true,
-            ti: '.BindingType'
-          }, {
-            n: '_import',
-            col: true,
-            en: 'import',
-            ti: '.ImportType'
-          }, {
-            n: '_interface',
-            col: true,
-            en: 'interface',
-            ti: '.InterfaceType'
-          }, {
-            n: 'service',
-            col: true,
-            ti: '.ServiceType'
-          }, {
-            n: 'targetNamespace',
             rq: true,
+            ti: 'QName',
             an: {
-              lp: 'targetNamespace'
+              lp: 'binding'
+            },
+            t: 'a'
+          }, {
+            n: 'address',
+            an: {
+              lp: 'address'
             },
             t: 'a'
           }]
@@ -361,13 +351,13 @@ var WSDL_2_0_Module_Factory = function () {
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'outfault',
-            col: true,
-            ti: '.MessageRefFaultType'
-          }, {
             n: 'input',
             col: true,
             ti: '.MessageRefType'
+          }, {
+            n: 'outfault',
+            col: true,
+            ti: '.MessageRefFaultType'
           }, {
             n: 'infault',
             col: true,
@@ -405,15 +395,7 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'DocumentedType',
-        ps: [{
-            n: 'documentation',
-            mno: 0,
-            col: true,
-            ti: '.DocumentationType'
-          }]
-      }, {
-        ln: 'IncludeType',
+        ln: 'BindingOperationMessageType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
@@ -422,45 +404,13 @@ var WSDL_2_0_Module_Factory = function () {
             n: 'any',
             mno: 0,
             col: true,
-            dom: false,
             mx: false,
             t: 'ae'
           }, {
-            n: 'location',
-            rq: true,
-            an: {
-              lp: 'location'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'ServiceType',
-        bti: '.ExtensibleDocumentedType',
-        ps: [{
-            n: 'otherAttributes',
-            t: 'aa'
-          }, {
-            n: 'endpointOrAny',
-            rq: true,
-            col: true,
-            mx: false,
-            en: 'endpoint',
-            ti: '.EndpointType',
-            t: 'er'
-          }, {
-            n: 'name',
-            rq: true,
+            n: 'messageLabel',
             ti: 'NCName',
             an: {
-              lp: 'name'
-            },
-            t: 'a'
-          }, {
-            n: '_interface',
-            rq: true,
-            ti: 'QName',
-            an: {
-              lp: 'interface'
+              lp: 'messageLabel'
             },
             t: 'a'
           }]
@@ -479,17 +429,34 @@ var WSDL_2_0_Module_Factory = function () {
             t: 'ae'
           }]
       }, {
-        ln: 'DocumentationType',
+        ln: 'ImportType',
+        bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
             t: 'aa'
           }, {
-            n: 'content',
+            n: 'any',
+            mno: 0,
             col: true,
+            dom: false,
+            mx: false,
             t: 'ae'
+          }, {
+            n: 'namespace',
+            rq: true,
+            an: {
+              lp: 'namespace'
+            },
+            t: 'a'
+          }, {
+            n: 'location',
+            an: {
+              lp: 'location'
+            },
+            t: 'a'
           }]
       }, {
-        ln: 'BindingOperationFaultType',
+        ln: 'BindingFaultType',
         bti: '.ExtensibleDocumentedType',
         ps: [{
             n: 'otherAttributes',
@@ -508,90 +475,123 @@ var WSDL_2_0_Module_Factory = function () {
               lp: 'ref'
             },
             t: 'a'
+          }]
+      }, {
+        ln: 'DescriptionType',
+        bti: '.ExtensibleDocumentedType',
+        ps: [{
+            n: 'otherAttributes',
+            t: 'aa'
           }, {
-            n: 'messageLabel',
-            ti: 'NCName',
+            n: 'types',
+            col: true,
+            ti: '.TypesType'
+          }, {
+            n: 'include',
+            col: true,
+            ti: '.IncludeType'
+          }, {
+            n: 'binding',
+            col: true,
+            ti: '.BindingType'
+          }, {
+            n: '_import',
+            col: true,
+            en: 'import',
+            ti: '.ImportType'
+          }, {
+            n: 'service',
+            col: true,
+            ti: '.ServiceType'
+          }, {
+            n: '_interface',
+            col: true,
+            en: 'interface',
+            ti: '.InterfaceType'
+          }, {
+            n: 'targetNamespace',
+            rq: true,
             an: {
-              lp: 'messageLabel'
+              lp: 'targetNamespace'
             },
             t: 'a'
           }]
       }],
     eis: [{
-        en: 'service',
-        ti: '.ServiceType'
+        en: 'binding',
+        ti: '.BindingType'
       }, {
-        en: 'operation',
-        ti: '.BindingOperationType',
+        en: 'fault',
+        ti: '.BindingFaultType',
         sc: '.BindingType'
       }, {
-        en: 'description',
-        ti: '.DescriptionType'
+        en: 'endpoint',
+        ti: '.EndpointType'
       }, {
-        en: 'interface',
-        ti: '.InterfaceType'
+        en: 'types',
+        ti: '.TypesType'
       }, {
-        en: 'include',
-        ti: '.IncludeType'
+        en: 'service',
+        ti: '.ServiceType'
       }, {
         en: 'input',
         ti: '.BindingOperationMessageType',
         sc: '.BindingOperationType'
       }, {
-        en: 'output',
-        ti: '.BindingOperationMessageType',
-        sc: '.BindingOperationType'
+        en: 'interface',
+        ti: '.InterfaceType'
       }, {
         en: 'input',
         ti: '.MessageRefType',
         sc: '.InterfaceOperationType'
       }, {
-        en: 'binding',
-        ti: '.BindingType'
+        en: 'include',
+        ti: '.IncludeType'
+      }, {
+        en: 'output',
+        ti: '.MessageRefType',
+        sc: '.InterfaceOperationType'
+      }, {
+        en: 'fault',
+        ti: '.InterfaceFaultType',
+        sc: '.InterfaceType'
       }, {
         en: 'infault',
-        ti: '.MessageRefFaultType',
-        sc: '.InterfaceOperationType'
+        ti: '.BindingOperationFaultType',
+        sc: '.BindingOperationType'
       }, {
         en: 'operation',
         ti: '.InterfaceOperationType',
         sc: '.InterfaceType'
       }, {
         en: 'infault',
-        ti: '.BindingOperationFaultType',
-        sc: '.BindingOperationType'
-      }, {
-        en: 'fault',
-        ti: '.BindingFaultType',
-        sc: '.BindingType'
-      }, {
-        en: 'outfault',
-        ti: '.BindingOperationFaultType',
-        sc: '.BindingOperationType'
+        ti: '.MessageRefFaultType',
+        sc: '.InterfaceOperationType'
       }, {
         en: 'import',
         ti: '.ImportType'
       }, {
-        en: 'fault',
-        ti: '.InterfaceFaultType',
-        sc: '.InterfaceType'
-      }, {
-        en: 'endpoint',
-        ti: '.EndpointType'
-      }, {
         en: 'output',
-        ti: '.MessageRefType',
-        sc: '.InterfaceOperationType'
+        ti: '.BindingOperationMessageType',
+        sc: '.BindingOperationType'
       }, {
         en: 'outfault',
         ti: '.MessageRefFaultType',
         sc: '.InterfaceOperationType'
       }, {
+        en: 'operation',
+        ti: '.BindingOperationType',
+        sc: '.BindingType'
+      }, {
         en: 'documentation',
         ti: '.DocumentationType'
       }, {
-        en: 'types',
-        ti: '.TypesType'
+        en: 'description',
+        ti: '.DescriptionType'
+      }, {
+        en: 'outfault',
+        ti: '.BindingOperationFaultType',
+        sc: '.BindingOperationType'
       }]
   };
   return {

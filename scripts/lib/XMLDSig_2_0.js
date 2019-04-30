@@ -26,24 +26,6 @@ var XMLDSig_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'QualifiedAttrType',
-        ps: [{
-            n: 'name',
-            rq: true,
-            ti: 'NCName',
-            an: {
-              lp: 'Name'
-            },
-            t: 'a'
-          }, {
-            n: 'ns',
-            rq: true,
-            an: {
-              lp: 'NS'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'VerificationType',
         ps: [{
             n: 'otherAttributes',
@@ -83,15 +65,6 @@ var XMLDSig_2_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'VerificationsType',
-        ps: [{
-            n: 'verification',
-            rq: true,
-            col: true,
-            en: 'Verification',
-            ti: '.VerificationType'
-          }]
-      }, {
         ln: 'UnqualifiedAttrType',
         ps: [{
             n: 'name',
@@ -116,28 +89,55 @@ var XMLDSig_2_0_Module_Factory = function () {
             },
             t: 'a'
           }]
+      }, {
+        ln: 'QualifiedAttrType',
+        ps: [{
+            n: 'name',
+            rq: true,
+            ti: 'NCName',
+            an: {
+              lp: 'Name'
+            },
+            t: 'a'
+          }, {
+            n: 'ns',
+            rq: true,
+            an: {
+              lp: 'NS'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'VerificationsType',
+        ps: [{
+            n: 'verification',
+            rq: true,
+            col: true,
+            en: 'Verification',
+            ti: '.VerificationType'
+          }]
       }],
     eis: [{
-        en: 'ExcludedXPath'
+        en: 'IncludedXPath'
       }, {
-        en: 'Selection',
-        ti: '.SelectionType'
-      }, {
-        en: 'ByteRange'
-      }, {
-        en: 'Verifications',
-        ti: '.VerificationsType'
+        en: 'UnqualifiedAttr',
+        ti: '.UnqualifiedAttrType'
       }, {
         en: 'Verification',
         ti: '.VerificationType'
       }, {
-        en: 'IncludedXPath'
+        en: 'Selection',
+        ti: '.SelectionType'
       }, {
         en: 'QualifiedAttr',
         ti: '.QualifiedAttrType'
       }, {
-        en: 'UnqualifiedAttr',
-        ti: '.UnqualifiedAttrType'
+        en: 'ByteRange'
+      }, {
+        en: 'ExcludedXPath'
+      }, {
+        en: 'Verifications',
+        ti: '.VerificationsType'
       }]
   };
   return {

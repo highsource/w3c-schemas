@@ -3,6 +3,132 @@ var XMLDSig_1_1_Module_Factory = function () {
     n: 'XMLDSig_1_1',
     dens: 'http:\/\/www.w3.org\/2009\/xmldsig11#',
     tis: [{
+        ln: 'NamedCurveType',
+        ps: [{
+            n: 'uri',
+            rq: true,
+            an: {
+              lp: 'URI'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'PnBFieldParamsType',
+        bti: '.CharTwoFieldParamsType',
+        ps: [{
+            n: 'k1',
+            rq: true,
+            en: 'K1',
+            ti: 'PositiveInteger'
+          }, {
+            n: 'k2',
+            rq: true,
+            en: 'K2',
+            ti: 'PositiveInteger'
+          }, {
+            n: 'k3',
+            rq: true,
+            en: 'K3',
+            ti: 'PositiveInteger'
+          }]
+      }, {
+        ln: 'ECValidationDataType',
+        ps: [{
+            n: 'seed',
+            rq: true,
+            ti: 'Base64Binary'
+          }, {
+            n: 'hashAlgorithm',
+            rq: true,
+            an: {
+              lp: 'hashAlgorithm'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'PrimeFieldParamsType',
+        ps: [{
+            n: 'p',
+            rq: true,
+            en: 'P',
+            ti: 'Base64Binary'
+          }]
+      }, {
+        ln: 'CharTwoFieldParamsType',
+        ps: [{
+            n: 'm',
+            rq: true,
+            en: 'M',
+            ti: 'PositiveInteger'
+          }]
+      }, {
+        ln: 'TnBFieldParamsType',
+        bti: '.CharTwoFieldParamsType',
+        ps: [{
+            n: 'k',
+            rq: true,
+            en: 'K',
+            ti: 'PositiveInteger'
+          }]
+      }, {
+        ln: 'DEREncodedKeyValueType',
+        ps: [{
+            n: 'value',
+            ti: 'Base64Binary',
+            t: 'v'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'X509DigestType',
+        ps: [{
+            n: 'value',
+            ti: 'Base64Binary',
+            t: 'v'
+          }, {
+            n: 'algorithm',
+            rq: true,
+            an: {
+              lp: 'Algorithm'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'CurveType',
+        ps: [{
+            n: 'a',
+            rq: true,
+            en: 'A',
+            ti: 'Base64Binary'
+          }, {
+            n: 'b',
+            rq: true,
+            en: 'B',
+            ti: 'Base64Binary'
+          }]
+      }, {
+        ln: 'KeyInfoReferenceType',
+        ps: [{
+            n: 'uri',
+            rq: true,
+            an: {
+              lp: 'URI'
+            },
+            t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
         ln: 'FieldIDType',
         ps: [{
             n: 'prime',
@@ -31,20 +157,6 @@ var XMLDSig_1_1_Module_Factory = function () {
             t: 'ae'
           }]
       }, {
-        ln: 'X509DigestType',
-        ps: [{
-            n: 'value',
-            ti: 'Base64Binary',
-            t: 'v'
-          }, {
-            n: 'algorithm',
-            rq: true,
-            an: {
-              lp: 'Algorithm'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'ECKeyValueType',
         ps: [{
             n: 'ecParameters',
@@ -68,82 +180,6 @@ var XMLDSig_1_1_Module_Factory = function () {
               lp: 'Id'
             },
             t: 'a'
-          }]
-      }, {
-        ln: 'NamedCurveType',
-        ps: [{
-            n: 'uri',
-            rq: true,
-            an: {
-              lp: 'URI'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'KeyInfoReferenceType',
-        ps: [{
-            n: 'uri',
-            rq: true,
-            an: {
-              lp: 'URI'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'PnBFieldParamsType',
-        bti: '.CharTwoFieldParamsType',
-        ps: [{
-            n: 'k1',
-            rq: true,
-            en: 'K1',
-            ti: 'PositiveInteger'
-          }, {
-            n: 'k2',
-            rq: true,
-            en: 'K2',
-            ti: 'PositiveInteger'
-          }, {
-            n: 'k3',
-            rq: true,
-            en: 'K3',
-            ti: 'PositiveInteger'
-          }]
-      }, {
-        ln: 'CharTwoFieldParamsType',
-        ps: [{
-            n: 'm',
-            rq: true,
-            en: 'M',
-            ti: 'PositiveInteger'
-          }]
-      }, {
-        ln: 'TnBFieldParamsType',
-        bti: '.CharTwoFieldParamsType',
-        ps: [{
-            n: 'k',
-            rq: true,
-            en: 'K',
-            ti: 'PositiveInteger'
-          }]
-      }, {
-        ln: 'CurveType',
-        ps: [{
-            n: 'a',
-            rq: true,
-            en: 'A',
-            ti: 'Base64Binary'
-          }, {
-            n: 'b',
-            rq: true,
-            en: 'B',
-            ti: 'Base64Binary'
           }]
       }, {
         ln: 'ECParametersType',
@@ -176,49 +212,10 @@ var XMLDSig_1_1_Module_Factory = function () {
             en: 'ValidationData',
             ti: '.ECValidationDataType'
           }]
-      }, {
-        ln: 'DEREncodedKeyValueType',
-        ps: [{
-            n: 'value',
-            ti: 'Base64Binary',
-            t: 'v'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'PrimeFieldParamsType',
-        ps: [{
-            n: 'p',
-            rq: true,
-            en: 'P',
-            ti: 'Base64Binary'
-          }]
-      }, {
-        ln: 'ECValidationDataType',
-        ps: [{
-            n: 'seed',
-            rq: true,
-            ti: 'Base64Binary'
-          }, {
-            n: 'hashAlgorithm',
-            rq: true,
-            an: {
-              lp: 'hashAlgorithm'
-            },
-            t: 'a'
-          }]
       }],
     eis: [{
-        en: 'DEREncodedKeyValue',
-        ti: '.DEREncodedKeyValueType'
-      }, {
-        en: 'Prime',
-        ti: '.PrimeFieldParamsType'
+        en: 'PnB',
+        ti: '.PnBFieldParamsType'
       }, {
         en: 'ECKeyValue',
         ti: '.ECKeyValueType'
@@ -226,17 +223,20 @@ var XMLDSig_1_1_Module_Factory = function () {
         en: 'KeyInfoReference',
         ti: '.KeyInfoReferenceType'
       }, {
+        en: 'Prime',
+        ti: '.PrimeFieldParamsType'
+      }, {
         en: 'X509Digest',
         ti: '.X509DigestType'
+      }, {
+        en: 'GnB',
+        ti: '.CharTwoFieldParamsType'
       }, {
         en: 'TnB',
         ti: '.TnBFieldParamsType'
       }, {
-        en: 'PnB',
-        ti: '.PnBFieldParamsType'
-      }, {
-        en: 'GnB',
-        ti: '.CharTwoFieldParamsType'
+        en: 'DEREncodedKeyValue',
+        ti: '.DEREncodedKeyValueType'
       }]
   };
   return {

@@ -4,95 +4,6 @@ var XLink_1_0_Module_Factory = function () {
     dens: 'http:\/\/www.w3.org\/1999\/xlink',
     dans: 'http:\/\/www.w3.org\/1999\/xlink',
     tis: [{
-        ln: 'Simple',
-        tn: 'simple',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'href',
-            t: 'a'
-          }, {
-            n: 'role',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'actuate',
-            ti: 'Token',
-            t: 'a'
-          }]
-      }, {
-        ln: 'ArcType',
-        tn: 'arcType',
-        ps: [{
-            n: 'locatorTitle',
-            mno: 0,
-            col: true,
-            en: 'title',
-            ti: '.TitleEltType'
-          }, {
-            n: 'type',
-            rq: true,
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'arcrole',
-            t: 'a'
-          }, {
-            n: 'title',
-            t: 'a'
-          }, {
-            n: 'show',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'actuate',
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'from',
-            ti: 'NCName',
-            t: 'a'
-          }, {
-            n: 'to',
-            ti: 'NCName',
-            t: 'a'
-          }]
-      }, {
-        ln: 'TitleEltType',
-        tn: 'titleEltType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'type',
-            rq: true,
-            ti: 'Token',
-            t: 'a'
-          }, {
-            n: 'lang',
-            an: {
-              lp: 'lang',
-              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'ResourceType',
         tn: 'resourceType',
         ps: [{
@@ -145,6 +56,38 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'Simple',
+        tn: 'simple',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'href',
+            t: 'a'
+          }, {
+            n: 'role',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            ti: 'Token',
+            t: 'a'
+          }]
+      }, {
         ln: 'Extended',
         tn: 'extended',
         ps: [{
@@ -178,10 +121,67 @@ var XLink_1_0_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'TitleEltType',
+        tn: 'titleEltType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'type',
+            rq: true,
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'lang',
+            an: {
+              lp: 'lang',
+              ns: 'http:\/\/www.w3.org\/XML\/1998\/namespace'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'ArcType',
+        tn: 'arcType',
+        ps: [{
+            n: 'locatorTitle',
+            mno: 0,
+            col: true,
+            en: 'title',
+            ti: '.TitleEltType'
+          }, {
+            n: 'type',
+            rq: true,
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'arcrole',
+            t: 'a'
+          }, {
+            n: 'title',
+            t: 'a'
+          }, {
+            n: 'show',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'actuate',
+            ti: 'Token',
+            t: 'a'
+          }, {
+            n: 'from',
+            ti: 'NCName',
+            t: 'a'
+          }, {
+            n: 'to',
+            ti: 'NCName',
+            t: 'a'
+          }]
+      }, {
         t: 'enum',
-        ln: 'ActuateType',
+        ln: 'TypeType',
         bti: 'Token',
-        vs: ['onLoad', 'onRequest', 'other', 'none']
+        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
       }, {
         t: 'enum',
         ln: 'ShowType',
@@ -189,14 +189,11 @@ var XLink_1_0_Module_Factory = function () {
         vs: ['new', 'replace', 'embed', 'other', 'none']
       }, {
         t: 'enum',
-        ln: 'TypeType',
+        ln: 'ActuateType',
         bti: 'Token',
-        vs: ['simple', 'extended', 'title', 'resource', 'locator', 'arc']
+        vs: ['onLoad', 'onRequest', 'other', 'none']
       }],
     eis: [{
-        en: 'locator',
-        ti: '.LocatorType'
-      }, {
         en: 'title',
         ti: '.TitleEltType'
       }, {
@@ -205,6 +202,9 @@ var XLink_1_0_Module_Factory = function () {
       }, {
         en: 'resource',
         ti: '.ResourceType'
+      }, {
+        en: 'locator',
+        ti: '.LocatorType'
       }]
   };
   return {

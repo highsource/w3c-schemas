@@ -3,6 +3,111 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
     n: 'XMLDSig_Core_1_1',
     dens: 'http:\/\/www.w3.org\/2000\/09\/xmldsig#',
     tis: [{
+        ln: 'SignedInfoType',
+        ps: [{
+            n: 'canonicalizationMethod',
+            rq: true,
+            en: 'CanonicalizationMethod',
+            ti: '.CanonicalizationMethodType'
+          }, {
+            n: 'signatureMethod',
+            rq: true,
+            en: 'SignatureMethod',
+            ti: '.SignatureMethodType'
+          }, {
+            n: 'reference',
+            rq: true,
+            col: true,
+            en: 'Reference',
+            ti: '.ReferenceType'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'SignatureType',
+        ps: [{
+            n: 'signedInfo',
+            rq: true,
+            en: 'SignedInfo',
+            ti: '.SignedInfoType'
+          }, {
+            n: 'signatureValue',
+            rq: true,
+            en: 'SignatureValue',
+            ti: '.SignatureValueType'
+          }, {
+            n: 'keyInfo',
+            en: 'KeyInfo',
+            ti: '.KeyInfoType'
+          }, {
+            n: 'object',
+            mno: 0,
+            col: true,
+            en: 'Object',
+            ti: '.ObjectType'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'SignatureValueType',
+        ps: [{
+            n: 'value',
+            ti: 'Base64Binary',
+            t: 'v'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'X509DataType',
+        ps: [{
+            n: 'x509IssuerSerialOrX509SKIOrX509SubjectName',
+            rq: true,
+            col: true,
+            mx: false,
+            etis: [{
+                en: 'X509SKI',
+                ti: 'Base64Binary'
+              }, {
+                en: 'X509SubjectName'
+              }, {
+                en: 'X509CRL',
+                ti: 'Base64Binary'
+              }, {
+                en: 'X509IssuerSerial',
+                ti: '.X509IssuerSerialType'
+              }, {
+                en: 'X509Certificate',
+                ti: 'Base64Binary'
+              }],
+            t: 'ers'
+          }]
+      }, {
+        ln: 'SPKIDataType',
+        ps: [{
+            n: 'spkiSexpAndAny',
+            rq: true,
+            col: true,
+            mx: false,
+            en: 'SPKISexp',
+            ti: 'Base64Binary',
+            t: 'er'
+          }]
+      }, {
         ln: 'DSAKeyValueType',
         ps: [{
             n: 'p',
@@ -39,247 +144,6 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             ti: 'Base64Binary'
           }]
       }, {
-        ln: 'SignedInfoType',
-        ps: [{
-            n: 'canonicalizationMethod',
-            rq: true,
-            en: 'CanonicalizationMethod',
-            ti: '.CanonicalizationMethodType'
-          }, {
-            n: 'signatureMethod',
-            rq: true,
-            en: 'SignatureMethod',
-            ti: '.SignatureMethodType'
-          }, {
-            n: 'reference',
-            rq: true,
-            col: true,
-            en: 'Reference',
-            ti: '.ReferenceType'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SignaturePropertiesType',
-        ps: [{
-            n: 'signatureProperty',
-            rq: true,
-            col: true,
-            en: 'SignatureProperty',
-            ti: '.SignaturePropertyType'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'RSAKeyValueType',
-        ps: [{
-            n: 'modulus',
-            rq: true,
-            en: 'Modulus',
-            ti: 'Base64Binary'
-          }, {
-            n: 'exponent',
-            rq: true,
-            en: 'Exponent',
-            ti: 'Base64Binary'
-          }]
-      }, {
-        ln: 'SignatureValueType',
-        ps: [{
-            n: 'value',
-            ti: 'Base64Binary',
-            t: 'v'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'X509IssuerSerialType',
-        ps: [{
-            n: 'x509IssuerName',
-            rq: true,
-            en: 'X509IssuerName'
-          }, {
-            n: 'x509SerialNumber',
-            rq: true,
-            en: 'X509SerialNumber',
-            ti: 'Integer'
-          }]
-      }, {
-        ln: 'X509DataType',
-        ps: [{
-            n: 'x509IssuerSerialOrX509SKIOrX509SubjectName',
-            rq: true,
-            col: true,
-            mx: false,
-            etis: [{
-                en: 'X509CRL',
-                ti: 'Base64Binary'
-              }, {
-                en: 'X509IssuerSerial',
-                ti: '.X509IssuerSerialType'
-              }, {
-                en: 'X509SubjectName'
-              }, {
-                en: 'X509Certificate',
-                ti: 'Base64Binary'
-              }, {
-                en: 'X509SKI',
-                ti: 'Base64Binary'
-              }],
-            t: 'ers'
-          }]
-      }, {
-        ln: 'ManifestType',
-        ps: [{
-            n: 'reference',
-            rq: true,
-            col: true,
-            en: 'Reference',
-            ti: '.ReferenceType'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SignaturePropertyType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'target',
-            rq: true,
-            an: {
-              lp: 'Target'
-            },
-            t: 'a'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'TransformsType',
-        ps: [{
-            n: 'transform',
-            rq: true,
-            col: true,
-            en: 'Transform',
-            ti: '.TransformType'
-          }]
-      }, {
-        ln: 'KeyValueType',
-        ps: [{
-            n: 'content',
-            col: true,
-            etis: [{
-                en: 'RSAKeyValue',
-                ti: '.RSAKeyValueType'
-              }, {
-                en: 'DSAKeyValue',
-                ti: '.DSAKeyValueType'
-              }],
-            t: 'ers'
-          }]
-      }, {
-        ln: 'DigestMethodType',
-        ps: [{
-            n: 'content',
-            col: true,
-            t: 'ae'
-          }, {
-            n: 'algorithm',
-            rq: true,
-            an: {
-              lp: 'Algorithm'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SPKIDataType',
-        ps: [{
-            n: 'spkiSexpAndAny',
-            rq: true,
-            col: true,
-            mx: false,
-            en: 'SPKISexp',
-            ti: 'Base64Binary',
-            t: 'er'
-          }]
-      }, {
-        ln: 'KeyInfoType',
-        ps: [{
-            n: 'content',
-            col: true,
-            etis: [{
-                en: 'KeyValue',
-                ti: '.KeyValueType'
-              }, {
-                en: 'KeyName'
-              }, {
-                en: 'X509Data',
-                ti: '.X509DataType'
-              }, {
-                en: 'PGPData',
-                ti: '.PGPDataType'
-              }, {
-                en: 'MgmtData'
-              }, {
-                en: 'RetrievalMethod',
-                ti: '.RetrievalMethodType'
-              }, {
-                en: 'SPKIData',
-                ti: '.SPKIDataType'
-              }],
-            t: 'ers'
-          }, {
-            n: 'id',
-            ti: 'ID',
-            an: {
-              lp: 'Id'
-            },
-            t: 'a'
-          }]
-      }, {
-        ln: 'SignatureMethodType',
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            en: 'HMACOutputLength',
-            ti: 'Integer',
-            t: 'er'
-          }, {
-            n: 'algorithm',
-            rq: true,
-            an: {
-              lp: 'Algorithm'
-            },
-            t: 'a'
-          }]
-      }, {
         ln: 'ObjectType',
         ps: [{
             n: 'content',
@@ -306,19 +170,50 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             t: 'a'
           }]
       }, {
-        ln: 'TransformType',
+        ln: 'SignaturePropertyType',
         ps: [{
             n: 'content',
             col: true,
-            en: 'XPath',
-            t: 'er'
+            t: 'ae'
           }, {
-            n: 'algorithm',
+            n: 'target',
             rq: true,
             an: {
-              lp: 'Algorithm'
+              lp: 'Target'
             },
             t: 'a'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'SignaturePropertiesType',
+        ps: [{
+            n: 'signatureProperty',
+            rq: true,
+            col: true,
+            en: 'SignatureProperty',
+            ti: '.SignaturePropertyType'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'TransformsType',
+        ps: [{
+            n: 'transform',
+            rq: true,
+            col: true,
+            en: 'Transform',
+            ti: '.TransformType'
           }]
       }, {
         ln: 'ReferenceType',
@@ -357,6 +252,23 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             t: 'a'
           }]
       }, {
+        ln: 'SignatureMethodType',
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            en: 'HMACOutputLength',
+            ti: 'Integer',
+            t: 'er'
+          }, {
+            n: 'algorithm',
+            rq: true,
+            an: {
+              lp: 'Algorithm'
+            },
+            t: 'a'
+          }]
+      }, {
         ln: 'RetrievalMethodType',
         ps: [{
             n: 'transforms',
@@ -372,6 +284,84 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             n: 'type',
             an: {
               lp: 'Type'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'TransformType',
+        ps: [{
+            n: 'content',
+            col: true,
+            en: 'XPath',
+            t: 'er'
+          }, {
+            n: 'algorithm',
+            rq: true,
+            an: {
+              lp: 'Algorithm'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'CanonicalizationMethodType',
+        ps: [{
+            n: 'content',
+            col: true,
+            dom: false,
+            t: 'ae'
+          }, {
+            n: 'algorithm',
+            rq: true,
+            an: {
+              lp: 'Algorithm'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'DigestMethodType',
+        ps: [{
+            n: 'content',
+            col: true,
+            t: 'ae'
+          }, {
+            n: 'algorithm',
+            rq: true,
+            an: {
+              lp: 'Algorithm'
+            },
+            t: 'a'
+          }]
+      }, {
+        ln: 'KeyInfoType',
+        ps: [{
+            n: 'content',
+            col: true,
+            etis: [{
+                en: 'X509Data',
+                ti: '.X509DataType'
+              }, {
+                en: 'SPKIData',
+                ti: '.SPKIDataType'
+              }, {
+                en: 'KeyValue',
+                ti: '.KeyValueType'
+              }, {
+                en: 'RetrievalMethod',
+                ti: '.RetrievalMethodType'
+              }, {
+                en: 'PGPData',
+                ti: '.PGPDataType'
+              }, {
+                en: 'MgmtData'
+              }, {
+                en: 'KeyName'
+              }],
+            t: 'ers'
+          }, {
+            n: 'id',
+            ti: 'ID',
+            an: {
+              lp: 'Id'
             },
             t: 'a'
           }]
@@ -392,27 +382,52 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             t: 'ers'
           }]
       }, {
-        ln: 'SignatureType',
+        ln: 'X509IssuerSerialType',
         ps: [{
-            n: 'signedInfo',
+            n: 'x509IssuerName',
             rq: true,
-            en: 'SignedInfo',
-            ti: '.SignedInfoType'
+            en: 'X509IssuerName'
           }, {
-            n: 'signatureValue',
+            n: 'x509SerialNumber',
             rq: true,
-            en: 'SignatureValue',
-            ti: '.SignatureValueType'
-          }, {
-            n: 'keyInfo',
-            en: 'KeyInfo',
-            ti: '.KeyInfoType'
-          }, {
-            n: 'object',
-            mno: 0,
+            en: 'X509SerialNumber',
+            ti: 'Integer'
+          }]
+      }, {
+        ln: 'KeyValueType',
+        ps: [{
+            n: 'content',
             col: true,
-            en: 'Object',
-            ti: '.ObjectType'
+            etis: [{
+                en: 'DSAKeyValue',
+                ti: '.DSAKeyValueType'
+              }, {
+                en: 'RSAKeyValue',
+                ti: '.RSAKeyValueType'
+              }],
+            t: 'ers'
+          }]
+      }, {
+        ln: 'RSAKeyValueType',
+        ps: [{
+            n: 'modulus',
+            rq: true,
+            en: 'Modulus',
+            ti: 'Base64Binary'
+          }, {
+            n: 'exponent',
+            rq: true,
+            en: 'Exponent',
+            ti: 'Base64Binary'
+          }]
+      }, {
+        ln: 'ManifestType',
+        ps: [{
+            n: 'reference',
+            rq: true,
+            col: true,
+            en: 'Reference',
+            ti: '.ReferenceType'
           }, {
             n: 'id',
             ti: 'ID',
@@ -421,130 +436,115 @@ var XMLDSig_Core_1_1_Module_Factory = function () {
             },
             t: 'a'
           }]
-      }, {
-        ln: 'CanonicalizationMethodType',
-        ps: [{
-            n: 'content',
-            col: true,
-            dom: false,
-            t: 'ae'
-          }, {
-            n: 'algorithm',
-            rq: true,
-            an: {
-              lp: 'Algorithm'
-            },
-            t: 'a'
-          }]
       }],
     eis: [{
-        en: 'PGPKeyPacket',
-        ti: 'Base64Binary',
-        sc: '.PGPDataType'
-      }, {
-        en: 'X509IssuerSerial',
-        ti: '.X509IssuerSerialType',
-        sc: '.X509DataType'
-      }, {
-        en: 'SignatureProperties',
-        ti: '.SignaturePropertiesType'
-      }, {
-        en: 'HMACOutputLength',
-        ti: 'Integer',
-        sc: '.SignatureMethodType'
-      }, {
-        en: 'Signature',
-        ti: '.SignatureType'
-      }, {
-        en: 'X509Certificate',
-        ti: 'Base64Binary',
-        sc: '.X509DataType'
-      }, {
-        en: 'Transform',
-        ti: '.TransformType'
-      }, {
-        en: 'RetrievalMethod',
-        ti: '.RetrievalMethodType'
-      }, {
-        en: 'XPath',
-        sc: '.TransformType'
-      }, {
-        en: 'DigestValue',
-        ti: 'Base64Binary'
-      }, {
-        en: 'KeyName'
-      }, {
-        en: 'X509SubjectName',
-        sc: '.X509DataType'
-      }, {
-        en: 'SPKISexp',
-        ti: 'Base64Binary',
-        sc: '.SPKIDataType'
-      }, {
         en: 'PGPKeyID',
         ti: 'Base64Binary',
         sc: '.PGPDataType'
       }, {
-        en: 'X509CRL',
-        ti: 'Base64Binary',
-        sc: '.X509DataType'
-      }, {
-        en: 'SignatureMethod',
-        ti: '.SignatureMethodType'
-      }, {
-        en: 'PGPData',
-        ti: '.PGPDataType'
-      }, {
-        en: 'SignedInfo',
-        ti: '.SignedInfoType'
-      }, {
-        en: 'SignatureValue',
-        ti: '.SignatureValueType'
-      }, {
-        en: 'SignatureProperty',
-        ti: '.SignaturePropertyType'
-      }, {
-        en: 'DSAKeyValue',
-        ti: '.DSAKeyValueType'
-      }, {
-        en: 'DigestMethod',
-        ti: '.DigestMethodType'
-      }, {
-        en: 'KeyValue',
-        ti: '.KeyValueType'
-      }, {
-        en: 'Transforms',
-        ti: '.TransformsType'
-      }, {
-        en: 'MgmtData'
-      }, {
-        en: 'RSAKeyValue',
-        ti: '.RSAKeyValueType'
-      }, {
-        en: 'X509Data',
-        ti: '.X509DataType'
-      }, {
-        en: 'KeyInfo',
-        ti: '.KeyInfoType'
+        en: 'Manifest',
+        ti: '.ManifestType'
       }, {
         en: 'Reference',
         ti: '.ReferenceType'
       }, {
-        en: 'SPKIData',
-        ti: '.SPKIDataType'
-      }, {
-        en: 'Object',
-        ti: '.ObjectType'
+        en: 'PGPKeyPacket',
+        ti: 'Base64Binary',
+        sc: '.PGPDataType'
       }, {
         en: 'CanonicalizationMethod',
         ti: '.CanonicalizationMethodType'
+      }, {
+        en: 'PGPData',
+        ti: '.PGPDataType'
+      }, {
+        en: 'SignatureProperties',
+        ti: '.SignaturePropertiesType'
       }, {
         en: 'X509SKI',
         ti: 'Base64Binary',
         sc: '.X509DataType'
       }, {
-        en: 'Manifest',
-        ti: '.ManifestType'
+        en: 'Object',
+        ti: '.ObjectType'
+      }, {
+        en: 'MgmtData'
+      }, {
+        en: 'SPKISexp',
+        ti: 'Base64Binary',
+        sc: '.SPKIDataType'
+      }, {
+        en: 'DigestValue',
+        ti: 'Base64Binary'
+      }, {
+        en: 'X509CRL',
+        ti: 'Base64Binary',
+        sc: '.X509DataType'
+      }, {
+        en: 'SignatureProperty',
+        ti: '.SignaturePropertyType'
+      }, {
+        en: 'DigestMethod',
+        ti: '.DigestMethodType'
+      }, {
+        en: 'KeyInfo',
+        ti: '.KeyInfoType'
+      }, {
+        en: 'SignatureValue',
+        ti: '.SignatureValueType'
+      }, {
+        en: 'DSAKeyValue',
+        ti: '.DSAKeyValueType'
+      }, {
+        en: 'X509IssuerSerial',
+        ti: '.X509IssuerSerialType',
+        sc: '.X509DataType'
+      }, {
+        en: 'X509Certificate',
+        ti: 'Base64Binary',
+        sc: '.X509DataType'
+      }, {
+        en: 'RetrievalMethod',
+        ti: '.RetrievalMethodType'
+      }, {
+        en: 'SPKIData',
+        ti: '.SPKIDataType'
+      }, {
+        en: 'SignatureMethod',
+        ti: '.SignatureMethodType'
+      }, {
+        en: 'Transform',
+        ti: '.TransformType'
+      }, {
+        en: 'KeyValue',
+        ti: '.KeyValueType'
+      }, {
+        en: 'Signature',
+        ti: '.SignatureType'
+      }, {
+        en: 'X509SubjectName',
+        sc: '.X509DataType'
+      }, {
+        en: 'SignedInfo',
+        ti: '.SignedInfoType'
+      }, {
+        en: 'KeyName'
+      }, {
+        en: 'Transforms',
+        ti: '.TransformsType'
+      }, {
+        en: 'HMACOutputLength',
+        ti: 'Integer',
+        sc: '.SignatureMethodType'
+      }, {
+        en: 'RSAKeyValue',
+        ti: '.RSAKeyValueType'
+      }, {
+        en: 'XPath',
+        sc: '.TransformType'
+      }, {
+        en: 'X509Data',
+        ti: '.X509DataType'
       }]
   };
   return {

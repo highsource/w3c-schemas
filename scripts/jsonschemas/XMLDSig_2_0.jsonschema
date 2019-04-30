@@ -75,51 +75,6 @@
                 "algorithm"
             ]
         },
-        "QualifiedAttrType":{
-            "type":"object",
-            "title":"QualifiedAttrType",
-            "required":[
-                "name",
-                "ns"
-            ],
-            "properties":{
-                "name":{
-                    "title":"name",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"Name",
-                        "namespaceURI":""
-                    }
-                },
-                "ns":{
-                    "title":"ns",
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
-                        }
-                    ],
-                    "propertyType":"attribute",
-                    "attributeName":{
-                        "localPart":"NS",
-                        "namespaceURI":""
-                    }
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"QualifiedAttrType",
-                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
-            },
-            "propertiesOrder":[
-                "name",
-                "ns"
-            ]
-        },
         "VerificationType":{
             "type":"object",
             "title":"VerificationType",
@@ -239,40 +194,6 @@
                 "positionAssertion"
             ]
         },
-        "VerificationsType":{
-            "type":"object",
-            "title":"VerificationsType",
-            "required":[
-                "verification"
-            ],
-            "properties":{
-                "verification":{
-                    "title":"verification",
-                    "allOf":[
-                        {
-                            "type":"array",
-                            "items":{
-                                "$ref":"#/definitions/VerificationType"
-                            },
-                            "minItems":1
-                        }
-                    ],
-                    "propertyType":"element",
-                    "elementName":{
-                        "localPart":"Verification",
-                        "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
-                    }
-                }
-            },
-            "typeType":"classInfo",
-            "typeName":{
-                "localPart":"VerificationsType",
-                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
-            },
-            "propertiesOrder":[
-                "verification"
-            ]
-        },
         "UnqualifiedAttrType":{
             "type":"object",
             "title":"UnqualifiedAttrType",
@@ -331,6 +252,85 @@
                 "parentName",
                 "parentNS"
             ]
+        },
+        "QualifiedAttrType":{
+            "type":"object",
+            "title":"QualifiedAttrType",
+            "required":[
+                "name",
+                "ns"
+            ],
+            "properties":{
+                "name":{
+                    "title":"name",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/NCName"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"Name",
+                        "namespaceURI":""
+                    }
+                },
+                "ns":{
+                    "title":"ns",
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/anyURI"
+                        }
+                    ],
+                    "propertyType":"attribute",
+                    "attributeName":{
+                        "localPart":"NS",
+                        "namespaceURI":""
+                    }
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"QualifiedAttrType",
+                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
+            },
+            "propertiesOrder":[
+                "name",
+                "ns"
+            ]
+        },
+        "VerificationsType":{
+            "type":"object",
+            "title":"VerificationsType",
+            "required":[
+                "verification"
+            ],
+            "properties":{
+                "verification":{
+                    "title":"verification",
+                    "allOf":[
+                        {
+                            "type":"array",
+                            "items":{
+                                "$ref":"#/definitions/VerificationType"
+                            },
+                            "minItems":1
+                        }
+                    ],
+                    "propertyType":"element",
+                    "elementName":{
+                        "localPart":"Verification",
+                        "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
+                    }
+                }
+            },
+            "typeType":"classInfo",
+            "typeName":{
+                "localPart":"VerificationsType",
+                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
+            },
+            "propertiesOrder":[
+                "verification"
+            ]
         }
     },
     "anyOf":[
@@ -347,7 +347,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "ExcludedXPath"
+                                        "IncludedXPath"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -364,7 +364,7 @@
                 }
             },
             "elementName":{
-                "localPart":"ExcludedXPath",
+                "localPart":"IncludedXPath",
                 "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
             }
         },
@@ -381,7 +381,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "Selection"
+                                        "UnqualifiedAttr"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -394,79 +394,11 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/SelectionType"
+                    "$ref":"#/definitions/UnqualifiedAttrType"
                 }
             },
             "elementName":{
-                "localPart":"Selection",
-                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "ByteRange"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/2010/xmldsig2#"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
-                }
-            },
-            "elementName":{
-                "localPart":"ByteRange",
-                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
-            }
-        },
-        {
-            "type":"object",
-            "properties":{
-                "name":{
-                    "allOf":[
-                        {
-                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
-                        },
-                        {
-                            "type":"object",
-                            "properties":{
-                                "localPart":{
-                                    "enum":[
-                                        "Verifications"
-                                    ]
-                                },
-                                "namespaceURI":{
-                                    "enum":[
-                                        "http://www.w3.org/2010/xmldsig2#"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                "value":{
-                    "$ref":"#/definitions/VerificationsType"
-                }
-            },
-            "elementName":{
-                "localPart":"Verifications",
+                "localPart":"UnqualifiedAttr",
                 "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
             }
         },
@@ -517,7 +449,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "IncludedXPath"
+                                        "Selection"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -530,11 +462,11 @@
                     ]
                 },
                 "value":{
-                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                    "$ref":"#/definitions/SelectionType"
                 }
             },
             "elementName":{
-                "localPart":"IncludedXPath",
+                "localPart":"Selection",
                 "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
             }
         },
@@ -585,7 +517,7 @@
                             "properties":{
                                 "localPart":{
                                     "enum":[
-                                        "UnqualifiedAttr"
+                                        "ByteRange"
                                     ]
                                 },
                                 "namespaceURI":{
@@ -598,11 +530,79 @@
                     ]
                 },
                 "value":{
-                    "$ref":"#/definitions/UnqualifiedAttrType"
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
                 }
             },
             "elementName":{
-                "localPart":"UnqualifiedAttr",
+                "localPart":"ByteRange",
+                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "ExcludedXPath"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/2010/xmldsig2#"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                }
+            },
+            "elementName":{
+                "localPart":"ExcludedXPath",
+                "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
+            }
+        },
+        {
+            "type":"object",
+            "properties":{
+                "name":{
+                    "allOf":[
+                        {
+                            "$ref":"http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                        },
+                        {
+                            "type":"object",
+                            "properties":{
+                                "localPart":{
+                                    "enum":[
+                                        "Verifications"
+                                    ]
+                                },
+                                "namespaceURI":{
+                                    "enum":[
+                                        "http://www.w3.org/2010/xmldsig2#"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                "value":{
+                    "$ref":"#/definitions/VerificationsType"
+                }
+            },
+            "elementName":{
+                "localPart":"Verifications",
                 "namespaceURI":"http://www.w3.org/2010/xmldsig2#"
             }
         }
