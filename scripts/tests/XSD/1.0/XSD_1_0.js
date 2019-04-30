@@ -62,7 +62,7 @@ module.exports = {
 				featureElements[topLevelElement.name] = featureTypes[topLevelElement.type.key];
 			}
 				
-			console.log(featureElements);
+			// console.log(featureElements);
 			test.done();
 		});
 	}//,
