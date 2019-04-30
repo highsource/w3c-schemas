@@ -1,6 +1,6 @@
 diff -urN ../resources-original/w3c/TR/xmldsig-core1/xmldsig1-schema.xsd w3c/TR/xmldsig-core1/xmldsig1-schema.xsd
 --- ../resources-original/w3c/TR/xmldsig-core1/xmldsig1-schema.xsd	2019-04-30 16:29:33.235066600 +0200
-+++ w3c/TR/xmldsig-core1/xmldsig1-schema.xsd	2019-04-30 17:04:26.114010700 +0200
++++ w3c/TR/xmldsig-core1/xmldsig1-schema.xsd	2019-04-30 17:06:34.904013700 +0200
 @@ -19,7 +19,7 @@
                 version="0.1" elementFormDefault="qualified">
  
@@ -12,13 +12,13 @@ diff -urN ../resources-original/w3c/TR/xmldsig-core1/xmldsig1-schema.xsd w3c/TR/
     schemaLocation="http://www.w3.org/TR/xmldsig-core1/xmldsig11-schema.xsd"/>
 diff -urN ../resources-original/w3c/TR/xmldsig-core2/xmldsig2-schema.xsd w3c/TR/xmldsig-core2/xmldsig2-schema.xsd
 --- ../resources-original/w3c/TR/xmldsig-core2/xmldsig2-schema.xsd	2019-04-30 16:33:49.253571000 +0200
-+++ w3c/TR/xmldsig-core2/xmldsig2-schema.xsd	2019-04-30 17:02:01.249673500 +0200
++++ w3c/TR/xmldsig-core2/xmldsig2-schema.xsd	2019-04-30 17:31:19.362034400 +0200
 @@ -1,3 +1,4 @@
 +<!--
  #
  # Copyright ©[2011] World Wide Web Consortium 
  # (Massachusetts Institute of Technology,  
-@@ -9,7 +10,7 @@
+@@ -9,11 +10,11 @@
  # PURPOSE. 
  # [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
  #
@@ -26,4 +26,10 @@ diff -urN ../resources-original/w3c/TR/xmldsig-core2/xmldsig2-schema.xsd w3c/TR/
 +-->
  <?xml version="1.0" encoding="utf-8"?>
  <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dsig11="http://www.w3.org/2009/xmldsig11#" xmlns:dsig2="http://www.w3.org/2010/xmldsig2#" targetNamespace="http://www.w3.org/2010/xmldsig2#" elementFormDefault="qualified" version="0.1">
- 	<import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+-	<import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+-	<import namespace="http://www.w3.org/2009/xmldsig11#" schemaLocation="xmldsig11-schema.xsd"/>
++	<import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd"/>
++	<import namespace="http://www.w3.org/2009/xmldsig11#" schemaLocation="http://www.w3.org/TR/xmldsig-core1/xmldsig11-schema.xsd"/>
+ 	<element name="Selection" type="dsig2:SelectionType"/>
+ 	<complexType name="SelectionType">
+ 		<sequence>
