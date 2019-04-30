@@ -3,3 +3,4 @@
     not recognized and the test will fail because of a missing schema.
 --
 REWRITE_SYSTEM "http://www.w3.org" "maven:org.hisrc.w3c:w3c-schemas:jar::!/w3c"
+REWRITE_SYSTEM "https://www.w3.org" "maven:org.hisrc.w3c:w3c-schemas:jar::!/w3c"
