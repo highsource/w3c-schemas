@@ -1,6 +1,6 @@
-<jaxb:bindings version="1.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
-	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" 
+<jaxb:bindings version="1.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
 	jaxb:extensionBindingPrefixes="xjc">
 
 	<jaxb:bindings schemaLocation="http://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd" node="/xs:schema">
