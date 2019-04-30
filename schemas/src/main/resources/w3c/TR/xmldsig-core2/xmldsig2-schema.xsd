@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 #
 # Copyright ©[2011] World Wide Web Consortium 
@@ -11,7 +13,7 @@
 # [1] http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 #
 -->
-<?xml version="1.0" encoding="utf-8"?>
+
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:dsig11="http://www.w3.org/2009/xmldsig11#" xmlns:dsig2="http://www.w3.org/2010/xmldsig2#" targetNamespace="http://www.w3.org/2010/xmldsig2#" elementFormDefault="qualified" version="0.1">
 	<import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/2008/REC-xmldsig-core-20080610/xmldsig-core-schema.xsd"/>
 	<import namespace="http://www.w3.org/2009/xmldsig11#" schemaLocation="http://www.w3.org/TR/xmldsig-core1/xmldsig11-schema.xsd"/>
@@ -52,12 +54,12 @@
         <anyAttribute namespace="##other" processContents="lax"/>
 	</complexType>
     <element name="QualifiedAttr" type="dsig2:QualifiedAttrType"/>
-    <complexType type="QualifiedAttrType">
+    <complexType name="QualifiedAttrType">
         <attribute name="Name" type="NCName" use="required"/>
         <attribute name="NS" type="anyURI" use="required"/>
     </complexType>
     <element name="UnqualifiedAttr" type="dsig2:UnqualifiedAttrType"/>
-    <complexType type="UnqualifiedAttrType">
+    <complexType name="UnqualifiedAttrType">
         <attribute name="Name" type="NCName" use="required"/>
         <attribute name="ParentName" type="NCName" use="required"/>
         <attribute name="ParentNS" type="anyURI"/>
