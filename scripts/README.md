@@ -11,6 +11,9 @@ Supports the following schemas:
 * `XHTML_1_0_Strict`
 * `XInclude_1_0`
 * `XLink_1_0`
+* `XMLDSig_Core_1_1`
+* `XMLDSig_1_1`
+* `XMLDSig_2_0`
 * `XSD_1_0`
 * `WSDL_2_0`
   * `WSDL_HTTP_2_0`

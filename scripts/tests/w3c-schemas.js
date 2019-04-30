@@ -5,6 +5,7 @@ module.exports =
 		"WSDL" : require('./WSDL/WSDL.js'),
 		"XInclude" : require('./XInclude/XInclude.js'),
 		"XLink" : require('./XLink/XLink.js'),
+		"XMLDsig" : require('./XMLDSig/XMLDSig.js'),
 		"XSD" : require('./XSD/XSD.js')
 	}
 };

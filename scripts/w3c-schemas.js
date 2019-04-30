@@ -7,4 +7,7 @@ module.exports.WSDL_SOAP_2_0    = require('./lib/WSDL_SOAP_2_0'   ).WSDL_SOAP_2_
 module.exports.XHTML_1_0_Strict = require('./lib/XHTML_1_0_Strict').XHTML_1_0_Strict;
 module.exports.XInclude_1_0     = require('./lib/XInclude_1_0'    ).XInclude_1_0    ;
 module.exports.XLink_1_0        = require('./lib/XLink_1_0'       ).XLink_1_0       ;
+module.exports.XMLDSig_Core_1_1 = require('./lib/XMLDSig_Core_1_1').XMLDSig_Core_1_1;
+module.exports.XMLDSig_1_1      = require('./lib/XMLDSig_1_1'     ).XMLDSig_1_1     ;
+module.exports.XMLDSig_2_0      = require('./lib/XMLDSig_2_0'     ).XMLDSig_2_0     ;
 module.exports.XSD_1_0          = require('./lib/XSD_1_0'         ).XSD_1_0         ;

@@ -25,41 +25,44 @@
 		"ws-addr",
 		"ws-addressing",
 		"ws addressing",
-                "wsdl",
-                "soap",
+		"wsdl",
+		"soap",
 		"xhtml",
 		"xlink",
 		"xinclude",
+		"xmldsig",
 		"xmlschema",
 		"xml schema",
 		"xsd"
 	],
 	"homepage": "https://github.com/highsource/w3c-schemas",
-	"bugs" : {
-		"url" : "http://github.com/highsource/w3c-schemas/issues",
-		"email" : "w3c-schemas-users@lists.sourceforge.net"
+	"bugs": {
+		"url": "http://github.com/highsource/w3c-schemas/issues",
+		"email": "w3c-schemas-users@lists.sourceforge.net"
 	},
-	"licenses" : [ {
-		"type" : "BSD-2-Clause",
-		"url" : "http://github.com/highsource/w3c-schemas/raw/master/LICENSE"
-	} ],
-	"author" : {
-		"name" : "Alexey Valikov",
-		"url" : "http://github.com/highsource"
+	"licenses": [
+		{
+			"type": "BSD-2-Clause",
+			"url": "http://github.com/highsource/w3c-schemas/raw/master/LICENSE"
+		}
+	],
+	"author": {
+		"name": "Alexey Valikov",
+		"url": "http://github.com/highsource"
 	},
 	"main": "w3c-schemas.js",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/highsource/w3c-schemas"
 	},
-	"scripts" : {
-		"test" : "nodeunit tests/tests.js"
+	"scripts": {
+		"test": "nodeunit tests/tests.js"
 	},
 	"dependencies": {
 		"jsonix": ">=2.4.0"
 	},
-	"devDependencies" : {
-		"nodeunit" : "0.x.x",
-		"node-static" : "0.x.x"
+	"devDependencies": {
+		"nodeunit": "0.x.x",
+		"node-static": "0.x.x"
 	}
 }
